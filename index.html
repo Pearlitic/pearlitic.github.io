@@ -232,9 +232,9 @@ function calc() {
   inPDR *= 0.01;
   inIEDcalc = calcIED(inIEDResult);
   if(inIEDcalc >= 1){
-    inIEDcalc = 1
+    inIEDcalc = 1;
   }
-  console.log("IED: " + inIEDcalc)
+  console.log("IED: " + inIEDcalc);
   //console.log("A: " + inATK + " | D: " + inDMG + " | I: " + /*inIEDList.toString() + "  " +*/ inIEDcalc + "\t | F: " + inFam + " | Pd: " + inPDR + " | Pr: " + inPrime);
   final = optimize(inATK, inDMG, inIEDcalc, inFam, inPDR, inPrime);
 
