@@ -54,6 +54,7 @@ p { margin: 3px }
 <html>
 
   <head>
+    <title>WSE Optimizer by Pearlite</title>
   </head>
 
   <body>
@@ -107,7 +108,7 @@ p { margin: 3px }
             <span>Familiar #: Enter the number of familiars you want to include in the optimization. Only Damage% and IED% familiars are supported, with the assumption of Epic 30%. If you've got 40% Uniques, increase the Prime # to calculate for 40%.</span>
             <br>
             <br>
-            <span>PDR %: Boss PDR. Go look up the wili for values for different bosses. Mid-End game bosses are typically 300% PDR.</span>
+            <span>PDR %: Boss PDR. Go look up the wiki for values for different bosses. Mid-End game bosses are typically 300% PDR.</span>
             <br>
             <br>
             <span>Prime #: Amount of prime lines to account for. This is typically 3, but if you are confident in your cubing luck you may increase the prime line # to optimize for.</span>
@@ -230,7 +231,10 @@ function calc() {
   inDMG *= 0.01;
   inPDR *= 0.01;
   inIEDcalc = calcIED(inIEDResult);
-
+  if(inIEDcalc >= 1){
+    inIEDcalc = 1
+  }
+  console.log("IED: " + inIEDcalc)
   //console.log("A: " + inATK + " | D: " + inDMG + " | I: " + /*inIEDList.toString() + "  " +*/ inIEDcalc + "\t | F: " + inFam + " | Pd: " + inPDR + " | Pr: " + inPrime);
   final = optimize(inATK, inDMG, inIEDcalc, inFam, inPDR, inPrime);
 
