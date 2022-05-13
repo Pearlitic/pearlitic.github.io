@@ -84,20 +84,20 @@
             ──────────────────────────────
           </p>
         </center>
-        <span>Attack (%): </span><input style="width: 150px" type="number" id="attackEl" value="3" placeholder="e.g. 3" onkeyup="run()" width="20">
+        <span>Attack (%): </span><input style="width: 150px" type="number" id="attackEl" value="" min="0" placeholder="e.g. 3" onkeyup="run()" width="20">
         <br>
-        <span>Damage (%): </span><input style="width: 150px" type="number" id="damageEl" value="300" placeholder="e.g. 300" onkeyup="run()">
+        <span>Damage (%): </span><input style="width: 150px" type="number" id="damageEl" value="" min="0" placeholder="e.g. 300" onkeyup="run()">
         <br>
-        <span>IED &nbsp;&nbsp;&nbsp;(%): </span><input style="width: 150px" type="string" id="iedEl" value="40,35,15" placeholder="e.g. 30,5,10" onkeyup="run()">
+        <span>IED &nbsp;&nbsp;&nbsp;(%): </span><input style="width: 150px" type="string" id="iedEl" value="" placeholder="e.g. 30,5,10" onkeyup="run()">
         <div class="spoiler">
           <input type="button" onclick="showSpoiler(this);" value="Show Advanced Options" style="width: 280px;">
           <b></b>
           <div class="inner" style="display:none;">
-            <span>Familiar #: </span><input style="width: 150px" type="number" id="famEl" value="0" placeholder="Enter Value (0 to 3)" onkeyup="run()">
+            <span>Familiar #: </span><input style="width: 150px" type="number" id="famEl" value="0" min="0" placeholder="0 to 3" onkeyup="run()">
             <br>
-            <span>PDR &nbsp;&nbsp; (%): </span><input style="width: 150px" type="number" id="pdrEl" value="300" placeholder="Enter Value" onkeyup="run()">
+            <span>PDR &nbsp;&nbsp; (%): </span><input style="width: 150px" type="number" id="pdrEl" value="300" min="0" placeholder="e.g. 300" onkeyup="run()">
             <br>
-            <span>Prime &nbsp;&nbsp; #: </span><input style="width: 150px" type="primeEl" id="primeEl" value="3" placeholder="Enter Value (Default 3)" onkeyup="run()">
+            <span>Prime &nbsp;&nbsp; #: </span><input style="width: 150px" type="primeEl" id="primeEl" value="3" min="0" placeholder="Default 3" onkeyup="run()">
           </div>
         </div>
         <div class="spoiler">
