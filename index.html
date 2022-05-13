@@ -1,32 +1,40 @@
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-    body{
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+  body {
     background-color: #333333;
     color: white;
-    font-family: "Roboto Mono","Consolas", "Lucida Console", "Lucida Sans Typewriter", monospace;
-    }
-    .box-ex{
+    font-family: "Roboto Mono", "Consolas", "Lucida Console", "Lucida Sans Typewriter", monospace;
+  }
+
+  .box-ex {
     /* width: 50px;*/
     background-color: #333333;
     margin: 0 auto;
     padding: 10px;
     text-align: center
-    }
-    input[type=button] {
+  }
+
+  input[type=button] {
     /*width: 5em;  height: 2em;*/
-    }
-    p { margin: 3px }
-    .smaller{
+  }
+
+  p {
+    margin: 3px
+  }
+
+  .smaller {
     font-size: 70%;
-    }
-    .box2{
+  }
+
+  .box2 {
     display: block;
     width: 280px;
     /*height: 300px;*/
     line-height: 30px;
     margin: 5px 5px;
     display: inline-block;
-    background-color: #555555;   
+    background-color: #555555;
     color: white;
     text-align: left;
     padding-left: 30px;
@@ -34,8 +42,9 @@
     padding-bottom: 20px;
     padding-right: 30px;
     border-style: dashed;
-    }
-    .box3{
+  }
+
+  .box3 {
     display: block;
     width: 280px;
     /*height: 300px;*/
@@ -43,7 +52,7 @@
     margin: 5px 5px;
     margin-bottom: 200px;
     display: inline-block;
-    background-color: #555555;   
+    background-color: #555555;
     color: white;
     text-align: left;
     padding-left: 30px;
@@ -51,243 +60,247 @@
     padding-bottom: 20px;
     padding-right: 30px;
     border-style: dashed;
-    }
+  }
+
 </style>
 <html>
-    <head>
-        <title>WSE Optimizer by Pearlite</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="google-site-verification" content="5pKheskkgbk7yXiillRrJDq1EVRTQdaNYoahSJt9GXM" />
-        <meta name="description" content="A simple Maplestory WSE Optimizer.">
-        <meta name="keywords" content="WSE, Maplestory, Optimizer, attack, damage, ied, familiar, pdr">
-    </head>
-    <body>
-        <div class="box-ex container-fluid">
-            <div class="box2 col1">
-                <center>
-                    <p style="font-size:28px"><b>WSE Optimizer </b><span class='smaller'></span>
-                    </p>
-                    <p style="font-size:16px">
-                        by Pearlite
-                    </p>
-                    <p style="font-size:16px">
-                        ──────────────────────────────
-                    </p>
-                </center>
-                <span>Attack (%): </span><input style="width: 150px" type="number" id="attackEl" value="3" placeholder="Enter Value (e.g. 3)" onkeyup="run()" width="20">
-                <br>
-                <span>Damage (%): </span><input style="width: 150px" type="number" id="damageEl" value="500" placeholder="Enter Value (e.g. 200)" onkeyup="run()">
-                <br>
-                <span>IED &nbsp;&nbsp;&nbsp;(%): </span><input style="width: 150px" type="string" id="iedEl" value="85,20" placeholder="Enter Value (e.g. 30,5,10)" onkeyup="run()">
-                <div class="spoiler">
-                    <input type="button" onclick="showSpoiler(this);" value="Show Advanced Options" style="width: 280px;">
-                    <b></b>
-                    <div class="inner" style="display:none;">
-                        <span>Familiar #: </span><input style="width: 150px" type="number" id="famEl" value="0" placeholder="Enter Value (0 to 3)" onkeyup="run()">
-                        <br>
-                        <span>PDR &nbsp;&nbsp; (%): </span><input style="width: 150px" type="number" id="pdrEl" value="300" placeholder="Enter Value" onkeyup="run()">
-                        <br>
-                        <span>Prime &nbsp;&nbsp; #: </span><input style="width: 150px" type="primeEl" id="primeEl" value="3" placeholder="Enter Value (Default 3)" onkeyup="run()">
-                    </div>
-                </div>
-                <div class="spoiler">
-                    <input type="button" onclick="showSpoiler2(this);" value="Show Help!" style="width: 280px;">
-                    <b></b>
-                    <div class="inner" style="display:none;">
-                        <span><b><i>DO NOT ACCOUNT FOR WSE POTENTIALS (I.E. THEY SHOULD BE CLEAN)!</i></b></span>
-                        <br>
-                        <span><b>Attack %:</b> Enter amount of attack % from passives, soul, etc.</span>
-                        <br>
-                        <br>
-                        <span><b>Damage %:</b> Enter amount of Damage and Boss Damage % from gears (excluding WSE potentials, but include flame/gear stat), passives, links, skill passive/active, hyper, node bonus, etc.</span>
-                        <br>
-                        <br>
-                        <span><b>IED %:</b> Enter amount of IED from gears (excluding WSE potentials, but include gear stat). Note that IED calculation isn't additive, so go look up how to calculate it. If you don't know how, the input field also supports multiple inputs seperated by commas in an example format of "30,30,10".</span>
-                        <br>
-                        <br>
-                        <span><b>Familiar #:</b> Enter the number of familiars you want to include in the optimization. Only Damage% and IED% familiars are supported, with the assumption of Epic 30%. If you've got 40% Uniques, increase the Prime # to account for 40%.</span>
-                        <br>
-                        <br>
-                        <span><b>PDR %:</b> Boss PDR. Go look up the wiki for values for different bosses. Mid-End game bosses are typically 300% PDR.</span>
-                        <br>
-                        <br>
-                        <span><b>Prime #:</b> Amount of prime lines to account for. This is typically 3, but if you are confident in your cubing luck you may increase the prime line # to optimize for.</span>
-                        <br>
-                        <br>
-                        <span></span>
-                    </div>
-                </div>
-                <br>
-                <input type="button" id="opti" onclick="calc();" value="Optimize!" style="font-weight: bold;width: 280px; margin-top: 0px;">
-            </div>
+
+  <head>
+    <title>WSE Optimizer by Pearlite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="5pKheskkgbk7yXiillRrJDq1EVRTQdaNYoahSJt9GXM" />
+    <meta name="description" content="A simple Maplestory WSE Optimizer.">
+    <meta name="keywords" content="WSE, Maplestory, Optimizer, attack, damage, ied, familiar, pdr">
+  </head>
+
+  <body>
+    <div class="box-ex container-fluid">
+      <div class="box2 col1">
+        <center>
+          <p style="font-size:28px"><b>WSE Optimizer </b><span class='smaller'></span>
+          </p>
+          <p style="font-size:16px">
+            by Pearlite
+          </p>
+          <p style="font-size:16px">
+            ──────────────────────────────
+          </p>
+        </center>
+        <span>Attack (%): </span><input style="width: 150px" type="number" id="attackEl" value="3" placeholder="Enter Value (e.g. 3)" onkeyup="run()" width="20">
+        <br>
+        <span>Damage (%): </span><input style="width: 150px" type="number" id="damageEl" value="500" placeholder="Enter Value (e.g. 200)" onkeyup="run()">
+        <br>
+        <span>IED &nbsp;&nbsp;&nbsp;(%): </span><input style="width: 150px" type="string" id="iedEl" value="85,20" placeholder="Enter Value (e.g. 30,5,10)" onkeyup="run()">
+        <div class="spoiler">
+          <input type="button" onclick="showSpoiler(this);" value="Show Advanced Options" style="width: 280px;">
+          <b></b>
+          <div class="inner" style="display:none;">
+            <span>Familiar #: </span><input style="width: 150px" type="number" id="famEl" value="0" placeholder="Enter Value (0 to 3)" onkeyup="run()">
             <br>
-            <div class="box3 col1">
-                <span>Optimized Result:</span>
-                <br>
-                <span><b>1 - FD:</b> </span><span id="op1f">000%</span><br><span>&nbsp;&nbsp;<b>A/D/I: </b>(</span><span id="op1a">0</span>,<span id="op1d">0</span>,<span id="op1i">0</span>) <b>P:</b> (<span id="op1p">1,1,1</span>)<br>
-                <span><b>2 - FD:</b> </span><span id="op2f">000%</span><br><span>&nbsp;&nbsp;<b>A/D/I: </b>(</span><span id="op2a">0</span>,<span id="op2d">0</span>,<span id="op2i">0</span>) <b>P:</b> (<span id="op2p">1,1,1</span>)<br>
-                <span><b>3 - FD:</b> </span><span id="op3f">000%</span><br><span>&nbsp;&nbsp;<b>A/D/I: </b>(</span><span id="op3a">0</span>,<span id="op3d">0</span>,<span id="op3i">0</span>) <b>P:</b> (<span id="op3p">1,1,1</span>)<br>
-                <span><b>4 - FD:</b> </span><span id="op4f">000%</span><br><span>&nbsp;&nbsp;<b>A/D/I: </b>(</span><span id="op4a">0</span>,<span id="op4d">0</span>,<span id="op4i">0</span>) <b>P:</b> (<span id="op4p">1,1,1</span>)<br>
-                <span><b>5 - FD:</b> </span><span id="op5f">000%</span><br><span>&nbsp;&nbsp;<b>A/D/I: </b>(</span><span id="op5a">0</span>,<span id="op5d">0</span>,<span id="op5i">0</span>) <b>P:</b> (<span id="op5p">1,1,1</span>)<br>
-                <div class="spoiler">
-                    <input type="button" onclick="showSpoiler2(this);" value="Show Help!" style="width: 280px;">
-                    <b></b>
-                    <div class="inner" style="display:none;">
-                        <span><b>A:</b> # of Attack Lines</span>
-                        <br>
-                        <span><b>D:</b> # of Boss Damage Lines</span>
-                        <br>
-                        <span><b>I:</b> # of IED Lines</span>
-                        <br>
-                        <span><b>P:</b> Ideal Prime Line (A,D,I)</span>
-                        <br>
-                        <span><i></i></span>
-                    </div>
-                </div>
-            </div>
+            <span>PDR &nbsp;&nbsp; (%): </span><input style="width: 150px" type="number" id="pdrEl" value="300" placeholder="Enter Value" onkeyup="run()">
+            <br>
+            <span>Prime &nbsp;&nbsp; #: </span><input style="width: 150px" type="primeEl" id="primeEl" value="3" placeholder="Enter Value (Default 3)" onkeyup="run()">
+          </div>
         </div>
-    </body>
+        <div class="spoiler">
+          <input type="button" onclick="showSpoiler2(this);" value="Show Help!" style="width: 280px;">
+          <b></b>
+          <div class="inner" style="display:none;">
+            <span><b><i>DO NOT ACCOUNT FOR WSE POTENTIALS (I.E. THEY SHOULD BE CLEAN)!</i></b></span>
+            <br>
+            <span><b>Attack %:</b> Enter amount of attack % from passives, soul, etc.</span>
+            <br>
+            <br>
+            <span><b>Damage %:</b> Enter amount of Damage and Boss Damage % from gears (excluding WSE potentials, but include flame/gear stat), passives, links, skill passive/active, hyper, node bonus, etc.</span>
+            <br>
+            <br>
+            <span><b>IED %:</b> Enter amount of IED from gears (excluding WSE potentials, but include gear stat). Note that IED calculation isn't additive, so go look up how to calculate it. If you don't know how, the input field also supports multiple inputs seperated by commas in an example format of "30,30,10".</span>
+            <br>
+            <br>
+            <span><b>Familiar #:</b> Enter the number of familiars you want to include in the optimization. Only Damage% and IED% familiars are supported, with the assumption of Epic 30%. If you've got 40% Uniques, increase the Prime # to account for 40%.</span>
+            <br>
+            <br>
+            <span><b>PDR %:</b> Boss PDR. Go look up the wiki for values for different bosses. Mid-End game bosses are typically 300% PDR.</span>
+            <br>
+            <br>
+            <span><b>Prime #:</b> Amount of prime lines to account for. This is typically 3, but if you are confident in your cubing luck you may increase the prime line # to optimize for.</span>
+            <br>
+            <br>
+            <span></span>
+          </div>
+        </div>
+        <br>
+        <input type="button" id="opti" onclick="calc();" value="Optimize!" style="font-weight: bold;width: 280px; margin-top: 0px;">
+      </div>
+      <br>
+      <div class="box3 col1">
+        <span>Optimized Result:</span>
+        <br>
+        <span><b>1 - FD:</b> </span><span id="op1f">000%</span><br><span>&nbsp;&nbsp;<b>A/D/I: </b>(</span><span id="op1a">0</span>,<span id="op1d">0</span>,<span id="op1i">0</span>) <b>P:</b> (<span id="op1p">1,1,1</span>)<br>
+        <span><b>2 - FD:</b> </span><span id="op2f">000%</span><br><span>&nbsp;&nbsp;<b>A/D/I: </b>(</span><span id="op2a">0</span>,<span id="op2d">0</span>,<span id="op2i">0</span>) <b>P:</b> (<span id="op2p">1,1,1</span>)<br>
+        <span><b>3 - FD:</b> </span><span id="op3f">000%</span><br><span>&nbsp;&nbsp;<b>A/D/I: </b>(</span><span id="op3a">0</span>,<span id="op3d">0</span>,<span id="op3i">0</span>) <b>P:</b> (<span id="op3p">1,1,1</span>)<br>
+        <span><b>4 - FD:</b> </span><span id="op4f">000%</span><br><span>&nbsp;&nbsp;<b>A/D/I: </b>(</span><span id="op4a">0</span>,<span id="op4d">0</span>,<span id="op4i">0</span>) <b>P:</b> (<span id="op4p">1,1,1</span>)<br>
+        <span><b>5 - FD:</b> </span><span id="op5f">000%</span><br><span>&nbsp;&nbsp;<b>A/D/I: </b>(</span><span id="op5a">0</span>,<span id="op5d">0</span>,<span id="op5i">0</span>) <b>P:</b> (<span id="op5p">1,1,1</span>)<br>
+        <div class="spoiler">
+          <input type="button" onclick="showSpoiler2(this);" value="Show Help!" style="width: 280px;">
+          <b></b>
+          <div class="inner" style="display:none;">
+            <span><b>A:</b> # of Attack Lines</span>
+            <br>
+            <span><b>D:</b> # of Boss Damage Lines</span>
+            <br>
+            <span><b>I:</b> # of IED Lines</span>
+            <br>
+            <span><b>P:</b> Ideal Prime Line (A,D,I)</span>
+            <br>
+            <span><i></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
 </html>
 <script>
-    var inATK = 0;
-    var inDMG = 0;
-    var inIED = "";
-    var inIEDList = [];
-    var inFam = 0;
-    var inPDR = 0;
-    var inPrime = 0;
-    
-    function run() {
-      //calc();
+  var inATK = 0;
+  var inDMG = 0;
+  var inIED = "";
+  var inIEDList = [];
+  var inFam = 0;
+  var inPDR = 0;
+  var inPrime = 0;
+
+  function run() {
+    //calc();
+  }
+
+  function calcIED(arr) {
+    temp = 0;
+    for (const val of arr) {
+      temp = 1 - (1 - temp) * (1 - val);
     }
-    
-    function calcIED(arr) {
-      temp = 0;
-      for (const val of arr) {
-        temp = 1 - (1 - temp) * (1 - val);
-      }
-      //console.log(temp);
-      return temp
+    //console.log(temp);
+    return temp
+  }
+
+  function calc() {
+    inATK = document.getElementById('attackEl').value;
+    inDMG = document.getElementById('damageEl').value;
+    inIED = document.getElementById('iedEl').value;
+    inFam = document.getElementById('famEl').value;
+    inPDR = document.getElementById('pdrEl').value;
+    inPrime = document.getElementById('primeEl').value;
+
+    inIEDList = inIED.split `,`.map(x => +x);
+
+
+    //check input, set box red if not
+    // attackEl.style.color = "red";
+    if (inIEDList.some(isNaN) || inIEDList.some(x => x < 0)) {
+      iedEl.style.color = "red";
+      opti.style.color = "red";
+      return;
+    } else if (inDMG < 0) {
+      damageEl.style.color = "red";
+      opti.style.color = "red";
+      return;
+    } else if (inATK < 0) {
+      attackEl.style.color = "red";
+      opti.style.color = "red";
+      return;
+    } else if (inFam < 0 || inFam > 3) {
+      famEl.style.color = "red";
+      opti.style.color = "red";
+      return;
+    } else if (inPDR < 0) {
+      pdrEl.style.color = "red";
+      opti.style.color = "red";
+      return;
+    } else if (inPrime < 0) {
+      primeEl.style.color = "red";
+      opti.style.color = "red";
+      return;
+    } else {
+      iedEl.style.color = "black";
+      damageEl.style.color = "black";
+      attackEl.style.color = "black";
+      famEl.style.color = "black";
+      pdrEl.style.color = "black";
+      primeEl.style.color = "black";
+      opti.style.color = "black";
     }
-    
-    function calc() {
-      inATK = document.getElementById('attackEl').value;
-      inDMG = document.getElementById('damageEl').value;
-      inIED = document.getElementById('iedEl').value;
-      inFam = document.getElementById('famEl').value;
-      inPDR = document.getElementById('pdrEl').value;
-      inPrime = document.getElementById('primeEl').value;
-    
-      inIEDList = inIED.split `,`.map(x => +x);
-    
-    
-      //check input, set box red if not
-      // attackEl.style.color = "red";
-      if (inIEDList.some(isNaN) || inIEDList.some(x => x < 0)) {
-        iedEl.style.color = "red";
-        opti.style.color = "red";
-        return;
-      } else if (inDMG < 0) {
-        damageEl.style.color = "red";
-        opti.style.color = "red";
-        return;
-      } else if (inATK < 0) {
-        attackEl.style.color = "red";
-        opti.style.color = "red";
-        return;
-      } else if (inFam < 0 || inFam > 3) {
-        famEl.style.color = "red";
-        opti.style.color = "red";
-        return;
-      } else if (inPDR < 0) {
-        pdrEl.style.color = "red";
-        opti.style.color = "red";
-        return;
-      } else if (inPrime < 0) {
-        primeEl.style.color = "red";
-        opti.style.color = "red";
-        return;
-      } else {
-        iedEl.style.color = "black";
-        damageEl.style.color = "black";
-        attackEl.style.color = "black";
-        famEl.style.color = "black";
-        pdrEl.style.color = "black";
-        primeEl.style.color = "black";
-        opti.style.color = "black";
-      }
-    
-      //Convert inputs to decimal
-      inIEDResult = inIEDList.map(x => x * 0.01);
-      inATK *= 0.01;
-      inDMG *= 0.01;
-      inPDR *= 0.01;
-      inIEDcalc = calcIED(inIEDResult);
-      if(inIEDcalc >= 1){
-        inIEDcalc = 1;
-      }
-      console.log("IED: " + inIEDcalc);
-      //console.log("A: " + inATK + " | D: " + inDMG + " | I: " + /*inIEDList.toString() + "  " +*/ inIEDcalc + "\t | F: " + inFam + " | Pd: " + inPDR + " | Pr: " + inPrime);
-      final = optimize(inATK, inDMG, inIEDcalc, inFam, inPDR, inPrime);
-    
-    
-      //final = [1,2,3,4,5,6,7];
-      for (o = 0; o < 5; o++) {
-        console.log("\nA: " + final[o][0] + "  D: " + final[o][1] + "  I: " + /*inIEDList.toString() + "  " +*/ final[o][2] + " | P: (" + final[o][3] + "," + final[o][4] + "," + final[o][5] + ") \tFD: " + Math.round(final[o][6] * 100) + "%");
-      }
-      //console.table(final);
-      for (r=0;r<5;r++){
-      tmp = r+1;
-      document.getElementById("op" + tmp + "f").textContent = Math.round(final[r][6]*100) + "%";
+
+    //Convert inputs to decimal
+    inIEDResult = inIEDList.map(x => x * 0.01);
+    inATK *= 0.01;
+    inDMG *= 0.01;
+    inPDR *= 0.01;
+    inIEDcalc = calcIED(inIEDResult);
+    if (inIEDcalc >= 1) {
+      inIEDcalc = 1;
+    }
+    console.log("IED: " + inIEDcalc);
+    //console.log("A: " + inATK + " | D: " + inDMG + " | I: " + /*inIEDList.toString() + "  " +*/ inIEDcalc + "\t | F: " + inFam + " | Pd: " + inPDR + " | Pr: " + inPrime);
+    final = optimize(inATK, inDMG, inIEDcalc, inFam, inPDR, inPrime);
+
+
+    //final = [1,2,3,4,5,6,7];
+    for (o = 0; o < 5; o++) {
+      console.log("\nA: " + final[o][0] + "  D: " + final[o][1] + "  I: " + /*inIEDList.toString() + "  " +*/ final[o][2] + " | P: (" + final[o][3] + "," + final[o][4] + "," + final[o][5] + ") \tFD: " + Math.round(final[o][6] * 100) + "%");
+    }
+    //console.table(final);
+    for (r = 0; r < 5; r++) {
+      tmp = r + 1;
+      document.getElementById("op" + tmp + "f").textContent = Math.round(final[r][6] * 100) + "%";
       document.getElementById("op" + tmp + "a").textContent = final[r][0];
       document.getElementById("op" + tmp + "d").textContent = final[r][1];
       document.getElementById("op" + tmp + "i").textContent = final[r][2];
-      document.getElementById("op" + tmp + "p").textContent = final[r][3] +"," + final[r][4] + "," + final[r][5];
-      
-      
-      
-      	
-      }
-      
-      //console.log("\nA: " + final[0][0] + "  D: " + final[0][1] + "  I: " + /*inIEDList.toString() + "  " +*/ final[0][2] + " | P: (" + final[0][3] + "," + final[0][4] + "," + final[0][5] + ") \tFD: " + Math.round(final[0][6] * 100) + "%");
+      document.getElementById("op" + tmp + "p").textContent = final[r][3] + "," + final[r][4] + "," + final[r][5];
+
+
+
+
     }
-    
-    function optimize(opA, opD, opI, opF, opPDR, opPR) {
-      oA = 0;
-      oD = 0;
-      oI = 0;
-      oF = parseInt(opF) + 9;
-      oFd = parseInt(opF) + 6;
-      oPrA = 0;
-      oPrD = 0;
-      oPrI = 0;
-      //oFD = 0;
-      FDc = 0;
-      final1 = [0, 0, 0, 0, 0, 0, 0];
-      final2 = [0, 0, 0, 0, 0, 0, 0];
-      final3 = [0, 0, 0, 0, 0, 0, 0];
-      final4 = [0, 0, 0, 0, 0, 0, 0];
-      final5 = [0, 0, 0, 0, 0, 0, 0];
-    
-      for (let a = 0; a <= oF; a++) {
-        for (let d = 0; d <= (oFd); d++) {
-          for (let i = 0; i <= (oF); i++) {
-            for (let pa = 0; pa <= (opPR); pa++) {
-              for (let pd = 0; pd <= (opPR); pd++) {
-                for (let pi = 0; pi <= (opPR); pi++) {
-    
-                  if (a + d + i == oF && pa + pd + pi == opPR && pa <= a && pd <= d && pi <= i) {
-                    //console.log(a + " " + d + " " + i + " " + pa + " " + pd + " " + pi);
-                    fA = 0.09 * (a - pa) + 0.12 * pa + opA;
-                    fD = 0.3 * (d - pd) + 0.4 * pd + opD;
-                    fI = calcIED(Array(pi).fill(0.4).concat(Array(i - pi).fill(0.3), [opI]));
-    
-                    FD = calcFD(fA, fD, fI, opPDR);
-                    
-                    if (FD > FDc) {
-                    	FDc = FD;
-                    }
-    ///
+
+    //console.log("\nA: " + final[0][0] + "  D: " + final[0][1] + "  I: " + /*inIEDList.toString() + "  " +*/ final[0][2] + " | P: (" + final[0][3] + "," + final[0][4] + "," + final[0][5] + ") \tFD: " + Math.round(final[0][6] * 100) + "%");
+  }
+
+  function optimize(opA, opD, opI, opF, opPDR, opPR) {
+    oA = 0;
+    oD = 0;
+    oI = 0;
+    oF = parseInt(opF) + 9;
+    oFd = parseInt(opF) + 6;
+    oPrA = 0;
+    oPrD = 0;
+    oPrI = 0;
+    //oFD = 0;
+    FDc = 0;
+    final1 = [0, 0, 0, 0, 0, 0, 0];
+    final2 = [0, 0, 0, 0, 0, 0, 0];
+    final3 = [0, 0, 0, 0, 0, 0, 0];
+    final4 = [0, 0, 0, 0, 0, 0, 0];
+    final5 = [0, 0, 0, 0, 0, 0, 0];
+
+    for (let a = 0; a <= oF; a++) {
+      for (let d = 0; d <= (oFd); d++) {
+        for (let i = 0; i <= (oF); i++) {
+          for (let pa = 0; pa <= (opPR); pa++) {
+            for (let pd = 0; pd <= (opPR); pd++) {
+              for (let pi = 0; pi <= (opPR); pi++) {
+
+                if (a + d + i == oF && pa + pd + pi == opPR && pa <= a && pd <= d && pi <= i) {
+                  //console.log(a + " " + d + " " + i + " " + pa + " " + pd + " " + pi);
+                  fA = 0.09 * (a - pa) + 0.12 * pa + opA;
+                  fD = 0.3 * (d - pd) + 0.4 * pd + opD;
+                  fI = calcIED(Array(pi).fill(0.4).concat(Array(i - pi).fill(0.3), [opI]));
+
+                  FD = calcFD(fA, fD, fI, opPDR);
+
+                  if (FD > FDc) {
+                    FDc = FD;
+                  }
+                  ///
                   if (FD > final1[6]) {
                     final5 = final4;
                     final4 = final3;
@@ -299,63 +312,63 @@
                     final4 = final3;
                     final3 = final2;
                     final2 = [a, d, i, pa, pd, pi, FD];
-                  }else if (FD > final3[6]) {
+                  } else if (FD > final3[6]) {
                     final5 = final4;
                     final4 = final3;
                     final3 = [a, d, i, pa, pd, pi, FD];
-                  }else if (FD > final4[6]) {
+                  } else if (FD > final4[6]) {
                     final5 = final4;
                     final4 = [a, d, i, pa, pd, pi, FD];
-                  }else if (FD > final5[6]) {
+                  } else if (FD > final5[6]) {
                     final5 = [a, d, i, pa, pd, pi, FD];
                   }
-                    //console.log("A: " + a + "  D: " + d + "  I: " + i + " | P: (" + pa + "," + pd + "," + pi + ") \tFD: " + Math.round(FD * 100) + "%");
-                  }
-                  
+                  //console.log("A: " + a + "  D: " + d + "  I: " + i + " | P: (" + pa + "," + pd + "," + pi + ") \tFD: " + Math.round(FD * 100) + "%");
                 }
+
               }
             }
           }
         }
       }
-    
-      //return [oA, oD, oI, oPrA, oPrD, oPrI, oFD]
-      return [final1, final2, final3, final4, final5]
     }
-    
-    function calcFD(a, d, i, pdr) {
-      DM = 1 - (1 - i) * pdr; // Damage Multiplier from IED
-      if (DM > 1) {
-        DM = 1;
-      } else if (DM < 0) {
-        DM = 0
-      }
-      return (1 + a) * (1 + d) * DM
+
+    //return [oA, oD, oI, oPrA, oPrD, oPrI, oFD]
+    return [final1, final2, final3, final4, final5]
+  }
+
+  function calcFD(a, d, i, pdr) {
+    DM = 1 - (1 - i) * pdr; // Damage Multiplier from IED
+    if (DM > 1) {
+      DM = 1;
+    } else if (DM < 0) {
+      DM = 0
     }
-    
-    
-    /////////////////////////////////////////////////////////////////////////////
-    
-    function showSpoiler(obj) {
-      var inner = obj.parentNode.getElementsByTagName("div")[0];
-      if (inner.style.display == "none") {
-        inner.style.display = "";
-        obj.value = "Hide Advanced Options";
-      } else {
-        inner.style.display = "none";
-        obj.value = "Show Advanced Options";
-      }
+    return (1 + a) * (1 + d) * DM
+  }
+
+
+  /////////////////////////////////////////////////////////////////////////////
+
+  function showSpoiler(obj) {
+    var inner = obj.parentNode.getElementsByTagName("div")[0];
+    if (inner.style.display == "none") {
+      inner.style.display = "";
+      obj.value = "Hide Advanced Options";
+    } else {
+      inner.style.display = "none";
+      obj.value = "Show Advanced Options";
     }
-    
-    function showSpoiler2(obj) {
-      var inner = obj.parentNode.getElementsByTagName("div")[0];
-      if (inner.style.display == "none") {
-        inner.style.display = "";
-        obj.value = "Hide";
-      } else {
-        inner.style.display = "none";
-        obj.value = "Show Help!";
-      }
+  }
+
+  function showSpoiler2(obj) {
+    var inner = obj.parentNode.getElementsByTagName("div")[0];
+    if (inner.style.display == "none") {
+      inner.style.display = "";
+      obj.value = "Hide";
+    } else {
+      inner.style.display = "none";
+      obj.value = "Show Help!";
     }
-    
+  }
+
 </script>
