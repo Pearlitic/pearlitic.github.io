@@ -4,7 +4,7 @@ Created on Sun Apr 10 15:11:14 2021
 
 @author: Pearlite
 """
-
+##### REQUIRES PYTHON TO BE INSTALLED ON YOUR COMPUTER #####
 '''
 BEGIN USER INPUT
 '''
@@ -23,6 +23,7 @@ prime = 3
 pdr = 300
 # display top n results
 display_top = 10
+### NOTE: If you intend to run this script by double clicking, uncomment the last line. Otherwise execute this script in the console/terminal or IDE.
 '''
 END OF USER INPUT
 '''
@@ -92,3 +93,4 @@ print('================================================')
 for i in range(display_top):
     print('Top %2d - FD: %3.0f%%\tA/D/I: %s\tPrime: %s' % (i+1,sorted_fd[i],table[sorted_fd[i]][0],table[sorted_fd[i]][1]))
 
+# input("Press enter to exit ;)")
