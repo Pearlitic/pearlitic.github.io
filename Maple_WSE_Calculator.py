@@ -14,7 +14,7 @@ atk = 3
 dmg = 300
 # IED %: Enter amount of IED from gears (excluding WSE potentials, but include gear stat) in an example format of "85" (include quotes) for 85%
     # Note that IED calculation isn't additive, so go look up how to calculate it. If you don't know how, the input field also supports multiple inputs seperated by commas in an example format of "30,30,10".
-ied = "30,30,15,2"
+ied = "30,30,15,5"
 # number of familiars, assumes epic 30%
 fam = 3
 # numebr of prime lines (If you have Unique familiars, you can increase prime lines to account for them)
