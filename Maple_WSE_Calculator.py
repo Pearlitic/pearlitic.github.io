@@ -19,7 +19,7 @@ ied = "30,30,15,2"
 fam = 3
 # numebr of prime lines (If you have Unique familiars, you can increase prime lines to account for them)
 prime = 3
-# target boss pdr % (most mid-game are 300%)
+# target boss pdr % (most mid-game are 300%). https://github.com/Pearlitic/pearlitic.github.io/tree/main/%25
 pdr = 300
 # display top n results
 display_top = 10
