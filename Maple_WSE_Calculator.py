@@ -4,7 +4,7 @@ Created on Sun Apr 10 15:11:14 2021
 
 @author: Pearlite
 """
-##### REQUIRES PYTHON TO BE INSTALLED ON YOUR COMPUTER #####
+##### REQUIRES PYTHON 3.6+ TO BE INSTALLED ON YOUR COMPUTER #####
 '''
 BEGIN USER INPUT
 '''
@@ -28,10 +28,7 @@ display_top = 10
 END OF USER INPUT
 '''
 
-#Split ied to array of nits
-iedarr = [int(x)*0.01 for x in ied.split(',')]
-
-# calculate final ied from array of ieds
+# function to calculate final ied from array of ieds
 def calcIED(arr, flag=True):
     if arr and flag:
         return 1 - (1-arr.pop())*calcIED(arr,False)
@@ -40,13 +37,15 @@ def calcIED(arr, flag=True):
     else:
         return 1
 
-# convert input percentage to deciamal
+# split ied to array of ints and calculate input ied (decimal)
+iedarr = [int(x)*0.01 for x in ied.split(',')]
 ied = calcIED(iedarr)
+# convert input percentage to decimal
 atk *= 0.01
 dmg *= 0.01
 pdr *= 0.01
 
-# calclate final damage multiplier from atk, dmg, ied and pdr
+# function to calclate final damage multiplier from atk, dmg, ied and pdr
 def calcFD(a, d, i, pdr):
     # Damage Multiplier accounting for boss pdr
     DM = 1 - (1 - i) * pdr;
@@ -58,19 +57,20 @@ def calcFD(a, d, i, pdr):
     # Return final damage accounting for atk/dmg bonus and damage multiplier
     return (1 + a)*(1 + d)*DM
 
-
+# create dictionary to store results
 table = {}
+# 1 space string, ignore (debug formatting use)
 s = ' '
-# Nested loop galore
+# nested loop galore to generate all possible combinations of WSE and prime lines
 for a in range(0,10):
     for d in range(0,10+fam):
         for i in range(0,10+fam):
             for pa in range(0,prime+1):
                 for pd in range(0,prime+1):
                     for pi in range(0,prime+1):
-                        # Only run when sum of a/d/i/fam is the correct amout of lines
+                        # Only run when sum of a/d/i/fam is the correct amout of lines and prime count is possible
                         if a+d+i==9+fam and pa+pd+pi==prime and pa <= a and pd <= d and pi <= i:
-                            # calculate final atk/dmg/ied accounting for hypothetical WSE distribution
+                            # calculate final atk/dmg/ied for hypothetical WSE distribution
                             final_atk = atk + 0.09*pa + 0.12*(a-pa)
                             final_dmg = dmg + 0.4*pd + 0.3*(d-pd)
                             final_ied = calcIED([ied] + [0.4]*pi + [0.3]*(i-pi))
@@ -78,8 +78,9 @@ for a in range(0,10):
                             FD = 100*calcFD(final_atk,final_dmg,final_ied,pdr)
                             # Debug print ignore
                             #print('%f %f %f %f' % (FD,final_atk,final_dmg,final_ied))
+                            # print all results
                             print('FD: %3.0f%%\tA/D/I: (%d, %d, %d)\tPrime: (%d, %d, %d)' % (FD,a,d,i,pa,pd,pi))
-                            # Add rounded 3 decimal result into dict
+                            # Add result into table
                             while True:
                                 # If result not in dict, add to dict
                                 if FD not in table: 
@@ -87,9 +88,12 @@ for a in range(0,10):
                                     break
                                 # If result is in dict, add 1e-10
                                 FD += 0.00000_00001
-                            
+
+# sort dictionary values to a list of arrays containing final damage % in decending order
 sorted_fd = sorted(table, reverse=True)
+# spacer
 print('================================================')
+# print top n results defined at beginning
 for i in range(display_top):
     print('Top %2d - FD: %3.0f%%\tA/D/I: %s\tPrime: %s' % (i+1,sorted_fd[i],table[sorted_fd[i]][0],table[sorted_fd[i]][1]))
 
