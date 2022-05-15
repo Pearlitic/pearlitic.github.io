@@ -63,7 +63,7 @@ table = {}
 s = ' '
 # nested loop galore to generate all possible combinations of WSE and prime lines
 for a in range(0,10):
-    for d in range(0,10+fam):
+    for d in range(0,7+fam):
         for i in range(0,10+fam):
             for pa in range(0,prime+1):
                 for pd in range(0,prime+1):
