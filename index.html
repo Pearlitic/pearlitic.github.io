@@ -1,93 +1,95 @@
 <html>
-
-<head>
-	<title>WSE Optimizer by Pearlite</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="google-site-verification" content="5pKheskkgbk7yXiillRrJDq1EVRTQdaNYoahSJt9GXM" />
-	<meta name="description" content="A simple Maplestory WSE Optimizer." />
-	<meta name="keywords" content="WSE, Maplestory, Optimizer, attack, damage, ied, familiar, pdr" />
-	
-	<script src="main.js"></script>
-	<script async defer src="https://buttons.github.io/buttons.js"></script>
-	<link rel="stylesheet" href="main.css">
-</head>
-
-<body>
-	<div class="box-ex container-fluid">
-		<div class="box2 col1">
-			<center>
-				<p style="font-size: 28px;"><b>WSE Optimizer </b><span class="smaller"></span></p>
-				<p style="font-size: 16px;"> by Pearlite </p>
-				<p style="font-size: 16px;"> ────────────────────────────── </p>
-			</center> <span>Attack (%): </span>
-			<input style="width: 150px;" type="number" id="attackEl" value="3" min="0" placeholder="e.g. 3" onkeyup="run()" width="20" />
-			<br /> <span>Damage (%): </span>
-			<input style="width: 150px;" type="number" id="damageEl" value="300" min="0" placeholder="e.g. 300" onkeyup="run()" />
-			<br /> <span>IED &nbsp;&nbsp;&nbsp;(%): </span>
-			<input style="width: 150px;" type="string" id="iedEl" value="30,30,10" placeholder="e.g. 30,5,10" onkeyup="run()" />
-			<div class="spoiler">
-				<input type="button" onclick="showSpoiler(this);" value="Show Advanced Options" style="width: 280px;" /> <b></b>
-				<div class="inner" style="display: none;"> <span>Familiar #: </span>
-					<input style="width: 150px;" type="number" id="famEl" value="0" min="0" placeholder="0 to 3" onkeyup="run()" />
-					<br /> <span>PDR &nbsp;&nbsp; (%): </span>
-					<input style="width: 150px;" type="number" id="pdrEl" value="300" min="0" placeholder="e.g. 300" onkeyup="run()" />
-					<br /> <span>Prime &nbsp;&nbsp; #: </span>
-					<input style="width: 150px;" type="primeEl" id="primeEl" value="3" min="0" placeholder="Default 3" onkeyup="run()" /> </div>
-			</div>
-			<div class="spoiler">
-				<input type="button" onclick="showSpoiler2(this);" value="Show Help!" style="width: 280px;" /> <b></b>
-				<div class="inner" style="display: none;"> <span>
+   <head>
+      <title>WSE Optimizer by Pearlite</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="google-site-verification" content="5pKheskkgbk7yXiillRrJDq1EVRTQdaNYoahSJt9GXM" />
+      <meta name="description" content="A simple Maplestory WSE Optimizer." />
+      <meta name="keywords" content="WSE, Maplestory, Optimizer, attack, damage, ied, familiar, pdr" />
+      <script src="main.js"></script>
+      <script async defer src="https://buttons.github.io/buttons.js"></script>
+      <link rel="stylesheet" href="main.css">
+   </head>
+   <body>
+      <div class="box-ex container-fluid">
+         <div class="box2 col1">
+            <center>
+               <p style="font-size: 28px;"><b>WSE Optimizer </b><span class="smaller"></span></p>
+               <p style="font-size: 16px;"> by Pearlite </p>
+               <p style="font-size: 16px;"> ────────────────────────────── </p>
+            </center>
+            <span>Attack (%): </span>
+            <input style="width: 150px;" type="number" id="attackEl" value="3" min="0" placeholder="e.g. 3" onkeyup="run()" width="20" />
+            <br /> <span>Damage (%): </span>
+            <input style="width: 150px;" type="number" id="damageEl" value="300" min="0" placeholder="e.g. 300" onkeyup="run()" />
+            <br /> <span>IED &nbsp;&nbsp;&nbsp;(%): </span>
+            <input style="width: 150px;" type="string" id="iedEl" value="30,30,10" placeholder="e.g. 30,5,10" onkeyup="run()" />
+            <div class="spoiler">
+               <input type="button" onclick="showSpoiler(this);" value="Show Advanced Options" style="width: 280px;" /> <b></b>
+               <div class="inner" style="display: none;"> <span>Familiar #: </span>
+                  <input style="width: 150px;" type="number" id="famEl" value="0" min="0" placeholder="0 to 3" onkeyup="run()" />
+                  <br /> <span>PDR &nbsp;&nbsp; (%): </span>
+                  <input style="width: 150px;" type="number" id="pdrEl" value="300" min="0" placeholder="e.g. 300" onkeyup="run()" />
+                  <br /> <span>Prime &nbsp;&nbsp; #: </span>
+                  <input style="width: 150px;" type="primeEl" id="primeEl" value="3" min="0" placeholder="Default 3" onkeyup="run()" /> 
+               </div>
+            </div>
+            <div class="spoiler">
+               <input type="button" onclick="showSpoiler2(this);" value="Show Help!" style="width: 280px;" /> <b></b>
+               <div class="inner" style="display: none;"> <span>
                   <b><i>DO NOT ACCOUNT FOR WSE POTENTIALS (I.E. THEY SHOULD BE CLEAN)!</i></b>
                   </span>
-					<br /> <span><b>Attack %:</b> Enter amount of attack % from passives, soul, etc.</span>
-					<br />
-					<br /> <span><b>Damage %:</b> Enter amount of Damage and Boss Damage % from gears (excluding WSE potentials, but include flame/gear stat), passives, links, skill passive/active, hyper, node bonus, etc.</span>
-					<br />
-					<br /> <span>
+                  <br /> <span><b>Attack %:</b> Enter amount of attack % from passives, soul, etc.</span>
+                  <br />
+                  <br /> <span><b>Damage %:</b> Enter amount of Damage and Boss Damage % from gears (excluding WSE potentials, but include flame/gear stat), passives, links, skill passive/active, hyper, node bonus, etc.</span>
+                  <br />
+                  <br /> <span>
                   <b>IED %:</b> Enter amount of IED from gears (excluding WSE potentials, but include gear stat). Note that IED calculation isn't additive, so go look up how to calculate it. If you don't know how, the input field
                   also supports multiple inputs seperated by commas in an example format of "30,30,10".
                   </span>
-					<br />
-					<br /> <span>
+                  <br />
+                  <br /> <span>
                   <b>Familiar #:</b> Enter the number of familiars you want to include in the optimization. Only Damage% and IED% familiars are supported, with the assumption of Epic 30%. If you've got 40% Uniques, increase the
                   Prime # to account for 40%.
                   </span>
-					<br />
-					<br /> <span><b>PDR %:</b> Boss PDR. Mid-End game bosses are typically 300% PDR. <a href="https://github.com/Pearlitic/pearlitic.github.io/tree/main/%25">List</a> of boss PDR.</span>
-					<br />
-					<br /> <span><b>Prime #:</b> Amount of prime lines to account for. This is typically 3, but if you are confident in your cubing luck you may increase the prime line # to optimize for.</span>
-					<br />
-					<br /> <span>Python version for more flexible editing and offline use: <a href="https://github.com/Pearlitic/pearlitic.github.io/blob/main/Maple_WSE_Calculator.py">link</a>. Requires Python 3.6+.</span>
-					<br />
-					<br /> <span></span> </div>
-			</div>
-			<br />
-			<input type="button" id="opti" onclick="calc();" value="Optimize!" style="font-weight: bold; width: 280px; margin-top: 0px;" /> </div>
-		<br />
-		<div class="box3 col1"> <span>Optimized Result:</span>
-			<br /> <span><b>1 - FD:</b> </span><span id="op1f">000%</span>
-			<br /> <span>&nbsp;&nbsp;<b>A/D/I: </b>(</span><span id="op1a">0</span>,<span id="op1d">0</span>,<span id="op1i">0</span>) <b>P:</b> (<span id="op1p">1,1,1</span>)
-			<br /> <span><b>2 - FD:</b> </span><span id="op2f">000%</span>
-			<br /> <span>&nbsp;&nbsp;<b>A/D/I: </b>(</span><span id="op2a">0</span>,<span id="op2d">0</span>,<span id="op2i">0</span>) <b>P:</b> (<span id="op2p">1,1,1</span>)
-			<br /> <span><b>3 - FD:</b> </span><span id="op3f">000%</span>
-			<br /> <span>&nbsp;&nbsp;<b>A/D/I: </b>(</span><span id="op3a">0</span>,<span id="op3d">0</span>,<span id="op3i">0</span>) <b>P:</b> (<span id="op3p">1,1,1</span>)
-			<br /> <span><b>4 - FD:</b> </span><span id="op4f">000%</span>
-			<br /> <span>&nbsp;&nbsp;<b>A/D/I: </b>(</span><span id="op4a">0</span>,<span id="op4d">0</span>,<span id="op4i">0</span>) <b>P:</b> (<span id="op4p">1,1,1</span>)
-			<br /> <span><b>5 - FD:</b> </span><span id="op5f">000%</span>
-			<br /> <span>&nbsp;&nbsp;<b>A/D/I: </b>(</span><span id="op5a">0</span>,<span id="op5d">0</span>,<span id="op5i">0</span>) <b>P:</b> (<span id="op5p">1,1,1</span>)
-			<br />
-			<div class="spoiler">
-				<input type="button" onclick="showSpoiler2(this);" value="Show Help!" style="width: 280px;" /> <b></b>
-				<div class="inner" style="display: none;"> <span><b>FD:</b> Final Damage %</span>
-					<br /> <span><b>A:</b> # of Attack Lines</span>
-					<br /> <span><b>D:</b> # of Boss Damage Lines</span>
-					<br /> <span><b>I:</b> # of IED Lines</span>
-					<br /> <span><b>P:</b> Ideal Prime Line (A,D,I)</span> <span><i></i></span> </div>
-			</div>
-		</div>
-		<p style="margin-left: auto; margin-right: auto; text-align: center; padding-bottom: 200px;"><a class="github-button" href="https://github.com/Pearlitic/pearlitic.github.io" aria-label="GitHub">GitHub</a></p>
-		<p></p>
-	</div>
-</body>
-
+                  <br />
+                  <br /> <span><b>PDR %:</b> Boss PDR. Mid-End game bosses are typically 300% PDR. <a href="https://github.com/Pearlitic/pearlitic.github.io/tree/main/%25">List</a> of boss PDR.</span>
+                  <br />
+                  <br /> <span><b>Prime #:</b> Amount of prime lines to account for. This is typically 3, but if you are confident in your cubing luck you may increase the prime line # to optimize for.</span>
+                  <br />
+                  <br /> <span>Python version for more flexible editing and offline use: <a href="https://github.com/Pearlitic/pearlitic.github.io/blob/main/Maple_WSE_Calculator.py">link</a>. Requires Python 3.6+.</span>
+                  <br />
+                  <br /> <span></span> 
+               </div>
+            </div>
+            <br />
+            <input type="button" id="opti" onclick="calc();" value="Optimize!" style="font-weight: bold; width: 280px; margin-top: 0px;" /> 
+         </div>
+         <br />
+         <div class="box3 col1">
+            <span>Optimized Result:</span>
+            <br /> <span><b>1 - FD:</b> </span><span id="op1f">000%</span>
+            <br /> <span>&nbsp;&nbsp;<b>A/D/I: </b>(</span><span id="op1a">0</span>,<span id="op1d">0</span>,<span id="op1i">0</span>) <b>P:</b> (<span id="op1p">1,1,1</span>)
+            <br /> <span><b>2 - FD:</b> </span><span id="op2f">000%</span>
+            <br /> <span>&nbsp;&nbsp;<b>A/D/I: </b>(</span><span id="op2a">0</span>,<span id="op2d">0</span>,<span id="op2i">0</span>) <b>P:</b> (<span id="op2p">1,1,1</span>)
+            <br /> <span><b>3 - FD:</b> </span><span id="op3f">000%</span>
+            <br /> <span>&nbsp;&nbsp;<b>A/D/I: </b>(</span><span id="op3a">0</span>,<span id="op3d">0</span>,<span id="op3i">0</span>) <b>P:</b> (<span id="op3p">1,1,1</span>)
+            <br /> <span><b>4 - FD:</b> </span><span id="op4f">000%</span>
+            <br /> <span>&nbsp;&nbsp;<b>A/D/I: </b>(</span><span id="op4a">0</span>,<span id="op4d">0</span>,<span id="op4i">0</span>) <b>P:</b> (<span id="op4p">1,1,1</span>)
+            <br /> <span><b>5 - FD:</b> </span><span id="op5f">000%</span>
+            <br /> <span>&nbsp;&nbsp;<b>A/D/I: </b>(</span><span id="op5a">0</span>,<span id="op5d">0</span>,<span id="op5i">0</span>) <b>P:</b> (<span id="op5p">1,1,1</span>)
+            <br />
+            <div class="spoiler">
+               <input type="button" onclick="showSpoiler2(this);" value="Show Help!" style="width: 280px;" /> <b></b>
+               <div class="inner" style="display: none;"> <span><b>FD:</b> Final Damage %</span>
+                  <br /> <span><b>A:</b> # of Attack Lines</span>
+                  <br /> <span><b>D:</b> # of Boss Damage Lines</span>
+                  <br /> <span><b>I:</b> # of IED Lines</span>
+                  <br /> <span><b>P:</b> Ideal Prime Line (A,D,I)</span> <span><i></i></span> 
+               </div>
+            </div>
+         </div>
+         <p style="margin-left: auto; margin-right: auto; text-align: center; padding-bottom: 200px;"><a class="github-button" href="https://github.com/Pearlitic/pearlitic.github.io" aria-label="GitHub">GitHub</a></p>
+         <p></p>
+      </div>
+   </body>
 </html>
