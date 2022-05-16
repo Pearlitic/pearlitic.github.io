@@ -23,6 +23,8 @@ prime = 3
 pdr = 300
 # display top n results
 display_top = 10
+# print all results? (only set True for debug purposes)
+display_all = False
 ### NOTE: If you intend to run this script by double clicking, uncomment the last line. Otherwise execute this script in the console/terminal or IDE.
 '''
 END OF USER INPUT
@@ -79,7 +81,7 @@ for a in range(0,10):
                             # Debug print ignore
                             #print('%f %f %f %f' % (FD,final_atk,final_dmg,final_ied))
                             # print all results
-                            print('FD: %3.0f%%\tA/D/I: (%d, %d, %d)\tPrime: (%d, %d, %d)' % (FD,a,d,i,pa,pd,pi))
+                            if display_all: print('FD: %3.0f%%\tA/D/I: (%d, %d, %d)\tPrime: (%d, %d, %d)' % (FD,a,d,i,pa,pd,pi))
                             # Add result into table
                             while True:
                                 # If result not in dict, add to dict
@@ -92,7 +94,7 @@ for a in range(0,10):
 # sort dictionary values to a list of arrays containing final damage % in decending order
 sorted_fd = sorted(table, reverse=True)
 # spacer
-print('================================================')
+if display_all: print('================================================')
 # print top n results defined at beginning
 for i in range(display_top):
     print('Top %2d - FD: %3.0f%%\tA/D/I: %s\tPrime: %s' % (i+1,sorted_fd[i],table[sorted_fd[i]][0],table[sorted_fd[i]][1]))
