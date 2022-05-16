@@ -17,7 +17,9 @@ dmg = 450
 ied = "40,30,30,30,20,20,15,5,5"
 # number of familiars, assumes epic 30%
 fam = 0
-# numebr of prime lines (If you have Unique familiars, you can increase prime lines to account for them)
+# numeber of prime lines (If you have Unique familiars, you can increase prime lines to account for them)
+    # prime lines are calculated as 12%/40%/40% for atk/dmg/ied
+    # non-prime are calculated as 9%/30%/30% for atk/dmg/ied
 prime = 3
 # target boss pdr % (most mid-game are 300%). https://github.com/Pearlitic/pearlitic.github.io/tree/main/%25
 pdr = 300
