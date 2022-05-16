@@ -6,7 +6,7 @@ Created on Sun Apr 10 15:11:14 2021
 """
 ##### REQUIRES PYTHON 3.6+ TO BE INSTALLED ON YOUR COMPUTER #####
 '''
-BEGIN USER INPUT
+BEGIN USER INPUT ===== BEGIN USER INPUT ===== BEGIN USER INPUT ===== BEGIN USER INPUT ===== 
 '''
 # Attack %: Enter amount of attack % from passives, soul, etc.
 atk = 3
@@ -29,7 +29,7 @@ display_top = 10
 display_all = False
 ### NOTE: If you intend to run this script by double clicking, uncomment the last line. Otherwise execute this script in the console/terminal or IDE.
 '''
-END OF USER INPUT
+END OF USER INPUT ===== END OF USER INPUT ===== END OF USER INPUT ===== END OF USER INPUT =====
 '''
 # input sanity check
 import sys
