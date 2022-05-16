@@ -34,11 +34,11 @@ p {
 
 .box2 {
   /*position: relative;*/
-	width: 280px;
+	width: 290px;
 	/*height: 300px;*/
 	line-height: 30px;
 	margin: auto;
-  margin-bottom: 10px;
+ 	margin-bottom: 10px;
 	/*display: inline-block;*/
 	background-color: #555555;
 	color: white;
@@ -48,11 +48,12 @@ p {
 	padding-bottom: 20px;
 	padding-right: 30px;
 	border-style: dashed;
+  vertical-align: top;
 }
 
 .box3 {
   
-	width: 280px;
+	width: 290px;
 	/*height: 300px;*/
 	line-height: 30px;
 	margin: auto;
@@ -66,4 +67,5 @@ p {
 	padding-bottom: 20px;
 	padding-right: 30px;
 	border-style: dashed;
+  vertical-align: top;
 }
