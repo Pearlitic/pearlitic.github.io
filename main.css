@@ -27,16 +27,19 @@ p {
 	margin: 3px;
 }
 
+
 .smaller {
 	font-size: 70%;
 }
 
 .box2 {
+  /*position: relative;*/
 	width: 280px;
 	/*height: 300px;*/
 	line-height: 30px;
-	margin: 5px 5px;
-	display: inline-block;
+	margin: auto;
+  margin-bottom: 10px;
+	/*display: inline-block;*/
 	background-color: #555555;
 	color: white;
 	text-align: left;
@@ -48,12 +51,13 @@ p {
 }
 
 .box3 {
+  
 	width: 280px;
 	/*height: 300px;*/
 	line-height: 30px;
-	margin: 5px 5px;
+	margin: auto;
 	margin-bottom: 30px;
-	display: inline-block;
+	/*display: inline-block;*/
 	background-color: #555555;
 	color: white;
 	text-align: left;
