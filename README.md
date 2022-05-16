@@ -3,7 +3,9 @@
 
 Advanced options allows also optimizing for familiars and PDR. Please enter reasonable values, the calculator craps out otherwise. Optimizer assumes regular classes (max 6 lines of DMG%).
 
-ToDo: Sanitize inputs.
+_To do: Sanitize inputs._
+
+---
 
 If you have a unique class that functions differently or want to customize the optimizer, download the Python script. It's much easier to customize and cleaner. The html/js code was written when I began learning coding and its a complete shitshow.
 
