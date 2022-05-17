@@ -3,8 +3,6 @@
 
 Advanced options allows also optimizing for familiars and PDR. Please enter reasonable values, the calculator craps out otherwise. Optimizer assumes regular classes (max 6 lines of DMG%).
 
-_To do: Sanitize inputs._
-
 You can download the [source code folder](https://github.com/Pearlitic/pearlitic.github.io/archive/refs/heads/main.zip) and open the index.html to run it offline (but I recommend using the Python version for better readablilty and customizability if you know how to set it up).
 
 ---
