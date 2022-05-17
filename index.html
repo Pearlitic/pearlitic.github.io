@@ -29,13 +29,14 @@
         <br />
         <span>IED &nbsp;&nbsp;&nbsp;(%): </span>
         <input style="width: 155px;" type="string" id="iedEl" value="30,30,10" placeholder="e.g. 30,5,10" onkeyup="run()" />
+        <br />
+        <span>Familiar #: </span>
+            <input style="width: 155px;" type="number" id="famEl" value="0" min="0" placeholder="0 to 3" onkeyup="run()" />
+            
         <div class="spoiler">
           <input type="button" onclick="showSpoiler(this);" value="Show Advanced Options" style="width: 280px;" />
           <b></b>
           <div class="inner" style="display: none;">
-            <span>Familiar #: </span>
-            <input style="width: 155px;" type="number" id="famEl" value="0" min="0" placeholder="0 to 3" onkeyup="run()" />
-            <br />
             <span>PDR &nbsp;&nbsp; (%): </span>
             <input style="width: 155px;" type="number" id="pdrEl" value="300" min="0" placeholder="e.g. 300" onkeyup="run()" />
             <br />
