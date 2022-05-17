@@ -21,28 +21,33 @@
           <p style="font-size: 16px;"> ────────────────────────────── </p>
         </center>
         <span>Attack (%): </span>
-        <input style="width: 150px;" type="number" id="attackEl" value="3" min="0" placeholder="e.g. 3" onkeyup="run()" width="20" />
+        <input style="width: 155px;" type="number" id="attackEl" value="3" min="0" placeholder="e.g. 3" onkeyup="run()" width="20" />
         <br />
         <span>Damage (%): </span>
-        <input style="width: 150px;" type="number" id="damageEl" value="300" min="0" placeholder="e.g. 300" onkeyup="run()" />
+        <input style="width: 155px;" type="number" id="damageEl" value="300" min="0" placeholder="e.g. 300" onkeyup="run()" />
         <br />
         <span>IED &nbsp;&nbsp;&nbsp;(%): </span>
-        <input style="width: 150px;" type="string" id="iedEl" value="30,30,10" placeholder="e.g. 30,5,10" onkeyup="run()" />
+        <input style="width: 155px;" type="string" id="iedEl" value="30,30,10" placeholder="e.g. 30,5,10" onkeyup="run()" />
         <div class="spoiler">
           <input type="button" onclick="showSpoiler(this);" value="Show Advanced Options" style="width: 280px;" />
           <b></b>
           <div class="inner" style="display: none;">
             <span>Familiar #: </span>
-            <input style="width: 150px;" type="number" id="famEl" value="0" min="0" placeholder="0 to 3" onkeyup="run()" />
+            <input style="width: 155px;" type="number" id="famEl" value="0" min="0" placeholder="0 to 3" onkeyup="run()" />
             <br />
             <span>PDR &nbsp;&nbsp; (%): </span>
-            <input style="width: 150px;" type="number" id="pdrEl" value="300" min="0" placeholder="e.g. 300" onkeyup="run()" />
+            <input style="width: 155px;" type="number" id="pdrEl" value="300" min="0" placeholder="e.g. 300" onkeyup="run()" />
             <br />
             <span>Prime &nbsp;&nbsp; #: </span>
-            <input style="width: 150px;" type="primeEl" id="primeEl" value="3" min="0" placeholder="Default 3" onkeyup="run()" />
+            <input style="width: 155px;" type="number" id="primeEl" value="3" min="0" placeholder="Default 3" onkeyup="run()" />
             <br />
             <span>Display Top #: </span>
-            <input style="width: 120px;" type="disTop" id="disTop" value="5" min="1" placeholder="Default 5" onkeyup="run()" />
+            <input style="width: 125px;" type="number" id="disTop" value="5" min="1" placeholder="Default 5" onkeyup="run()" />
+            <br />
+            <span>Max A/D/I #: </span>
+            <input style="width: 36px;" type="number" id="maxatk" value="9" min="0" placeholder="9" onkeyup="run()" />
+            <input style="width: 36px;" type="number" id="maxdmg" value="6" min="0" placeholder="6" onkeyup="run()" />
+            <input style="width: 36px;" type="number" id="maxied" value="9" min="0" placeholder="9" onkeyup="run()" />
           </div>
         </div>
         <div class="spoiler">
