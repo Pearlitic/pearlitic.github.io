@@ -5,6 +5,8 @@ Advanced options allows also optimizing for familiars and PDR. Please enter reas
 
 _To do: Sanitize inputs._
 
+You can download the [source code folder](https://github.com/Pearlitic/pearlitic.github.io/releases) and open the index.html to run it offline.
+
 ---
 
 If you have a unique class that functions differently or want to customize the optimizer, download the Python script. It's much easier to customize and cleaner. The html/js code was written when I began learning coding and its a complete shitshow.
