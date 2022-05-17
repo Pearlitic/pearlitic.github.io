@@ -88,6 +88,11 @@ function calc() {
 	inPDR = document.getElementById("pdrEl").value;
 	inPrime = document.getElementById("primeEl").value;
 
+	inmaxatk = document.getElementById("maxatk").value;
+	inmaxdmg = document.getElementById("maxdmg").value;
+	inmaxied = document.getElementById("maxied").value;
+	//console.log(inmaxatk,inmaxdmg,inmaxied);
+
 	//convert ied string to array
 	inIEDList = inIED.split `,`.map((x) => +x);
 	//check input, set box red if not compliant
@@ -115,6 +120,25 @@ function calc() {
 		primeEl.style.color = "red";
 		opti.style.color = "red";
 		return;
+	} else if (inmaxatk < 0) {
+		maxatk.style.color = "red";
+		opti.style.color = "red";
+		return;
+	} else if (inmaxdmg < 0) {
+		maxdmg.style.color = "red";
+		opti.style.color = "red";
+		return;
+	} else if (inmaxied < 0) {
+		maxied.style.color = "red";
+		opti.style.color = "red";
+		return;
+	} else if ((parseInt(inmaxatk) + parseInt(inmaxdmg) + parseInt(inmaxied)) < 9) {
+		//console.log('in');
+		maxied.style.color = "red";
+		maxatk.style.color = "red";
+		maxdmg.style.color = "red";
+		opti.style.color = "red";
+		return;
 	} else {
 		iedEl.style.color = "black";
 		damageEl.style.color = "black";
@@ -122,6 +146,10 @@ function calc() {
 		famEl.style.color = "black";
 		pdrEl.style.color = "black";
 		primeEl.style.color = "black";
+		maxatk.style.color = "black";
+		maxdmg.style.color = "black";
+		maxied.style.color = "black";
+
 		opti.style.color = "black";
 	}
 	//Convert inputs to decimal from user input (percentage)
@@ -146,36 +174,59 @@ function calc() {
    }*/
 	//console.table(final);
 	// print values into the web page
-	for (r = 0; r < display_top; r++) {
-		tmp = r + 1;
-		document.getElementById("op" + tmp + "f").textContent = Math.round(final[r][0] * 100) + "%";
-		//document.getElementById("op" + tmp + "a").textContent = final[r][0];
-		//document.getElementById("op" + tmp + "d").textContent = final[r][1];
-		//document.getElementById("op" + tmp + "i").textContent = final[r][2];
-		document.getElementById("op" + tmp + "adi").textContent = '(' + final[r][1][0] + "," + final[r][1][1] + "," + final[r][1][2] + ')';
-		document.getElementById("op" + tmp + "p").textContent = '(' + final[r][1][3] + "," + final[r][1][4] + "," + final[r][1][5] + ')';
+	try {
+		for (r = 0; r < display_top; r++) {
+			tmp = r + 1;
+			try {
+				document.getElementById("op" + tmp + "f").textContent = Math.round(final[r][0] * 100) + "%";
+			} catch (error) {
+				document.getElementById("op" + tmp + "f").textContent = "---%";
+			}
+			//document.getElementById("op" + tmp + "a").textContent = final[r][0];
+			//document.getElementById("op" + tmp + "d").textContent = final[r][1];
+			//document.getElementById("op" + tmp + "i").textContent = final[r][2];
+			try {
+				document.getElementById("op" + tmp + "adi").textContent = '(' + final[r][1][0] + "," + final[r][1][1] + "," + final[r][1][2] + ')';
+				document.getElementById("op" + tmp + "p").textContent = '(' + final[r][1][3] + "," + final[r][1][4] + "," + final[r][1][5] + ')';
+			} catch (error) {
+				document.getElementById("op" + tmp + "adi").textContent = '(-,-,-)';
+				document.getElementById("op" + tmp + "p").textContent = '(-,-,-)';
+			}
+		}
+	} catch (error) {
+		console.log('Not enough results in table');
 	}
 	//console.log("\nA: " + final[0][0] + "  D: " + final[0][1] + "  I: " + /*inIEDList.toString() + "  " +*/ final[0][2] + " | P: (" + final[0][3] + "," + final[0][4] + "," + final[0][5] + ") \tFD: " + Math.round(final[0][6] * 100) + "%");
 }
 //input final input params, and return top 5 configuration in arrays as an array
 function optimize(opA, opD, opI, opF, opPDR, opPR) {
+	//get user defined max lines
+	inmaxatk = document.getElementById("maxatk").value;
+	inmaxdmg = document.getElementById("maxdmg").value;
+	inmaxied = document.getElementById("maxied").value;
+
 	//input values initialize
 	oA = 0;
 	oD = 0;
 	oI = 0;
-	oF = parseInt(opF) + 9;
-	oFd = parseInt(opF) + 6;
+	oF = 9 + parseInt(opF)
+	oFa = parseInt(inmaxatk);
+	oFd = parseInt(opF) + parseInt(inmaxdmg);
+	oFi = parseInt(inmaxied) + parseInt(opF)
 	oPrA = 0;
 	oPrD = 0;
 	oPrI = 0;
+
+	//console.log(oF,oFa,oFd,oFi);
+
 	//oFD = 0;
 	//initialize array for final values
 	FDc = 0;
 	var table = {};
 	//nested for loop galore to figure out top 5
-	for (let a = 0; a <= oF; a++) {
+	for (let a = 0; a <= oFa; a++) {
 		for (let d = 0; d <= oFd; d++) {
-			for (let i = 0; i <= oF; i++) {
+			for (let i = 0; i <= oFi; i++) {
 				for (let pa = 0; pa <= opPR; pa++) {
 					for (let pd = 0; pd <= opPR; pd++) {
 						for (let pi = 0; pi <= opPR; pi++) {
