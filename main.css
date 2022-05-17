@@ -32,6 +32,10 @@ p {
   font-size: 70%;
 }
 
+spoiler {
+  text-align: left;
+}
+
 .box2 {
   /*position: relative;*/
   width: 290px;
@@ -42,7 +46,7 @@ p {
   /*display: inline-block;*/
   background-color: #555555;
   color: white;
-  text-align: left;
+  text-align: center;
   padding-left: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -60,7 +64,7 @@ p {
   /*display: inline-block;*/
   background-color: #555555;
   color: white;
-  text-align: left;
+  text-align: center;
   padding-left: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
