@@ -32,10 +32,6 @@ p {
   font-size: 70%;
 }
 
-spoiler {
-  text-align: left;
-}
-
 .box2 {
   /*position: relative;*/
   width: 290px;
@@ -71,4 +67,8 @@ spoiler {
   padding-right: 30px;
   border-style: dashed;
   vertical-align: top;
+}
+
+#help {
+  text-align: left;
 }
