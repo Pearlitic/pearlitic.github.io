@@ -16,4 +16,7 @@ List of sources I can think of:
 + Active Skill "on-hit" Bonus
 + Familiars (Can also be optimized with WSE, but if you only have a few good ones you can also treat them as "gear")
 + Soul
++ Legion
 + Consumables
+
+An easy and lazy way to find your IED and DMG is to equip a crap weapon with no potentials and use all your buffs. Use the values you get in the stat window as baseline, and then add the "on-hit" stats and other bonuses not accounted for in the stat window to your total.
