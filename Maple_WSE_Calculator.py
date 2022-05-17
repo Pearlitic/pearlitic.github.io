@@ -51,6 +51,10 @@ if (pdr < 0):
     sys.exit('Invalid Boss PDR (<0)')
 if (display_top < 1):
     sys.exit('No Results Displayed')
+if (max_wse_atk_lines < 0 or max_wse_dmg_lines < 0 or max_wse_ied_lines < 0):
+    sys.exit('Invalid WSE max lines (<0)')
+if (max_wse_atk_lines + max_wse_dmg_lines + max_wse_ied_lines < 9):
+    sys.exit('Invalid WSE max lines (Sum of 3 must be >=9)')
 
 # function to calculate final ied from array of ieds
 def calcIED(arr, flag=True):
@@ -129,7 +133,10 @@ if display_all: print('================================================')
 print('Input Parameters:\nATK: %6d%%  DMG: %8d%%  IED: %8.1f%%\nFamiliars: %d  Prime Lines: %d  Boss PDR: %d%%' % (atk*100,dmg*100,ied*100,fam,prime,pdr*100))
 print('===== Printing Top %d Results =====' % display_top)
 # print top n results defined at beginning
-for i in range(display_top):
-    print('Top %2d - FD: %3.0f%%\tA/D/I: %s\tPrime: %s' % (i+1,sorted_fd[i],table[sorted_fd[i]][0],table[sorted_fd[i]][1]))
-
+try:
+    for i in range(display_top):
+        print('Top %2d - FD: %3.0f%%\tA/D/I: %s\tPrime: %s' % (i+1,sorted_fd[i],table[sorted_fd[i]][0],table[sorted_fd[i]][1]))
+        display_top -= 1
+except:
+    print('%s Result(s) not Displayed: Not Enough Combinations' % display_top)
 # input("Press enter to exit ;)")
