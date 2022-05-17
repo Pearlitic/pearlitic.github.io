@@ -5,7 +5,7 @@ Advanced options allows also optimizing for familiars and PDR. Please enter reas
 
 _To do: Sanitize inputs._
 
-You can download the [source code folder](https://github.com/Pearlitic/pearlitic.github.io/releases) and open the index.html to run it offline.
+You can download the [source code folder](https://github.com/Pearlitic/pearlitic.github.io/releases) and open the index.html to run it offline (but I recommend using the Python version if you know how to set it up).
 
 ---
 
