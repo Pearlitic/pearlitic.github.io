@@ -17,7 +17,7 @@ dmg = 450
 ied = "40,30,30,30,20,20,15,5,5"
 # number of familiars, assumes epic 30%
 fam = 0
-# numeber of prime lines (If you have Unique familiars, you can increase prime lines to account for them)
+# number of prime lines (If you have Unique familiars, you can increase prime lines to account for them)
     # prime lines are calculated as 12%/40%/40% for atk/dmg/ied
     # non-prime are calculated as 9%/30%/30% for atk/dmg/ied
 prime = 3
@@ -25,8 +25,14 @@ prime = 3
 pdr = 300
 # display top n results
 display_top = 10
+
+# === ADVANCED OPTIONS === #
+max_wse_atk_lines = 9
+max_wse_dmg_lines = 6
+max_wse_ied_lines = 9
 # print all results? (only set True for debug purposes)
 display_all = False
+
 ### NOTE: If you intend to run this script by double clicking, uncomment the last line. Otherwise execute this script in the console/terminal or IDE.
 '''
 END OF USER INPUT ===== END OF USER INPUT ===== END OF USER INPUT ===== END OF USER INPUT =====
@@ -55,6 +61,7 @@ def calcIED(arr, flag=True):
     else:
         return 1
 
+
 # split ied to array of ints (convert to decimal) from string
 iedarr = [int(x)*0.01 for x in ied.split(',')]
 # sanity check
@@ -64,7 +71,7 @@ for n in iedarr:
 ied = calcIED(iedarr)
 # sanity check
 if ied > 1 or ied < 0:
-    sys.exit('IED input result out of bounds (result <0% or >100%)')
+    sys.exit('IED result out of bounds (result <0% or >100%)')
 # convert input percentage to decimal
 atk *= 0.01
 dmg *= 0.01
@@ -87,9 +94,9 @@ table = {}
 # 1 space string, ignore (debug formatting use)
 s = ' '
 # nested loop galore to generate all possible combinations of WSE and prime lines
-for a in range(0,10):
-    for d in range(0,7+fam):
-        for i in range(0,10+fam):
+for a in range(0,max_wse_atk_lines+1):
+    for d in range(0,max_wse_dmg_lines+1+fam):
+        for i in range(0,max_wse_ied_lines+1+fam):
             for pa in range(0,prime+1):
                 for pd in range(0,prime+1):
                     for pi in range(0,prime+1):
