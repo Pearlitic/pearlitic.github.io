@@ -7,7 +7,7 @@ Beware of some stats not calculated in the stats window.
 _Note that some skills come with something like "Passive: "+XX% some stat", these are actually treated liek passive skills and are included in the stat window. However, when in doubt, just ask in your class Discord channel!_
 
 List of sources I can think of: 
-+ Gear Stat (not potential, the base stats e.g. CRA has 5% IED on the armor)
++ Gear Stat (not potential, the base stats. e.g. CRA has 5% IED on the armor)
 + Gear Set Bonuses
 + Passive Skills
 + Buff Skills
