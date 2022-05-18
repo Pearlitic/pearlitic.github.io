@@ -104,7 +104,7 @@ for a in range(0,max_wse_atk_lines+1):
             for pa in range(0,prime+1):
                 for pd in range(0,prime+1):
                     for pi in range(0,prime+1):
-                        # Only run when sum of a/d/i/fam is the correct amout of lines and prime count is possible
+                        # Only run when sum of a/d/i/fam is the correct amout of lines, and prime count is possible
                         if a+d+i == 9+fam and pa+pd+pi == prime and pa <= a and pd <= d and pi <= i:
                             # calculate final atk/dmg/ied for hypothetical WSE distribution
                             final_atk = atk + 0.09*pa + 0.12*(a-pa)
@@ -114,7 +114,7 @@ for a in range(0,max_wse_atk_lines+1):
                             FD = 100*calcFD(final_atk,final_dmg,final_ied,pdr)
                             # Debug print ignore
                             #print('%f %f %f %f' % (FD,final_atk,final_dmg,final_ied))
-                            # print all results
+                            # print result if display_all is set to True
                             if display_all: print('FD: %3.0f%%\tA/D/I: (%d, %d, %d)\tPrime: (%d, %d, %d)' % (FD,a,d,i,pa,pd,pi))
                             # Add result into table
                             while True:
@@ -131,6 +131,7 @@ sorted_fd = sorted(table, reverse=True)
 if display_all: print('================================================')
 # print input parameters
 print('Input Parameters:\nATK: %6d%%  DMG: %8d%%  IED: %8.1f%%\nFamiliars: %d  Prime Lines: %d  Boss PDR: %d%%' % (atk*100,dmg*100,ied*100,fam,prime,pdr*100))
+# spacer
 print('===== Printing Top %d Results =====' % display_top)
 # print top n results defined at beginning
 try:
@@ -139,4 +140,5 @@ try:
         display_top -= 1
 except:
     print('%s Result(s) not Displayed: Not Enough Combinations' % display_top)
-# input("Press enter to exit ;)")
+
+# input("Press Enter to exit")
