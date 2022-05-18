@@ -12,13 +12,14 @@ List of sources I can think of:
 + Passive Skills
 + Buff Skills
 + Link Skills
++ Passive Hyper Skill
 + Hyper Stat
-+ Inner Ability
-+ V Node Bonuses
++ Inner Ability (+20% DMG)
++ V Node Bonuses (+20% IED @Lv40 for some skills)
 + Active Skill "on-hit" Bonus
 + Familiars (Can also be optimized with WSE, but if you only have a few good ones you can also treat them as "gear")
-+ Soul
-+ Legion
++ Soul (+3% ATK / +7% DMG / +7% IED)
++ Legion (max +40% IED/DMG)
 + Consumables
 
 An easy and lazy way to find your IED and DMG is to equip a crap weapon with no potentials and use all your buffs. Use the values you get in the stat window as baseline, and then add the "on-hit" stats and other bonuses not accounted for in the stat window to your total.
