@@ -3,33 +3,66 @@
 Created on Sun Apr 10 15:11:14 2021
 
 @author: Pearlite
-"""
+
 ##### REQUIRES PYTHON 3.6+ TO BE INSTALLED ON YOUR COMPUTER #####
+"""
+
 '''
 BEGIN USER INPUT ===== BEGIN USER INPUT ===== BEGIN USER INPUT ===== BEGIN USER INPUT ===== 
 '''
 # Attack %: Enter amount of attack % from passives, soul, etc.
 atk = 3
+
 # Damage %: Enter amount of Damage and Boss Damage % from gears (excluding WSE potentials, but include flame/gear stat), passives, links, skill passive/active, hyper, node bonus, etc.
-dmg = 450
-# IED %: Enter amount of IED from gears (excluding WSE potentials, but include gear stat) in an example format of "85" (include quotes) for 85%
-    # Note that IED calculation isn't additive, so go look up how to calculate it. If you don't know how, the input field also supports multiple inputs seperated by commas in an example format of "30,30,10".
-ied = "40,30,30,30,20,20,15,5,5"
-# number of familiars, assumes epic 30%
+dmg = 432
+
+# IED %: Enter amount of IED from gears (excluding WSE potentials, but include gear stat) in an example of "85" (exclude quotes) for 85%
+    # Note that IED calculation isn't additive, so go look up how to calculate it. If you don't know how, the input list supports multiple inputs (duh, its an array).
+# REMEMBER TO PUT COMMA BEHIND NUMBERS!!! (except for last one)
+# You can comment out lines you don't have, or add things if missed
+ied = [0,########################### No touchy, begin of array dummy
+       #############################
+       40,  # Legion Max Grid
+       30,  # Hyper Stat Lv10
+       30,  # Sup Gollux 4-set
+       # 20,  # V-Matrix Bossing Skill Lv40 Passive
+       # 20,  # Hyper Bossing Skill Passive
+       15,  # Luminous Link Lv2
+       10,  # Absolab 4-set
+       # 10,  # MPE 77 Medal
+       10,  # Ambition Lv100 Trait
+       10,  # Clean Absolab Wep
+       10,  # CRA hat
+       5,   # CRA top
+       5,   # CRA bot
+       9,   # Explorer Mage Link Skill Empirical Knowledge Max Stack Lv3
+       # 3,   # Soul Weapon Bonus
+       3,   # Familiar Badge
+       3,   # Blaster Legion Lv140 Card
+       3,   # BT Legion Lv140 Card
+       #############################
+       0]########################### No touchy, end of array dummy
+
+# number of familiars, assumes epic 30% boss or ied
 fam = 0
+
 # number of prime lines (If you have Unique familiars, you can increase prime lines to account for them)
     # prime lines are calculated as 12%/40%/40% for atk/dmg/ied
     # non-prime are calculated as 9%/30%/30% for atk/dmg/ied
 prime = 3
+
 # target boss pdr % (most mid-game are 300%). https://github.com/Pearlitic/pearlitic.github.io/tree/main/%25
 pdr = 300
+
 # display top n results
 display_top = 10
 
-# === ADVANCED OPTIONS === #
+## === ADVANCED OPTIONS === ##
+# If you play a class with weird WSE, modify the max potential lines of you WSE:
 max_wse_atk_lines = 9
 max_wse_dmg_lines = 6
 max_wse_ied_lines = 9
+
 # print all results? (only set True for debug purposes)
 display_all = False
 
@@ -37,6 +70,7 @@ display_all = False
 '''
 END OF USER INPUT ===== END OF USER INPUT ===== END OF USER INPUT ===== END OF USER INPUT =====
 '''
+##### DO NOT TOUCH CODE BELOW #####
 # input sanity check
 import sys
 if (atk < 0):
@@ -67,7 +101,7 @@ def calcIED(arr, flag=True):
 
 
 # split ied to array of ints (convert to decimal) from string
-iedarr = [int(x)*0.01 for x in ied.split(',')]
+iedarr = [x*0.01 for x in ied] # [int(x)*0.01 for x in ied.split(',')]
 # sanity check
 for n in iedarr:
     if n < 0 or n > 1: sys.exit('Invalid IED Input (<0% or >100%)')
