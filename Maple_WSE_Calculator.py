@@ -35,6 +35,7 @@ ied = [0,########################### No touchy, begin of array dummy
        10,  # CRA hat
        5,   # CRA top
        5,   # CRA bot
+       5,   # Empress Medal or CRA Title
        9,   # Explorer Mage Link Skill Empirical Knowledge Max Stack Lv3
        # 3,   # Soul Weapon Bonus
        3,   # Familiar Badge
