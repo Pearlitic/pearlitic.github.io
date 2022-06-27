@@ -101,7 +101,7 @@ def calcIED(arr, flag=True):
         return 1
 
 
-# split ied to array of ints (convert to decimal) from string
+# convert ied to decimal from percentage format
 iedarr = [x*0.01 for x in ied] # [int(x)*0.01 for x in ied.split(',')]
 # sanity check
 for n in iedarr:
