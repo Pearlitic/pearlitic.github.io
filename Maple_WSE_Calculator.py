@@ -4,7 +4,7 @@ Created on Sun Apr 10 15:11:14 2021
 
 @author: Pearlite
 
-##### REQUIRES PYTHON 3.6+ TO BE INSTALLED ON YOUR COMPUTER #####
+##### REQUIRES PYTHON 3.6+ #####
 """
 
 '''
