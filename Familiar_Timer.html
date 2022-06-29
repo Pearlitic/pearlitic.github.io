@@ -1,0 +1,326 @@
+<html>
+   <style>
+      @import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700');
+      body{
+      background-color: #333333;
+      color: white;
+      font-family: "Noto Sans", sans-serif, Arial;
+      }
+      .box-ex{
+      width: 550px;
+      background-color: #333333;
+      margin: 0 auto;
+      padding: 10px;
+      }
+      .box{
+      width: 100px;
+      height: 100px;
+      line-height: 30px;
+      margin: 3px 1px;
+      display: inline-block;
+      background-color: #555555;   
+      color: white;
+      text-align: center;
+      }
+      .box span{
+      display: inline-block;
+      vertical-align: middle;
+      }
+      .box-cols{
+      margin: 0 auto !important;
+      }
+      input[type=button] {
+      width: 5em;  height: 2em;
+      }
+      .box2{
+      width: 519px;
+      height: 50px;
+      line-height: 50px;
+      margin: 3px 1px;
+      display: inline-block;
+      background-color: #555555;   
+      color: white;
+      text-align: center;
+      border-style: dashed;
+      }
+   </style>
+   <script>
+      //change me
+      var timeSeconds = 300;
+      
+      
+      function setTime(){
+      timeSeconds=document.getElementById('respawn').value;
+      }
+      
+      
+      
+      //==============NO TOUCHY==============
+      
+      function countdown(element, minutes, seconds, element2) {
+          // Fetch the display element
+          
+          document.getElementById('respawn').disabled  = true;
+          var el = document.getElementById(element);
+          var elx2 = document.getElementById(element2);
+          elx2.value = "Missed";
+      		elx2.style.backgroundColor = "#FFFFFF";
+          
+          // Set the timer
+          var interval = setInterval(function() {
+              if(seconds == 0) {
+                  if(minutes == 0) {
+                      (el.value = "KILL!");     
+                        el.style.backgroundColor = "#008000";
+                        elx2.value = "Missed";
+      		elx2.style.backgroundColor = "#FFFFFF";
+                      clearInterval(interval);
+                      return;
+                  } else {
+                      minutes--;
+                      seconds = 60;
+                  }
+              }
+      
+              if(minutes > 0) {
+                  var minute_text = minutes + (minutes > 1 ? ' minutes' : ' minute');
+              } else {
+                  var minute_text = '';
+              }
+      
+              var second_text = seconds > 1 ? '' : '';
+              el.value = minute_text + ' ' + seconds + ' ' + second_text + '';
+              el.style.backgroundColor = "#FFFFFF";
+              seconds--;
+          }, 1000);
+      }
+      
+      function countdownx2(element, minutes, seconds, element2) {
+          // Fetch the display element
+          document.getElementById('respawn').disabled  = true;
+          
+          var el = document.getElementById(element);
+          var elx2 = document.getElementById(element2);
+      		elx2.value = "Start";
+      		elx2.style.backgroundColor = "#FFFFFF";
+          // Set the timer
+          var interval = setInterval(function() {
+              if(seconds == 0) {
+                  if(minutes == 0) {
+                      (el.value = "Check!");     
+                        el.style.backgroundColor = "#E4CA17";
+                        elx2.value = "Start";
+      									elx2.style.backgroundColor = "#FFFFFF";	
+                      clearInterval(interval);
+                      return;
+                  } else {
+                      minutes--;
+                      seconds = 60;
+                  }
+              }
+      
+              if(minutes > 0) {
+                  var minute_text = minutes + (minutes > 1 ? ' minutes' : ' minute');
+              } else {
+                  var minute_text = '';
+              }
+      
+              var second_text = seconds > 1 ? '' : '';
+              el.value = minute_text + ' ' + seconds + ' ' + second_text + '';
+              el.style.backgroundColor = "#FFFFFF";
+              seconds--;
+          }, 1000);
+      }
+      
+      //Start as many timers as you want
+      
+      var start1 = document.getElementById('timer1');
+      var start2 = document.getElementById('timer2');
+      var start3 = document.getElementById('timer3');
+      var start4 = document.getElementById('timer4');
+      var start5 = document.getElementById('timer5');
+      var start6 = document.getElementById('timer6');
+      var start7 = document.getElementById('timer7');
+      var start8 = document.getElementById('timer8');
+      var start9 = document.getElementById('timer9');
+      var start10 = document.getElementById('timer10');
+      var start11 = document.getElementById('timer11');
+      var start12 = document.getElementById('timer12');
+      var start13 = document.getElementById('timer13');
+      var start14 = document.getElementById('timer14');
+      var start15 = document.getElementById('timer15');
+      var start16 = document.getElementById('timer16');
+      var start17 = document.getElementById('timer17');
+      var start18 = document.getElementById('timer18');
+      var start19 = document.getElementById('timer19');
+      var start20 = document.getElementById('timer20');
+      var start21 = document.getElementById('timer21');
+      var start22 = document.getElementById('timer22');
+      var start23 = document.getElementById('timer23');
+      var start24 = document.getElementById('timer24');
+      var start25 = document.getElementById('timer25');
+      var start26 = document.getElementById('timer26');
+      var start27 = document.getElementById('timer27');
+      var start28 = document.getElementById('timer28');
+      var start29 = document.getElementById('timer29');
+      var start30 = document.getElementById('timer30');
+      
+      var start1x2 = document.getElementById('timer1x2');
+      var start2x2 = document.getElementById('timer2x2');
+      var start3x2 = document.getElementById('timer3x2');
+      var start4x2 = document.getElementById('timer4x2');
+      var start5x2 = document.getElementById('timer5x2');
+      var start6x2 = document.getElementById('timer6x2');
+      var start7x2 = document.getElementById('timer7x2');
+      var start8x2 = document.getElementById('timer8x2');
+      var start9x2 = document.getElementById('timer9x2');
+      var start10x2 = document.getElementById('timer10x2');
+      var start11x2 = document.getElementById('timer11x2');
+      var start12x2 = document.getElementById('timer12x2');
+      var start13x2 = document.getElementById('timer13x2');
+      var start14x2 = document.getElementById('timer14x2');
+      var start15x2 = document.getElementById('timer15x2');
+      var start16x2 = document.getElementById('timer16x2');
+      var start17x2 = document.getElementById('timer17x2');
+      var start18x2 = document.getElementById('timer18x2');
+      var start19x2 = document.getElementById('timer19x2');
+      var start20x2 = document.getElementById('timer20x2');
+      var start21x2 = document.getElementById('timer21x2');
+      var start22x2 = document.getElementById('timer22x2');
+      var start23x2 = document.getElementById('timer23x2');
+      var start24x2 = document.getElementById('timer24x2');
+      var start25x2 = document.getElementById('timer25x2');
+      var start26x2 = document.getElementById('timer26x2');
+      var start27x2 = document.getElementById('timer27x2');
+      var start28x2 = document.getElementById('timer28x2');
+      var start29x2 = document.getElementById('timer29x2');
+      var start30x2 = document.getElementById('timer30x2');
+      
+      
+      start1.onclick = function() {countdown('timer1', 0, timeSeconds, 'timer1x2');}
+      start2.onclick = function() {countdown('timer2', 0, timeSeconds, 'timer2x2');}
+      start3.onclick = function() {countdown('timer3', 0, timeSeconds, 'timer3x2');}
+      start4.onclick = function() {countdown('timer4', 0, timeSeconds, 'timer4x2');}
+      start5.onclick = function() {countdown('timer5', 0, timeSeconds, 'timer5x2');}
+      start6.onclick = function() {countdown('timer6', 0, timeSeconds, 'timer6x2');}
+      start7.onclick = function() {countdown('timer7', 0, timeSeconds, 'timer7x2');}
+      start8.onclick = function() {countdown('timer8', 0, timeSeconds, 'timer8x2');}
+      start9.onclick = function() {countdown('timer9', 0, timeSeconds, 'timer9x2');}
+      start10.onclick = function() {countdown('timer10', 0, timeSeconds, 'timer10x2');}
+      start11.onclick = function() {countdown('timer11', 0, timeSeconds, 'timer11x2');}
+      start12.onclick = function() {countdown('timer12', 0, timeSeconds, 'timer12x2');}
+      start13.onclick = function() {countdown('timer13', 0, timeSeconds, 'timer13x2');}
+      start14.onclick = function() {countdown('timer14', 0, timeSeconds, 'timer14x2');}
+      start15.onclick = function() {countdown('timer15', 0, timeSeconds, 'timer15x2');}
+      start16.onclick = function() {countdown('timer16', 0, timeSeconds, 'timer16x2');}
+      start17.onclick = function() {countdown('timer17', 0, timeSeconds, 'timer17x2');}
+      start18.onclick = function() {countdown('timer18', 0, timeSeconds, 'timer18x2');}
+      start19.onclick = function() {countdown('timer19', 0, timeSeconds, 'timer19x2');}
+      start20.onclick = function() {countdown('timer20', 0, timeSeconds, 'timer20x2');}
+      start21.onclick = function() {countdown('timer21', 0, timeSeconds, 'timer21x2');}
+      start22.onclick = function() {countdown('timer22', 0, timeSeconds, 'timer22x2');}
+      start23.onclick = function() {countdown('timer23', 0, timeSeconds, 'timer23x2');}
+      start24.onclick = function() {countdown('timer24', 0, timeSeconds, 'timer24x2');}
+      start25.onclick = function() {countdown('timer25', 0, timeSeconds, 'timer25x2');}
+      start26.onclick = function() {countdown('timer26', 0, timeSeconds, 'timer26x2');}
+      start27.onclick = function() {countdown('timer27', 0, timeSeconds, 'timer27x2');}
+      start28.onclick = function() {countdown('timer28', 0, timeSeconds, 'timer28x2');}
+      start29.onclick = function() {countdown('timer29', 0, timeSeconds, 'timer29x2');}
+      start30.onclick = function() {countdown('timer30', 0, timeSeconds, 'timer30x2');}
+      
+      start1x2.onclick = function() {countdownx2('timer1x2', 0, timeSeconds, 'timer1');}
+      start2x2.onclick = function() {countdownx2('timer2x2', 0, timeSeconds, 'timer2');}
+      start3x2.onclick = function() {countdownx2('timer3x2', 0, timeSeconds, 'timer3');}
+      start4x2.onclick = function() {countdownx2('timer4x2', 0, timeSeconds, 'timer4');}
+      start5x2.onclick = function() {countdownx2('timer5x2', 0, timeSeconds, 'timer5');}
+      start6x2.onclick = function() {countdownx2('timer6x2', 0, timeSeconds, 'timer6');}
+      start7x2.onclick = function() {countdownx2('timer7x2', 0, timeSeconds, 'timer7');}
+      start8x2.onclick = function() {countdownx2('timer8x2', 0, timeSeconds, 'timer8');}
+      start9x2.onclick = function() {countdownx2('timer9x2', 0, timeSeconds, 'timer9');}
+      start10x2.onclick = function() {countdownx2('timer10x2', 0, timeSeconds, 'timer10');}
+      start11x2.onclick = function() {countdownx2('timer11x2', 0, timeSeconds, 'timer11');}
+      start12x2.onclick = function() {countdownx2('timer12x2', 0, timeSeconds, 'timer12');}
+      start13x2.onclick = function() {countdownx2('timer13x2', 0, timeSeconds, 'timer13');}
+      start14x2.onclick = function() {countdownx2('timer14x2', 0, timeSeconds, 'timer14');}
+      start15x2.onclick = function() {countdownx2('timer15x2', 0, timeSeconds, 'timer15');}
+      start16x2.onclick = function() {countdownx2('timer16x2', 0, timeSeconds, 'timer16');}
+      start17x2.onclick = function() {countdownx2('timer17x2', 0, timeSeconds, 'timer17');}
+      start18x2.onclick = function() {countdownx2('timer18x2', 0, timeSeconds, 'timer18');}
+      start19x2.onclick = function() {countdownx2('timer19x2', 0, timeSeconds, 'timer19');}
+      start20x2.onclick = function() {countdownx2('timer20x2', 0, timeSeconds, 'timer20');}
+      start21x2.onclick = function() {countdownx2('timer21x2', 0, timeSeconds, 'timer21');}
+      start22x2.onclick = function() {countdownx2('timer22x2', 0, timeSeconds, 'timer22');}
+      start23x2.onclick = function() {countdownx2('timer23x2', 0, timeSeconds, 'timer23');}
+      start24x2.onclick = function() {countdownx2('timer24x2', 0, timeSeconds, 'timer24');}
+      start25x2.onclick = function() {countdownx2('timer25x2', 0, timeSeconds, 'timer25');}
+      start26x2.onclick = function() {countdownx2('timer26x2', 0, timeSeconds, 'timer26');}
+      start27x2.onclick = function() {countdownx2('timer27x2', 0, timeSeconds, 'timer27');}
+      start28x2.onclick = function() {countdownx2('timer28x2', 0, timeSeconds, 'timer28');}
+      start29x2.onclick = function() {countdownx2('timer29x2', 0, timeSeconds, 'timer29');}
+      start30x2.onclick = function() {countdownx2('timer30x2', 0, timeSeconds, 'timer30');}
+   </script>
+   <head></head>
+   <body>
+      <div class="box-ex container-fluid">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="box col-md-3"><span>Ch 1 :&nbsp;</span><input id="timer1" type="button" value="Start" /><input id="timer1x2" type="button" value="Missed" /></div>
+               <div class="box col-md-3"><span>Ch 2 :&nbsp;</span><input id="timer2" type="button" value="Start" /><input id="timer2x2" type="button" value="Missed" /></div>
+               <div class="box col-md-3"><span>Ch 3 :&nbsp;</span><input id="timer3" type="button" value="Start" /><input id="timer3x2" type="button" value="Missed" /></div>
+               <div class="box col-md-3"><span>Ch 4 :&nbsp;</span><input id="timer4" type="button" value="Start" /><input id="timer4x2" type="button" value="Missed" /></div>
+               <div class="box col-md-3"><span>Ch 5 :&nbsp;</span><input id="timer5" type="button" value="Start" /><input id="timer5x2" type="button" value="Missed" /></div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12">
+               <div class="box col-md-3"><span>Ch 6 :&nbsp;</span><input id="timer6" type="button" value="Start" /><input id="timer6x2" type="button" value="Missed" /></div>
+               <div class="box col-md-3"><span>Ch 7 :&nbsp;</span><input id="timer7" type="button" value="Start" /><input id="timer7x2" type="button" value="Missed" /></div>
+               <div class="box col-md-3"><span>Ch 8 :&nbsp;</span><input id="timer8" type="button" value="Start" /><input id="timer8x2" type="button" value="Missed" /></div>
+               <div class="box col-md-3"><span>Ch 9 :&nbsp;</span><input id="timer9" type="button" value="Start" /><input id="timer9x2" type="button" value="Missed" /></div>
+               <div class="box col-md-3"><span>Ch 10 :&nbsp;</span><input id="timer10" type="button" value="Start" /><input id="timer10x2" type="button" value="Missed" /></div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12">
+               <div class="box col-md-3"><span>Ch 11 :&nbsp;</span><input id="timer11" type="button" value="Start" /><input id="timer11x2" type="button" value="Missed" /></div>
+               <div class="box col-md-3"><span>Ch 12 :&nbsp;</span><input id="timer12" type="button" value="Start" /><input id="timer12x2" type="button" value="Missed" /></div>
+               <div class="box col-md-3"><span>Ch 13 :&nbsp;</span><input id="timer13" type="button" value="Start" /><input id="timer13x2" type="button" value="Missed" /></div>
+               <div class="box col-md-3"><span>Ch 14 :&nbsp;</span><input id="timer14" type="button" value="Start" /><input id="timer14x2" type="button" value="Missed" /></div>
+               <div class="box col-md-3"><span>Ch 15 :&nbsp;</span><input id="timer15" type="button" value="Start" /><input id="timer15x2" type="button" value="Missed" /></div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12">
+               <div class="box col-md-3"><span>Ch 16 :&nbsp;</span><input id="timer16" type="button" value="Start" /><input id="timer16x2" type="button" value="Missed" /></div>
+               <div class="box col-md-3"><span>Ch 17 :&nbsp;</span><input id="timer17" type="button" value="Start" /><input id="timer17x2" type="button" value="Missed" /></div>
+               <div class="box col-md-3"><span>Ch 18 :&nbsp;</span><input id="timer18" type="button" value="Start" /><input id="timer18x2" type="button" value="Missed" /></div>
+               <div class="box col-md-3"><span>Ch 19 :&nbsp;</span><input id="timer19" type="button" value="Start" /><input id="timer19x2" type="button" value="Missed" /></div>
+               <div class="box col-md-3"><span>Ch 20 :&nbsp;</span><input id="timer20" type="button" value="Start" /><input id="timer20x2" type="button" value="Missed" /></div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12">
+               <div class="box col-md-3"><span>Ch 21 :&nbsp;</span><input id="timer21" type="button" value="Start" /><input id="timer21x2" type="button" value="Missed" /></div>
+               <div class="box col-md-3"><span>Ch 22 :&nbsp;</span><input id="timer22" type="button" value="Start" /><input id="timer22x2" type="button" value="Missed" /></div>
+               <div class="box col-md-3"><span>Ch 23 :&nbsp;</span><input id="timer23" type="button" value="Start" /><input id="timer23x2" type="button" value="Missed" /></div>
+               <div class="box col-md-3"><span>Ch 24 :&nbsp;</span><input id="timer24" type="button" value="Start" /><input id="timer24x2" type="button" value="Missed" /></div>
+               <div class="box col-md-3"><span>Ch 25 :&nbsp;</span><input id="timer25" type="button" value="Start" /><input id="timer25x2" type="button" value="Missed" /></div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12">
+               <div class="box col-md-3"><span>Ch 26 :&nbsp;</span><input id="timer26" type="button" value="Start" /><input id="timer26x2" type="button" value="Missed" /></div>
+               <div class="box col-md-3"><span>Ch 27 :&nbsp;</span><input id="timer27" type="button" value="Start" /><input id="timer27x2" type="button" value="Missed" /></div>
+               <div class="box col-md-3"><span>Ch 28 :&nbsp;</span><input id="timer28" type="button" value="Start" /><input id="timer28x2" type="button" value="Missed" /></div>
+               <div class="box col-md-3"><span>Ch 29 :&nbsp;</span><input id="timer29" type="button" value="Start" /><input id="timer29x2" type="button" value="Missed" /></div>
+               <div class="box col-md-3"><span>Ch 30 :&nbsp;</span><input id="timer30" type="button" value="Start" /><input id="timer30x2" type="button" value="Missed" /></div>
+            </div>
+         </div>
+      </div>
+      <div class="box-ex container-fluid">
+         <div class="box2 col-md-3">
+            <span>Respawn Timer (s): </span><input type="number" id="respawn" value="300" placeholder="Enter Value" onkeyup="setTime()"><!--<input id="timer" type="button" value="Set" onClick="setTime()">-->
+         </div>
+      </div>
+   </body>
+</html>
