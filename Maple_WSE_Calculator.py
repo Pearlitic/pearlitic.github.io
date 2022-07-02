@@ -58,6 +58,9 @@ pdr = 300
 # display top n results
 display_top = 10
 
+#Display Detailed (final A/D/I%) Info?
+display_detailed = False
+
 ## === ADVANCED OPTIONS === ##
 # If you play a class with weird WSE, modify the max potential lines of you WSE:
 max_wse_atk_lines = 9
@@ -155,7 +158,7 @@ for a in range(0,max_wse_atk_lines+1):
                             while True:
                                 # If result not in dict, add to dict
                                 if FD not in table: 
-                                    table[FD] = [(a,d,i),(pa,pd,pi)]
+                                    table[FD] = [(a,d,i),(pa,pd,pi),(final_atk,final_dmg,final_ied)]
                                     break
                                 # If result is in dict, add 1e-10
                                 FD += 0.00000_00001
@@ -172,6 +175,7 @@ print('===== Printing Top %d Results =====' % display_top)
 try:
     for i in range(display_top):
         print('Top %2d - FD: %3.0f%%\tA/D/I: %s\tPrime: %s' % (i+1,sorted_fd[i],table[sorted_fd[i]][0],table[sorted_fd[i]][1]))
+        if display_detailed: print('\t\t\t\t\t⮡ A/D/I (%%): (%d%%, %d%%, %2.2f%%)' % (table[sorted_fd[i]][2][0]*100,table[sorted_fd[i]][2][1]*100,table[sorted_fd[i]][2][2]*100))
         display_top -= 1
 except:
     print('%s Result(s) not Displayed: Not Enough Combinations' % display_top)
