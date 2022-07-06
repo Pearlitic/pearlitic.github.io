@@ -4,7 +4,7 @@ Here lives the Python scripts. There are 2 versions:
 
 #### [Standard verison](https://github.com/Pearlitic/pearlitic.github.io/blob/main/Python/Maple_WSE_Calculator.py)
 
-The 'casual' version that assumes 30% familiars and combines the result familiar count into WSE.
+The 'casual' version that assumes 30% familiars and combines the resultant familiar count into WSE.
 
 ![casual](https://github.com/Pearlitic/pearlitic.github.io/blob/main/%25/Spyder.png)
 
