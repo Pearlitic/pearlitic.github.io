@@ -89,6 +89,9 @@ display_top = 10
 #Display Detailed (final A/D/I%) Info?
 display_detailed = True
 
+# Allow duplicate familair effects? (Keep off unless you want to get duplicate results with same Final Damage but different familairs)
+allow_duplicate = False
+
 ## === ADVANCED OPTIONS === ##
 # If you play a class with weird WSE, modify the max potential lines of you WSE:
 max_wse_atk_lines = 9
@@ -204,8 +207,9 @@ for a in range(0,max_wse_atk_lines+1):
                                     if FD not in table: 
                                         table[FD] = [(a,d,i),(pa,pd,pi),(final_atk,final_dmg,final_ied),', '.join(f)]
                                         break
-                                    # If result is in dict, add 1e-10
-                                    FD += 0.00000_00001
+                                    # If result is in dict and dupe allowd, add 1e-10
+                                    if allow_duplicate: FD += 0.00000_00001
+                                    else: break
 
 # sort dictionary values to a list of arrays containing final damage % in decending order
 sorted_fd = sorted(table, reverse=True)
