@@ -61,11 +61,12 @@ fam_count = 3
 # Familiar card list
 fam_list = {
        # Please follow the format, keep the names short but memorable, and have at least 3 familairs.
-       # If you don't have at least 3, you can just put something like "dummy_1": (0,0,0), to simulate a "useless" familiar
+       # If you don't have at least 3, you can just put something like "dummy_1": (0,0,0), to simulate a "useless" familiar.
        # Don't put more than 3 familiars of the same type to save compute time. Just put the best 3 of each boss/ied familairs you have.
-       # Last familiar line doesn't need an ending comma
+       # Note: If you have 2-line IEDS, here's the cheat sheet: 30+30 = 51, 30+15 = 40.5, 20+15 = 32, 30+20 = 44, 20+20 = 36. If i didn't cover it calculate it yourself.
+       # Last familiar line doesn't need an ending comma.
        # NO DUPLICATE NAMES!
-       # Format:
+     ### Format:
      # "Familiar_name": (atk%,boss%,ied%),
        "boogie_30b_1": (0,30,0),
        "ninja_30b_1": (0,30,0),
