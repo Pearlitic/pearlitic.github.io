@@ -117,7 +117,7 @@ if (fam_count < 0 or fam_count > 3):
     sys.exit('Invalid Familiar Count (<0 or >3)')
 if (len(fam_list.keys()) < fam_count):
     sys.exit('Invalid Familiar List (Not enough familiars!)')
-if (prime < 3 or prime > 9 + fam_count):
+if (prime < 3 or prime > 9):
     sys.exit('Invalid Prime Lines (<0 or >9')
 if (pdr < 0):
     sys.exit('Invalid Boss PDR (<0)')
