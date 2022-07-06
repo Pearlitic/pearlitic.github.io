@@ -9,6 +9,6 @@ You can download the [source code folder](https://github.com/Pearlitic/pearlitic
 
 If you have a unique class that functions differently or want to customize the optimizer, download the Python script. It's much easier to customize and cleaner. The html/js code was written when I began learning coding and its a complete shitshow.
 
-[Python version](https://github.com/Pearlitic/pearlitic.github.io/blob/main/Maple_WSE_Calculator.py) of this calculator for better editing and offline use. You can edit it and run it as a script if you have Python installed, or run it on an online IDE such as [\(online-python\)](https://www.online-python.com/). Requires Python 3.6+. 
+[Python version](https://github.com/Pearlitic/pearlitic.github.io/tree/main/Python) of this calculator for better editing and offline use. You can edit it and run it as a script if you have Python installed, or run it on an online IDE such as [\(online-python\)](https://www.online-python.com/). Requires Python 3.6+. 
 
 ![Spyder](https://github.com/Pearlitic/pearlitic.github.io/blob/main/%25/Spyder.png)
