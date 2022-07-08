@@ -29,10 +29,10 @@ dmg = (0 ##### No Touchy, starting dummy
 
 # IED %: Enter amount of IED from gears (excluding WSE potentials, but include gear stat) in an example of "85" (exclude quotes) for 85%
     # Note that IED calculation isn't additive, so go look up how to calculate it. If you don't know how, the input list supports multiple inputs (duh, its an array).
-# REMEMBER TO PUT COMMA BEHIND NUMBERS!!! (except for last one)
+# REMEMBER TO PUT COMMA BEHIND NUMBERS!!!
 # You can comment out lines you don't have, or add things if missed
-ied = [0,########################### No touchy, begin of array dummy
-       #############################
+ied = [0,############## No touchy, begin of array dummy
+       ################################################
        40,  # Legion Max Grid
        30,  # Hyper Stat Lv10
        30,  # Sup Gollux 4-set
@@ -52,8 +52,8 @@ ied = [0,########################### No touchy, begin of array dummy
        3,   # Familiar Badge
        3,   # Blaster Legion Lv140 Card
        3,   # BT Legion Lv140 Card
-       #############################
-       0]########################### No touchy, end of array dummy
+       ##############################################
+       0]############## No touchy, end of array dummy
 
 # Familiar count to optimize for
 fam_count = 3
@@ -66,7 +66,7 @@ fam_list = {
        # Note: If you have 2-line IEDS, here's the cheat sheet: 30+30 = 51, 30+15 = 40.5, 20+15 = 32, 30+20 = 44, 20+20 = 36. If i didn't cover it calculate it yourself.
        # Last familiar line doesn't need an ending comma.
        # NO DUPLICATE NAMES!
-     ### Format:
+     ### FORMAT:
      # "Familiar_name": (atk%,boss%,ied%),
        "boogie_30b_1": (0,30,0),
        "ninja_30b_1": (0,30,0),
@@ -76,25 +76,25 @@ fam_list = {
        "cat_30i_1": (0,0,30)
        }
 
-# number of prime lines (If you have Unique familiars, you can increase prime lines to account for them)
+# number of prime lines
     # prime lines are calculated as 12%/40%/40% for atk/dmg/ied
     # non-prime are calculated as 9%/30%/30% for atk/dmg/ied
 prime = 3
 
-# target boss pdr % (most mid-game are 300%). https://github.com/Pearlitic/pearlitic.github.io/tree/main/%25
+# target boss pdr % (most mid-game are 300%). See https://github.com/Pearlitic/pearlitic.github.io/tree/main/%25
 pdr = 300
 
 # display top n results
 display_top = 10
 
-#Display Detailed (final A/D/I%) Info?
+#Display Detailed (Final ATK%/DMG%/IED%) Info?
 display_detailed = True
 
 # Allow duplicate familair effects? (Keep off unless you want to get duplicate results with same Final Damage but different familairs)
 allow_duplicate = False
 
 ## === ADVANCED OPTIONS === ##
-# If you play a class with weird WSE, modify the max potential lines of you WSE:
+# If you play a class with weird WSE, modify the max potential lines of your WSE:
 max_wse_atk_lines = 9
 max_wse_dmg_lines = 6
 max_wse_ied_lines = 9
@@ -102,14 +102,14 @@ max_wse_ied_lines = 9
 # print all results? (only set True for debug purposes)
 display_all = False
 
-### NOTE: If you intend to run this script by double clicking, uncomment the last line. Otherwise execute this script in the console/terminal or IDE.
+### NOTE: If you intend to run this script by double clicking, uncomment the last line at the end of the file. Otherwise execute this script in the console/terminal or IDE.
 '''
 END OF USER INPUT ===== END OF USER INPUT ===== END OF USER INPUT ===== END OF USER INPUT =====
 '''
 
 ##### DO NOT TOUCH CODE BELOW #####
-# generate familiar combinations
-fam_combo = list(itertools.combinations(fam_list,fam_count))
+##### DO NOT TOUCH CODE BELOW #####
+##### DO NOT TOUCH CODE BELOW #####
 
 # input sanity check
 import sys
@@ -131,6 +131,9 @@ if (max_wse_atk_lines < 0 or max_wse_dmg_lines < 0 or max_wse_ied_lines < 0):
     sys.exit('Invalid WSE max lines (<0)')
 if (max_wse_atk_lines + max_wse_dmg_lines + max_wse_ied_lines < 9):
     sys.exit('Invalid WSE max lines (Sum of 3 must be >=9)')
+
+# generate familiar combinations
+fam_combo = list(itertools.combinations(fam_list,fam_count))
 
 # function to calculate final ied from array of ieds
 def calcIED(arr, flag=True):
