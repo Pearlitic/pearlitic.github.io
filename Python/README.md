@@ -8,7 +8,7 @@ The 'casual' version that assumes 30% familiars and combines the resultant famil
 
 ![casual](https://github.com/Pearlitic/pearlitic.github.io/blob/main/%25/Spyder.png)
 
-#### [Advanced Version](https://github.com/Pearlitic/pearlitic.github.io/blob/main/Python/Maple_WSE_Calculator_Advanced_Familar.py)
+#### [Advanced Version](https://github.com/Pearlitic/pearlitic.github.io/blob/main/Python/Maple_WSE_Calculator_Advanced_Custom_Familiar.py)
 
 The advanced version allows naming and customized familiars in the form of a dictionary. Well don't worry about the programming part, if you aren't completely programming-dumb and can follow patterns, you shouldn't have trouble editing it.
 
