@@ -29,9 +29,9 @@ dmg = (0 ##### No Touchy, starting dummy
 
 # IED %: Enter amount of IED from gears (excluding WSE potentials, but include gear stat) in an example of "85" (exclude quotes) for 85%
     # Note that IED calculation isn't additive, so go look up how to calculate it. If you don't know how, the input list supports multiple inputs (duh, its an array).
-# REMEMBER TO PUT COMMA BEHIND NUMBERS!!! (except for last one)
+# REMEMBER TO PUT COMMA BEHIND NUMBERS!!!
 # You can comment out lines you don't have, or add things if missed
-ied = [0,########################### No touchy, begin of array dummy
+ied = [0,########### No touchy, begin of array dummy
        #############################
        40,  # Legion Max Grid
        30,  # Hyper Stat Lv10
@@ -53,7 +53,7 @@ ied = [0,########################### No touchy, begin of array dummy
        3,   # Blaster Legion Lv140 Card
        3,   # BT Legion Lv140 Card
        #############################
-       0]########################### No touchy, end of array dummy
+       0]########### No touchy, end of array dummy
 
 # Familiar count to optimize for
 fam_count = 3
@@ -81,13 +81,13 @@ fam_list = {
     # non-prime are calculated as 9%/30%/30% for atk/dmg/ied
 prime = 3
 
-# target boss pdr % (most mid-game are 300%). https://github.com/Pearlitic/pearlitic.github.io/tree/main/%25
+# target boss pdr % (most mid-game are 300%). See https://github.com/Pearlitic/pearlitic.github.io/tree/main/%25
 pdr = 300
 
 # display top n results
 display_top = 10
 
-#Display Detailed (final A/D/I%) Info?
+#Display Detailed (final ATK/DMG/IED%) Info?
 display_detailed = True
 
 # Allow duplicate familair effects? (Keep off unless you want to get duplicate results with same Final Damage but different familairs)
@@ -97,7 +97,7 @@ allow_duplicate = False
 allow_inferior = False
 
 ## === ADVANCED OPTIONS === ##
-# If you play a class with weird WSE, modify the max potential lines of you WSE:
+# If you play a class with weird WSE, modify the max potential lines of your WSE:
 max_wse_atk_lines = 9
 max_wse_dmg_lines = 6
 max_wse_ied_lines = 9
@@ -105,14 +105,14 @@ max_wse_ied_lines = 9
 # print all results? (only set True for debug purposes)
 display_all = False
 
-### NOTE: If you intend to run this script by double clicking, uncomment the last line. Otherwise execute this script in the console/terminal or IDE.
+### NOTE: If you intend to run this script by double clicking, uncomment the last line at the end of the file. Otherwise execute this script in the console/terminal or IDE.
 '''
 END OF USER INPUT ===== END OF USER INPUT ===== END OF USER INPUT ===== END OF USER INPUT =====
 '''
 
 ##### DO NOT TOUCH CODE BELOW #####
-# generate familiar combinations
-fam_combo = list(itertools.combinations(fam_list,fam_count))
+##### DO NOT TOUCH CODE BELOW #####
+##### DO NOT TOUCH CODE BELOW #####
 
 # input sanity check
 import sys
@@ -144,6 +144,8 @@ def calcIED(arr, flag=True):
     else:
         return 1
 
+# generate familiar combinations
+fam_combo = list(itertools.combinations(fam_list,fam_count))
 
 # convert ied to decimal from percentage format
 iedarr = [x*0.01 for x in ied] # [int(x)*0.01 for x in ied.split(',')]
@@ -196,7 +198,7 @@ for a in range(0,max_wse_atk_lines+1):
                                 # calculate a/d/i of current familiar list f
                                 fam_stats = get_fam_adi(f)
                                 # calculate final atk/dmg/ied for hypothetical WSE distribution
-                                final_atk = atk + 0.09*pa + 0.12*(a-pa) + fam_stats[0]
+                                final_atk = atk + 0.12*pa + 0.09*(a-pa) + fam_stats[0]
                                 final_dmg = dmg + 0.4*pd + 0.3*(d-pd) + fam_stats[1]
                                 final_ied = calcIED([ied] + [0.4]*pi + [0.3]*(i-pi) + [fam_stats[2]])
                                 # calculate final damage %
