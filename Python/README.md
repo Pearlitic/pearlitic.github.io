@@ -26,7 +26,9 @@ The advanced one requires itertools plugin, which should be built-into Python.
 
 ### [Perfect Trinode Finder](https://github.com/Pearlitic/pearlitic.github.io/blob/main/Python/Perfect_Trinode_Combo_Finder.py)
 
-Simple script to find perfect trinode combination. Quick and dirty script with no input validation, so make surey ou got no typos!
+Simple script to find perfect trinode combination. If no perfect combo found, the next best option will be displayed.
+
+Quick and dirty script with no input validation, so make sure you only input perfect trios with no typo!
 
 ---
 
