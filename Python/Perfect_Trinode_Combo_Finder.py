@@ -65,7 +65,7 @@ else:
     best_score = sorted(non_perfect_combo.keys())[0]
     print('Listing Option(s) with', best_score, 'Missing Skill(s) :')
     counter = 1
-    for combo in non_perfect_combo[1]:
+    for combo in non_perfect_combo[best_score]:
         print('Imperfect Set',counter,':')
         for sub_list in combo:
             print(sub_list)
