@@ -2,6 +2,10 @@
 
 Here lives the random Maplestory related Python scripts.
 
+Current Projects: 
++ [WSE Optimizer](#wse-optimizer)
++ [Perfect Trinode Finder](#perfect-trinode-finder)
+
 ---
 
 ### WSE Optimizer
