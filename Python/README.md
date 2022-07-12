@@ -22,8 +22,6 @@ The 'casual' version that assumes 30% familiars and combines the resultant famil
 
 The advanced version allows naming and customized familiars in the form of a dictionary. Well don't worry about the programming part, if you aren't completely programming-dumb and can follow patterns, you shouldn't have trouble editing it.
 
-The advanced one requires itertools plugin, which should be built-into Python.
-
 ![advanced](https://github.com/Pearlitic/pearlitic.github.io/blob/main/%25/Spyder2.png)
 
 ---
