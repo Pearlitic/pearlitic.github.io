@@ -30,7 +30,7 @@ The advanced version allows naming and customized familiars in the form of a dic
 
 Simple script to find perfect trinode combination. If no perfect combo found, the next best option will be displayed.
 
-Quick and dirty script with no input validation, so make sure you only input perfect trios with no typo!
+Quick and dirty script with no input validation, so beware of typos!
 
 Output looks something like this:
 ```
