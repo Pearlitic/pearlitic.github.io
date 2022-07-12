@@ -1,6 +1,12 @@
-### Python Scripts
+## Python Scripts
 
-Here lives the Python scripts. There are 2 versions:
+Here lives the random Maplestory related Python scripts.
+
+---
+
+### WSE Optimizer
+
+There are 2 versions:
 
 #### [Standard verison](https://github.com/Pearlitic/pearlitic.github.io/blob/main/Python/Maple_WSE_Calculator.py)
 
@@ -15,6 +21,12 @@ The advanced version allows naming and customized familiars in the form of a dic
 The advanced one requires itertools plugin, which should be built-into Python.
 
 ![advanced](https://github.com/Pearlitic/pearlitic.github.io/blob/main/%25/Spyder2.png)
+
+---
+
+### [Perfect Trinode Finder](https://github.com/Pearlitic/pearlitic.github.io/blob/main/Python/Perfect_Trinode_Combo_Finder.py)
+
+Simple script to find perfect trinode combination. Quick and dirty script with no input validation, so make surey ou got no typos!
 
 ---
 
