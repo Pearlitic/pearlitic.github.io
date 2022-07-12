@@ -34,6 +34,32 @@ Simple script to find perfect trinode combination. If no perfect combo found, th
 
 Quick and dirty script with no input validation, so make sure you only input perfect trios with no typo!
 
+Output looks something like this:
+```
+Valid Trinode Sets :
+Set 1 :
+['A', 'E', 'F']
+['B', 'C', 'D']
+['F', 'E', 'A']
+['C', 'B', 'D']
+```
+or 
+```
+Valid Trinode Sets :
+ERROR: No Perfect Trinode Sets, Displaying Next Best Option
+Listing Option(s) with 1 Missing Skill(s) :
+Imperfect Set 1 :
+['A', 'B', 'D']
+['C', 'E', 'D']
+['B', 'C', 'D']
+['E', 'D', 'A']
+Imperfect Set 2 :
+['A', 'B', 'D']
+['C', 'E', 'D']
+['C', 'B', 'D']
+['E', 'D', 'A']
+```
+
 ---
 
 My favorite way to edit these are using the [Spyder IDE](https://www.spyder-ide.org/). Feel free to also use your own preferred IDE, text editor, or even an online IDE. If you don't know how to "install" Python onto your computer, probably download something like Spyder where it packages its own executable along.
