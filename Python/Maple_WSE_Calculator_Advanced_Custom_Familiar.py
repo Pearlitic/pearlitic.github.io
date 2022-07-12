@@ -13,7 +13,13 @@ import itertools
 BEGIN USER INPUT ===== BEGIN USER INPUT ===== BEGIN USER INPUT ===== BEGIN USER INPUT ===== 
 '''
 # Attack %: Enter amount of attack % from passives, soul, etc.
-atk = 3
+atk = (0 ##### No Touchy, starting dummy
+       #################################
+       + 3 # Mag soul
+       + 4 # Will of the Hero
+       + 0 # Class specific
+       #################################
+       + 0)## No touchy, ending dummy
 
 # Damage %: Enter amount of Damage and Boss Damage % from gears (excluding WSE potentials, but include flame/gear stat), passives, links, skill passive/active, hyper, node bonus, etc.
 dmg = (0 ##### No Touchy, starting dummy
