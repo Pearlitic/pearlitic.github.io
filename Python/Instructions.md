@@ -245,7 +245,7 @@ allow_inferior = False
 
 When you open the file to edit, you will immediately see a list (array) at the beginning fo the file. This is your nodes list. Just follow the format and list out all your trinodes.
 
-Here is an example for lets say, my Buccaneer. Notice I used short-hand or initials for the skill name to keep the list short and clean.
+Here is an example for lets say, my Buccaneer. Notice I used short-hand or initials for the skill name to keep the list short and clean. Remember to surround text with `'quotes'` since they are text (strings).
 ```py
 node_list = [
     ###############################
