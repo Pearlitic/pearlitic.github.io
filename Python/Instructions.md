@@ -7,7 +7,7 @@
 
 ### Introduction
 
-These are basic instructions on how to use the scripts. If you have some basic programming knowledge and know how to setup Python, this should be a piece of cake. If not, I'll try my best to explain. Basically the hardest part is figuring out how to get Python working. After that, it's just follow the pattern.
+These are basic instructions on how to use the scripts. If you have some basic programming knowledge and know how to setup Python, this should be a piece of cake. If not, I'll try my best to explain. Basically the hardest part is figuring out how to setup a Python enviroment. After that, it's just follow the pattern.
 
 ---
 
