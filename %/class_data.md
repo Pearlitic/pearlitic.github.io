@@ -1,2515 +1,810 @@
-<div id="inner_tbl">
-  <table>
-    <tbody>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Adele</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">14</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">20</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">10</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">10</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">5</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">5</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">5</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">20</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">0</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Angelic Buster</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">4</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">10</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">10</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">10</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">50</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">0</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Aran</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">4</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">49.5</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">52</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">0</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Ark</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">4</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">20</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">20</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">50</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Battle Mage</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">39</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">20</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">0</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">30</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Bishop</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">4</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">60</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">10</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Blaster</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">19</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">44</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">10</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">0</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Blaze Wizard</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">14</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">20</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">0</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">0</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Beast Tamer</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">15</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">20</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">20</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Bowmaster</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">29</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">30</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">10</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Buccaneer</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">4</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">25</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">20</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">20</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Cadena</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">4</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">30</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">15</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">7</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">7</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Cannoneer</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">4</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">20</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">25</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">60</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">0</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Corsair</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">24</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">25</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">30</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">20</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Dark Knight</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">4</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">30</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">20</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">20</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">10</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Dawn Warrior</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">14</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">20</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">20</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">0</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Demon Avenger</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">4</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">30</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">30</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">40</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">0</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Demon Slayer</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">4</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">43</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">52</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">52</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Dual Blade</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">4</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">80</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">20</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">0</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Evan</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">39</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">40</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">0</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Fire Poison</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">4</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">10</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">55</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">0</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Hayato</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">4</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">-50</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">2</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Hero</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">4</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">45</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">0</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Hoyoung</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">14</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">25</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">0</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">0</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Ice Lightning</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">4</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">120</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">0</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Illium</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">14</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">4</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">4</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">4</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">20</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">20</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">20</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Jett</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">29</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">20</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">20</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Kaiser</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">34</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">40</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">20</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">10</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">26</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Kanna</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">4</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">0</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">0</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Kinesis</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">14</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">0</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">30</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Luminous</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">4</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">40</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">20</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">20</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">0</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Marksmen</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">4</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">50</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">20</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">10</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Mechanic</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">4</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">10</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">2</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">3</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">0</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Mercedes</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">34</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">50</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">5</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">60</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">0</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Mihile</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">4</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">50</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">0</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Night Lord</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">4</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">30</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">20</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">20</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">20</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Night Walker</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">4</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">7</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">7</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">7</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">7</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">7</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">20</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">20</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Paladin</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">4</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">44</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">20</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">20</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">0</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Pathfinder</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">24</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">20</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">0</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Phantom</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">4</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">27</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">4</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">0</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Shade</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">4</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">40</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">20</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Shadower</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">4</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">20</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">20</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Thunder Breaker</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">4</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">5</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">5</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">5</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">5</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">5</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">9</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">9</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">9</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">9</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">9</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">6</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">55</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">0</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Wild Hunter</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">39</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">10</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">20</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">20</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">30</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Wind Archer</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">14</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">20</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">15</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">10</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">35</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">30</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Xenon</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">4</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">30</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">10</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">20</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">0</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="td_head">Zero</div>
-          <table style="width:100%">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="td_head">attPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">4</div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="td_head">iedPercent</div>
-                  <table style="width:100%">
-                    <tbody>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">20</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_odd">
-                          <div class="td_row_odd">50</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="td_row_even">
-                          <div class="td_row_even">15</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">dmgPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">-14</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="td_head">bossPercent</div>
-                </td>
-                <td>
-                  <div class="td_row_even">-15</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+<table>
+<thead>
+  <tr>
+    <th>Class</th>
+    <th>Attribute</th>
+    <th>Value</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td rowspan="4">Adele</td>
+    <td>Attack%</td>
+    <td>14</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[20, 20, 10, 10, 5, 5, 5]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Angelic Buster</td>
+    <td>Attack%</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[20, 10, 10, 10, 20]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Aran</td>
+    <td>Attack%</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[49.5]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>52</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Ark</td>
+    <td>Attack%</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[20, 20, 20]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Battle Mage</td>
+    <td>Attack%</td>
+    <td>39</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[20, 20]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>30</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Bishop</td>
+    <td>Attack%</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[20]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>60</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Blaster</td>
+    <td>Attack%</td>
+    <td>19</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[44]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Blaze Wizard</td>
+    <td>Attack%</td>
+    <td>14</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[20, 20]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Beast Tamer</td>
+    <td>Attack%</td>
+    <td>15</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[20]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Bowmaster</td>
+    <td>Attack%</td>
+    <td>29</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[20]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>30</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Buccaneer</td>
+    <td>Attack%</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[20, 25]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Cadena</td>
+    <td>Attack%</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[30, 15]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Cannoneer</td>
+    <td>Attack%</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[20, 20, 25]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>60</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Corsair</td>
+    <td>Attack%</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[20, 25]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>30</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Dark Knight</td>
+    <td>Attack%</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[30, 20, 20]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Dawn Warrior</td>
+    <td>Attack%</td>
+    <td>14</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[20, 20]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Demon Avenger</td>
+    <td>Attack%</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[30, 30]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>40</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Demon Slayer</td>
+    <td>Attack%</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[43]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>52</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>52</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Dual Blade</td>
+    <td>Attack%</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[80]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Evan</td>
+    <td>Attack%</td>
+    <td>39</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[20]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>40</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Fire Poison</td>
+    <td>Attack%</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[10]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>55</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Hayato</td>
+    <td>Attack%</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[20]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>-50</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Hero</td>
+    <td>Attack%</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[20]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>45</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Hoyoung</td>
+    <td>Attack%</td>
+    <td>14</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[20, 25]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Ice Lightning</td>
+    <td>Attack%</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[20]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>120</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Illium</td>
+    <td>Attack%</td>
+    <td>14</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[4, 4, 4, 20]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Jett</td>
+    <td>Attack%</td>
+    <td>29</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[20]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Kaiser</td>
+    <td>Attack%</td>
+    <td>34</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[40, 20]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Kanna</td>
+    <td>Attack%</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[20]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Kinesis</td>
+    <td>Attack%</td>
+    <td>14</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[20]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>30</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Luminous</td>
+    <td>Attack%</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[40, 20]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Marksmen</td>
+    <td>Attack%</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[20, 50, 20]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Mechanic</td>
+    <td>Attack%</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[20, 10, 2]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Mercedes</td>
+    <td>Attack%</td>
+    <td>34</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[50, 5]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>60</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Mihile</td>
+    <td>Attack%</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[20]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Night Lord</td>
+    <td>Attack%</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[30, 20]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Night Walker</td>
+    <td>Attack%</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[20, 7, 7, 7, 7, 7]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Paladin</td>
+    <td>Attack%</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[44, 20]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Pathfinder</td>
+    <td>Attack%</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[20]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Phantom</td>
+    <td>Attack%</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[27]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Shade</td>
+    <td>Attack%</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[20]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>40</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Shadower</td>
+    <td>Attack%</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[20]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Thunder Breaker</td>
+    <td>Attack%</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[5, 5, 5, 5, 5, 9, 9, 9, 9, 9, 20, 6]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>55</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Wild Hunter</td>
+    <td>Attack%</td>
+    <td>39</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[10, 20]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>30</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Wind Archer</td>
+    <td>Attack%</td>
+    <td>14</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[20, 20, 15, 10]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>35</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>30</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Xenon</td>
+    <td>Attack%</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[30, 10, 20]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Zero</td>
+    <td>Attack%</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>IED%</td>
+    <td>[20, 50, 15]</td>
+  </tr>
+  <tr>
+    <td>DMG%</td>
+    <td>-14</td>
+  </tr>
+  <tr>
+    <td>BOSS%</td>
+    <td>-15</td>
+  </tr>
+</tbody>
+</table>
