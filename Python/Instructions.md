@@ -37,6 +37,7 @@ Comments:
 ```py
 # this is a comment
 variable_1 = 123 # this is also a comment, but written behind functional code
+# variable_2 = 3 # Code that is commented-out are ignored (i.e. not read by the interpreter)
 ```
 
 Assigning numeric types to variables:
