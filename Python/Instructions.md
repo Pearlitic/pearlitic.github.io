@@ -60,8 +60,9 @@ Set 1 :
 ```
 In an unfortunate situation where there does not exist a tri-node combo, something like this will appear:
 
-_Notice there's a duplicate 'CB' skill.
-In this situation I recommend keeping all your trinodes until you get more, then run this script again with your updated list._
+_Notice there's a duplicate 'CB' skill._
+
+_In this situation I recommend keeping all your trinodes until you get more, then run this script again with your updated list._
 ```
 Valid Trinode Sets :
 ERROR: No Perfect Trinode Sets, Displaying Next Best Option
