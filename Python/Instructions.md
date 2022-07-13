@@ -11,6 +11,75 @@ These are basic instructions on how to use the scripts. If you have some basic p
 
 ---
 
+#### Python Data Types
+
+<details>
+  <summary>Click to expand!</summary>
+
+Just a short tutorial on how to properly format datatypes used in the scripts. Don't worry too much about the purpose/concept, just understand how to format them so your script doesn't spit out errors.
+
+Comments:
+```py
+# this is a comment
+variable_1 = 123 # this is also a comment, but written behind functional code
+```
+
+Assigning numeric types to variables:
+```py
+# assigns interger value of 10 to the variable "variable_1"
+variable_1 = 10
+
+# assigns the sum of 1, 2, and 3 to "variable 2"
+variable_2 = 1 + 2 + 3
+
+# same as above, but split to multiple lines
+variable_2 = (1
+              + 2
+              + 3)
+```
+
+Assigning text (string) types to variables:
+```py
+text_var_1 = "text surrounded by double quotes denotes a string"
+text_bar_2 = 'single quotes also work'
+```
+
+Assigning list (array) / tuple to variables:
+```py
+# assign a tuple of 3 elements -  1, 2, and 3 to "tuple_1" (tuples are similar to lists, but tuples are immutable)
+tuple_1 = (1,2,3)
+
+# assign a list of 3 elements -  1, 2, and 3 to "list_1"
+list_1 = [1,2,3]
+# same as above but across multiple lines
+list_1 = [1,
+          2,
+          3]
+
+# nesting lists within lists
+nested_list = [
+                ['these', 'are', '2', 'lists'],
+                ['nested', 'within', 'a', 'list'] # remember last element doesn't need an ending comma
+              ]
+```
+
+Assigning keys and values to a dictionary:
+```py
+# note: there CANNOT be duplicate keys within a dictionary!
+dictionary = {'key': 'value', # you can store keys, each with a value within a dictionary
+              'key_2': ('values', 'in', 'a', 'tuple'), # for example, a key named 'key_2' with a tuple as a value
+              3: [1,2,3] # you can also store lists, or even use an integer as a key
+              4: {'nested_dict_key': 123}, # or even store another dictionary as a value!
+              5: 'final' # no ending comma on last line
+              }
+```
+
+These should be all the editable datatypes intended for users to edit.
+
+</details>
+
+---
+
 ### WSE Optimizer
 
 There are 2 versions:
