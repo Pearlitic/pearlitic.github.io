@@ -97,8 +97,13 @@ These should be all the editable datatypes intended for users to edit.
 
 ### WSE Optimizer
 
+<details>
+  <summary>Recommended Base Stats (Click to expand)</summary>
+
 Character base [stats](https://github.com/Pearlitic/pearlitic.github.io/blob/main/%25/class_data.md) used by SuckHard's calculator. The 4% extra attack you see on classes is Will of the Hero skill.
 
+</details>
+  
 There are 2 versions:
 
 #### [Standard verison](https://github.com/Pearlitic/pearlitic.github.io/blob/main/Python/Maple_WSE_Calculator.py)
