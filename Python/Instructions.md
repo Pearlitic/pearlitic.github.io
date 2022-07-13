@@ -49,7 +49,7 @@ Next, edit the value for how many tri-node sets your class need. Each tri-node e
 ```py
 trinode_set_count = 2
 ```
-When I run the script, the output looks something like this:
+Once the script is ran, the output looks something like this:
 ```
 Valid Trinode Sets :
 Set 1 :
@@ -59,18 +59,15 @@ Set 1 :
 ['HB', 'NS', 'Octo']
 ```
 In an unfortunate situation where there does not exist a tri-node combo, something like this will appear:
+_Notice there's a duplicate 'CB' skill.
+In this situation I recommend keeping all your trinodes until you get more, then run this script again with your updated list._
 ```
 Valid Trinode Sets :
 ERROR: No Perfect Trinode Sets, Displaying Next Best Option
 Listing Option(s) with 1 Missing Skill(s) :
 Imperfect Set 1 :
-['A', 'B', 'D']
-['C', 'E', 'D']
-['B', 'C', 'D']
-['E', 'D', 'A']
-Imperfect Set 2 :
-['A', 'B', 'D']
-['C', 'E', 'D']
-['C', 'B', 'D']
-['E', 'D', 'A']
+['SB', 'Octo', 'CB']
+['SB', 'CB', 'SA']
+['CB', 'HB', 'SA']
+['Octo', 'HB', 'CB']
 ```
