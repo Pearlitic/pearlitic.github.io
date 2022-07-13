@@ -59,6 +59,7 @@ Set 1 :
 ['HB', 'NS', 'Octo']
 ```
 In an unfortunate situation where there does not exist a tri-node combo, something like this will appear:
+
 _Notice there's a duplicate 'CB' skill.
 In this situation I recommend keeping all your trinodes until you get more, then run this script again with your updated list._
 ```
@@ -71,3 +72,6 @@ Imperfect Set 1 :
 ['CB', 'HB', 'SA']
 ['Octo', 'HB', 'CB']
 ```
+
+---
+
