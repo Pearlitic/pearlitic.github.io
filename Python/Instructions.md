@@ -11,7 +11,22 @@ These are basic instructions on how to use the scripts. If you have some basic p
 
 ---
 
-#### Python Data Types
+### Python Stuff
+
+##### Setting Up Python Enviroment
+
+<details>
+  <summary>Click to expand!</summary>
+
+The easiest way to run the scripts is to use an online IDE like [Online-Python](https://www.online-python.com/). You just need to save the code and edit it locally on your computer, then copy it over to the online IDE each time you wanna run the file.
+
+[Spyder](https://www.spyder-ide.org/) is my favorite IDE and my preferred way to run the scripts locally. If you have no need to other packages (if you're reading this, you don't), you can just directly install it (if you do, install Spyder via Anaconda). It comes with its own Python enviroment so you don't need to do any complicated setup. [GitHub release page](https://github.com/spyder-ide/spyder/releases).
+
+The last way is to manually install [Python](https://www.python.org/downloads/), and run the script via command line. If you plan to do this, you shouldn't be reading this as you already know how to do it.
+
+</details>
+
+##### Python Data Types
 
 <details>
   <summary>Click to expand!</summary>
@@ -86,7 +101,15 @@ There are 2 versions:
 
 #### [Standard verison](https://github.com/Pearlitic/pearlitic.github.io/blob/main/Python/Maple_WSE_Calculator.py)
 
-The 'casual' version that assumes 30% familiars and combines the resultant familiar count into WSE.
+Open the file in your preferred text editor or IDE.
+
+I will use my Kanna as an example.
+
+Enter your character's base attack. This should be 0 for most classes.
+```py
+# Attack %: Enter amount of attack % from passives, soul, etc.
+atk = 3 + 4 # mag soul 3% + Will of the Hero 4%
+```
 
 #### [Advanced Version](https://github.com/Pearlitic/pearlitic.github.io/blob/main/Python/Maple_WSE_Calculator_Advanced_Custom_Familiar.py)
 
