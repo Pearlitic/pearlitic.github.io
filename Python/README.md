@@ -8,6 +8,10 @@ Current Projects:
 
 ---
 
+__[How to use the scripts??](https://github.com/Pearlitic/pearlitic.github.io/blob/main/Python/Instructions.md)__
+
+---
+
 ### WSE Optimizer
 
 There are 2 versions:
