@@ -13,7 +13,7 @@ node_list = [
     ]
 
 # How many trinodes your class needs? (3 skills = 1 trinode)
-trinode_count = 2
+trinode_set_count = 2
 
 ### === NO TOUCHY BELOW === ###
 
@@ -24,7 +24,7 @@ from collections import Counter
 def generate_node_combo(n_list, trinode_count):
     return list(itertools.combinations(range(0,len(n_list)), trinode_count*2))
 
-node_combo = generate_node_combo(node_list,trinode_count)
+node_combo = generate_node_combo(node_list,trinode_set_count)
 
 # list/dict to store perfect / non-perfect trinode combos
 valid_combo = []
