@@ -41,10 +41,10 @@ variable_1 = 123 # this is also a comment, but written behind functional code
 
 Assigning numeric types to variables:
 ```py
-# assigns interger value of 10 to the variable "variable_1"
-variable_1 = 10
+# assigns interger value of 6 to the variable "variable_1"
+variable_1 = 6
 
-# assigns the sum of 1, 2, and 3 to "variable 2"
+# assigns the sum of 1, 2, and 3 (which is 6) to "variable 2"
 variable_2 = 1 + 2 + 3
 
 # same as above, but split to multiple lines
