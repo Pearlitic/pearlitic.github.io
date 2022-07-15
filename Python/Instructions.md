@@ -115,7 +115,6 @@ I will use my Kanna as an example.
 
 Enter your character's base attack. This should be 0 for most classes.
 ```py
-# Attack %: Enter amount of attack % from passives, soul, etc.
 atk = 3 + 4 # mag soul 3% + Will of the Hero 4%
 ```
 
@@ -161,33 +160,26 @@ ied = [0,########################### No touchy, begin of array dummy
 
 Enter how many familairs you want to optimize for.
 ```py
-# number of familiars, assumes epic 30% boss or ied
 fam = 0
 ```
 
 Enter the number of prime lines you want to optmize on your WSE. Keep at 3 unless you have a reason not to.
 ```py
-# number of prime lines (If you have Unique familiars, you can increase prime lines to account for them)
-    # prime lines are calculated as 12%/40%/40% for atk/dmg/ied
-    # non-prime are calculated as 9%/30%/30% for atk/dmg/ied
 prime = 3
 ```
 
 Enter the target boss's PDR. That's 300 for most end-game bosses. Saren is the first end-game boss that exceeds this (380).
 ```py
-# target boss pdr % (most mid-game are 300%). https://github.com/Pearlitic/pearlitic.github.io/tree/main/%25
 pdr = 300
 ```
 
 Enter how many top results you want to display. I recommend keeping it at 10.
 ```py
-# display top n results
 display_top = 10
 ```
 
 Would you like to see detailed final optimized % info? If yes, set value to `True`.
 ```py
-#Display Detailed (final A/D/I%) Info?
 display_detailed = False
 ```
 
