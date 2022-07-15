@@ -121,31 +121,40 @@ atk = 3 + 4 # mag soul 3% + Will of the Hero 4%
 
 Enter dmg% + boss%:
 ```py
+dmg = (0 ##### No Touchy, starting dummy
+       #################################
+       + 86     # dmg%
+       + 165    # boss%
+       + 18     # Ark Lv3 link
+       + 30     # Arcane Fan
+       + 45     # bellflower
+       #################################
+       + 0)## No touchy, ending dummy
 ```
 
 Enter IED% list:
 ```py
 ied = [0,########################### No touchy, begin of array dummy
        #############################
-       40,  # Legion Max Grid
+       20,  # Legion Grid
        30,  # Hyper Stat Lv10
        30,  # Sup Gollux 4-set
-       # 20,  # V-Matrix Bossing Skill Lv40 Passive
-       # 20,  # Hyper Bossing Skill Passive
-       15,  # Luminous Link Lv2
+       20,  # Luminous Link Lv3
        10,  # Absolab 4-set
-       # 10,  # MPE 77 Medal
-       10,  # Ambition Lv100 Trait
-       10,  # Clean Absolab Wep
+       10,  # Ambition Lv100 Traiteee
+       20,  # Clean Arcane Wep
        10,  # CRA hat
        5,   # CRA top
        5,   # CRA bot
-       5,   # Empress Medal or CRA Title
-       9,   # Explorer Mage Link Skill Empirical Knowledge Max Stack Lv3
-       # 3,   # Soul Weapon Bonus
        3,   # Familiar Badge
-       3,   # Blaster Legion Lv140 Card
-       3,   # BT Legion Lv140 Card
+       5,   # Blaster Legion Lv140 Card
+       5,   # BT Legion Lv140 Card
+       5,   # Empress Medal
+       5,   # CRA Title
+       #############################
+       9,   # Explorer Mage Link Skill Empirical Knowledge Max Stack Lv3
+       # 20,  # V-Matrix Bossing Skill Lv40 Passive
+       # 20,  # Hyper Bossing Skill Passive
        #############################
        0]########################### No touchy, end of array dummy
 ```
