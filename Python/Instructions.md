@@ -223,7 +223,7 @@ fam_list = {
        # NO DUPLICATE NAMES!
      ### Format:
      # "Familiar_name": (atk%,boss%,ied%),
-       "serpant_30b": (0,30,0),
+       "snek_30b": (0,30,0),
        "oda_30b": (0,30,0),
        "boogie_35i": (0,0,35),
        "sage_cat_30i": (0,0,30)
