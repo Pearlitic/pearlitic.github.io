@@ -99,9 +99,9 @@ These should be all the editable datatypes intended for users to edit.
 ### WSE Optimizer
 
 <details>
-  <summary>Recommended Base Stats (Click to expand)</summary>
+  <summary>Recommended Hidden Stats (Click to expand)</summary>
 
-Character base [stats](https://github.com/Pearlitic/pearlitic.github.io/blob/main/%25/class_data.md) used by SuckHard's calculator. The 4% extra attack you see on classes is Will of the Hero skill.
+**_Likely Outdated_**. These are "hidden" stats that are not accounted for / not found in the stats window. See [stats](https://github.com/Pearlitic/pearlitic.github.io/blob/main/%25/class_data.md) used by SuckHard's calculator. The 4% extra attack you see on classes is Will of the Hero skill. The 20% IED is from Lv40 V skills. Some classes have a lot of bonus IED%/DMG%, these are not displayed in the stats window but are built into skills, such as the infamous Marksman's snipe.
 
 </details>
   
