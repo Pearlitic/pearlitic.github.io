@@ -160,7 +160,7 @@ ied = [0,########################### No touchy, begin of array dummy
 
 Enter how many familairs you want to optimize for.
 ```py
-fam = 0
+fam = 3
 ```
 
 Enter the number of prime lines you want to optmize on your WSE. Keep at 3 unless you have a reason not to.
