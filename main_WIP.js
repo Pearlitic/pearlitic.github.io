@@ -93,30 +93,77 @@ function calc() {
 	inmaxied = document.getElementById("maxied").value;
 	//console.log(inmaxatk,inmaxdmg,inmaxied);
 
+in_fam1_a = document.getElementById("fam1_a").value;
+in_fam1_d = document.getElementById("fam1_d").value;
+in_fam1_i = document.getElementById("fam1_i").value;
+in_fam2_a = document.getElementById("fam2_a").value;
+in_fam2_d = document.getElementById("fam2_d").value;
+in_fam2_i = document.getElementById("fam2_i").value;
+in_fam3_a = document.getElementById("fam3_a").value;
+in_fam3_d = document.getElementById("fam3_d").value;
+in_fam3_i = document.getElementById("fam3_i").value;
+in_fam4_a = document.getElementById("fam4_a").value;
+in_fam4_d = document.getElementById("fam4_d").value;
+in_fam4_i = document.getElementById("fam4_i").value;
+in_fam5_a = document.getElementById("fam5_a").value;
+in_fam5_d = document.getElementById("fam5_d").value;
+in_fam5_i = document.getElementById("fam5_i").value;
+in_fam6_a = document.getElementById("fam6_a").value;
+in_fam6_d = document.getElementById("fam6_d").value;
+in_fam6_i = document.getElementById("fam6_i").value;
+
+fam_list = [
+[in_fam1_a,in_fam1_d,in_fam1_i],
+[in_fam2_a,in_fam2_d,in_fam2_i],
+[in_fam3_a,in_fam3_d,in_fam3_i],
+[in_fam4_a,in_fam4_d,in_fam4_i],
+[in_fam5_a,in_fam5_d,in_fam5_i],
+[in_fam6_a,in_fam6_d,in_fam6_i]
+]
+var fam_valid = 1;
+for (const x of fam_list){
+    for (const y of x){
+    if (y == ""){
+    document.getElementById("editfambut").style.color='#FF0000';
+    	fam_valid = 0;
+    }
+    }
+}
+if (fam_valid == 1) { document.getElementById("editfambut").style.color='#000000';
+}
+else{
+	return;
+}
 	//convert ied string to array
 	inIEDList = inIED.split `,`.map((x) => +x);
 	//check input, set box red if not compliant
-	if (inIEDList.some(isNaN) || inIEDList.some((x) => x < 0)) {
+	if (inIEDList.some(isNaN) || inIEDList.some((x) => x < 0) || document.getElementById("iedEl").value == "") {
+    if (document.getElementById("iedEl").value == "") document.getElementById("iedEl").value = "-1";
 		iedEl.style.color = "red";
 		opti.style.color = "red";
 		return;
-	} else if (inDMG < 0) {
+	} else if (inDMG < 0 || inDMG == "") {
+  	if (inDMG == "") damageEl.value = "-1";
 		damageEl.style.color = "red";
 		opti.style.color = "red";
 		return;
-	} else if (inATK < 0) {
+	} else if (inATK < 0 || inATK == "") {
+  if (inATK == "") attackEl.value = "-1";
 		attackEl.style.color = "red";
 		opti.style.color = "red";
 		return;
-	} else if (inFam < 0 || inFam > 3) {
+	} else if (inFam < 0 || inFam > 3 || inFam == "") {
+  if (inFam == "") famEl.value = "-1";
 		famEl.style.color = "red";
 		opti.style.color = "red";
 		return;
-	} else if (inPDR < 0) {
+	} else if (inPDR < 0 || inPDR == "") {
+  if (inPDR == "") pdrEl.value = "-1";
 		pdrEl.style.color = "red";
 		opti.style.color = "red";
 		return;
-	} else if (inPrime < 0) {
+	} else if (inPrime < 0 || inPrime == "") {
+  if (inPrime == "") primeEl.value = "-1";
 		primeEl.style.color = "red";
 		opti.style.color = "red";
 		return;
@@ -277,7 +324,50 @@ function calcFD(a, d, i, pdr) {
 	return (1 + a) * (1 + d) * DM;
 }
 
+///////////////////
+function setFamDefault() {
+	//console.log('fail');
+	fam1_a.value = 0;
+  fam1_d.value = 30;
+  fam1_i.value = 0;
+  fam2_a.value = 0;
+  fam2_d.value = 30;
+  fam2_i.value = 0;
+  fam3_a.value = 0;
+  fam3_d.value = 30;
+  fam3_i.value = 0;
+  fam4_a.value = 0;
+  fam4_d.value = 0;
+  fam4_i.value = 30;
+  fam5_a.value = 0;
+  fam5_d.value = 0;
+  fam5_i.value = 30;
+  fam6_a.value = 0;
+  fam6_d.value = 0;
+  fam6_i.value = 30;
+}
 
+function setFamZero() {
+	//console.log('fail');
+	fam1_a.value = 0;
+  fam1_d.value = 0;
+  fam1_i.value = 0;
+  fam2_a.value = 0;
+  fam2_d.value = 0;
+  fam2_i.value = 0;
+  fam3_a.value = 0;
+  fam3_d.value = 0;
+  fam3_i.value = 0;
+  fam4_a.value = 0;
+  fam4_d.value = 0;
+  fam4_i.value = 0;
+  fam5_a.value = 0;
+  fam5_d.value = 0;
+  fam5_i.value = 0;
+  fam6_a.value = 0;
+  fam6_d.value = 0;
+  fam6_i.value = 0;
+}
 
 /////////////////////////////////////////////////////////////////////////////
 function showSpoiler(obj) {
