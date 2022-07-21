@@ -6,7 +6,7 @@
     <meta name="keywords" content="Maplestory, WSE, calculator, optimizer, wse calculator, wse optimizer, attack, damage, ied, familiar, pdr, boss, weapon, secondary, emblem, game" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="google-site-verification" content="5pKheskkgbk7yXiillRrJDq1EVRTQdaNYoahSJt9GXM" />
-    <script src="main_wip.js"></script>
+    <script src="main.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <link rel="stylesheet" href="main.css">
   </head>
@@ -35,40 +35,44 @@
             
 
 <div class="spoiler">
-          <input type="button" onclick="showSpoilerfam(this);" value="Edit Familiars" style="width: 280px;" />
+          <input type="button" id="editfambut" onclick="showSpoilerfam(this);" value="Edit Familiars" style="width: 280px;" />
           <b></b>
           <div class="innerfam" style="display: none;">
-            
+          <span>Enter Familiar A%/D%/I%</span>
+          <br />
+          <input type="button" onclick="setFamZero()" value="Set all 0" style="width: 140px;" />
+          <input type="button" onclick="setFamDefault()" value="Set 3x 30% D/I ea." style="width: 140px;" />
+          <br />
             <span>Familiar #1: &nbsp;</span>
-            <input style="width: 35px;" type="number" id="fam1_a" value="0" min="0" onkeyup="run()" />
-            <input style="width: 35px;" type="number" id="fam1_d" value="0" min="0" onkeyup="run()" />
-            <input style="width: 35px;" type="number" id="fam1_i" value="0" min="0" onkeyup="run()" />
-			<br/>
+            <input style="width: 35px;" type="number" id="fam1_a" min="0" placeholder="" onkeyup="run()" />
+            <input style="width: 35px;" type="number" id="fam1_d" placeholder="" min="0" onkeyup="run()" />
+            <input style="width: 35px;" type="number" id="fam1_i" placeholder="" min="0" onkeyup="run()" />
+			<br />
 <span>Familiar #2: &nbsp;</span>
-            <input style="width: 35px;" type="number" id="fam2_a" value="0" min="0" onkeyup="run()" />
-            <input style="width: 35px;" type="number" id="fam2_d" value="0" min="0" onkeyup="run()" />
-            <input style="width: 35px;" type="number" id="fam2_i" value="0" min="0" onkeyup="run()" />
-			<br/>
+            <input style="width: 35px;" type="number" id="fam2_a" value="" min="0" onkeyup="run()" />
+            <input style="width: 35px;" type="number" id="fam2_d" value="" min="0" onkeyup="run()" />
+            <input style="width: 35px;" type="number" id="fam2_i" value="" min="0" onkeyup="run()" />
+			<br />
 <span>Familiar #3: &nbsp;</span>
-            <input style="width: 35px;" type="number" id="fam3_a" value="0" min="0" onkeyup="run()" />
-            <input style="width: 35px;" type="number" id="fam3_d" value="0" min="0" onkeyup="run()" />
-            <input style="width: 35px;" type="number" id="fam3_i" value="0" min="0" onkeyup="run()" />
-			<br/>
+            <input style="width: 35px;" type="number" id="fam3_a" value="" min="0" onkeyup="run()" />
+            <input style="width: 35px;" type="number" id="fam3_d" value="" min="0" onkeyup="run()" />
+            <input style="width: 35px;" type="number" id="fam3_i" value="" min="0" onkeyup="run()" />
+			<br />
 <span>Familiar #4: &nbsp;</span>
-            <input style="width: 35px;" type="number" id="fam4_a" value="0" min="0" onkeyup="run()" />
-            <input style="width: 35px;" type="number" id="fam4_d" value="0" min="0" onkeyup="run()" />
-            <input style="width: 35px;" type="number" id="fam4_i" value="0" min="0" onkeyup="run()" />
-			<br/>
+            <input style="width: 35px;" type="number" id="fam4_a" value="" min="0" onkeyup="run()" />
+            <input style="width: 35px;" type="number" id="fam4_d" value="" min="0" onkeyup="run()" />
+            <input style="width: 35px;" type="number" id="fam4_i" value="" min="0" onkeyup="run()" />
+			<br />
 <span>Familiar #5: &nbsp;</span>
-            <input style="width: 35px;" type="number" id="fam5_a" value="0" min="0" onkeyup="run()" />
-            <input style="width: 35px;" type="number" id="fam5_d" value="0" min="0" onkeyup="run()" />
-            <input style="width: 35px;" type="number" id="fam5_i" value="0" min="0" onkeyup="run()" />
-			<br/>
+            <input style="width: 35px;" type="number" id="fam5_a" value="" min="0" onkeyup="run()" />
+            <input style="width: 35px;" type="number" id="fam5_d" value="" min="0" onkeyup="run()" />
+            <input style="width: 35px;" type="number" id="fam5_i" value="" min="0" onkeyup="run()" />
+			<br />
 <span>Familiar #6: &nbsp;</span>
-            <input style="width: 35px;" type="number" id="fam6_a" value="0" min="0" onkeyup="run()" />
-            <input style="width: 35px;" type="number" id="fam6_d" value="0" min="0" onkeyup="run()" />
-            <input style="width: 35px;" type="number" id="fam6_i" value="0" min="0" onkeyup="run()" />
-			<br/>
+            <input style="width: 35px;" type="number" id="fam6_a" value="" min="0" onkeyup="run()" />
+            <input style="width: 35px;" type="number" id="fam6_d" value="" min="0" onkeyup="run()" />
+            <input style="width: 35px;" type="number" id="fam6_i" value="" min="0" onkeyup="run()" />
+			<br />
           </div>
         </div>
 
