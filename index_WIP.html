@@ -1,0 +1,186 @@
+<html>
+  <head>
+    <title>WSE Optimizer by Pearlite</title>
+    <meta name="author" content="Pearlite">
+    <meta name="description" content="A Simple Maplestory WSE Optimizer with Familiar Support." />
+    <meta name="keywords" content="Maplestory, WSE, calculator, optimizer, wse calculator, wse optimizer, attack, damage, ied, familiar, pdr, boss, weapon, secondary, emblem, game" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="5pKheskkgbk7yXiillRrJDq1EVRTQdaNYoahSJt9GXM" />
+    <script src="main.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div class="box-ex container-fluid">
+      <div class="box2 col1">
+        <center>
+          <p style="font-size: 28px;">
+            <b>WSE Optimizer </b>
+            <span class="smaller"></span>
+          </p>
+          <p style="font-size: 16px;"> by Pearlite </p>
+          <p style="font-size: 16px;"> ────────────────────────────── </p>
+        </center>
+        <span>Attack (%): </span>
+        <input style="width: 155px;" type="number" id="attackEl" value="3" min="0" placeholder="e.g. 3" onkeyup="run()" width="20" />
+        <br />
+        <span>Damage (%): </span>
+        <input style="width: 155px;" type="number" id="damageEl" value="300" min="0" placeholder="e.g. 300" onkeyup="run()" />
+        <br />
+        <span>IED &nbsp;&nbsp;&nbsp;(%): </span>
+        <input style="width: 155px;" type="string" id="iedEl" value="30,30,10" placeholder="e.g. 30,5,10" onkeyup="run()" />
+        <br />
+        <span>Familiar #: </span>
+            <input style="width: 155px;" type="number" id="famEl" value="0" min="0" max="3" placeholder="0 to 3" onkeyup="run()" />
+            
+
+<div class="spoiler">
+          <input type="button" onclick="showSpoilerfam(this);" value="Edit Familiars" style="width: 280px;" />
+          <b></b>
+          <div class="innerfam" style="display: none;">
+            
+            <span>Familiar #1: &nbsp;</span>
+            <input style="width: 35px;" type="number" id="fam1_a" value="0" min="0" onkeyup="run()" />
+            <input style="width: 35px;" type="number" id="fam1_d" value="0" min="0" onkeyup="run()" />
+            <input style="width: 35px;" type="number" id="fam1_i" value="0" min="0" onkeyup="run()" />
+			<br/>
+<span>Familiar #2: &nbsp;</span>
+            <input style="width: 35px;" type="number" id="fam2_a" value="0" min="0" onkeyup="run()" />
+            <input style="width: 35px;" type="number" id="fam2_d" value="0" min="0" onkeyup="run()" />
+            <input style="width: 35px;" type="number" id="fam2_i" value="0" min="0" onkeyup="run()" />
+			<br/>
+<span>Familiar #3: &nbsp;</span>
+            <input style="width: 35px;" type="number" id="fam3_a" value="0" min="0" onkeyup="run()" />
+            <input style="width: 35px;" type="number" id="fam3_d" value="0" min="0" onkeyup="run()" />
+            <input style="width: 35px;" type="number" id="fam3_i" value="0" min="0" onkeyup="run()" />
+			<br/>
+<span>Familiar #4: &nbsp;</span>
+            <input style="width: 35px;" type="number" id="fam4_a" value="0" min="0" onkeyup="run()" />
+            <input style="width: 35px;" type="number" id="fam4_d" value="0" min="0" onkeyup="run()" />
+            <input style="width: 35px;" type="number" id="fam4_i" value="0" min="0" onkeyup="run()" />
+			<br/>
+<span>Familiar #5: &nbsp;</span>
+            <input style="width: 35px;" type="number" id="fam5_a" value="0" min="0" onkeyup="run()" />
+            <input style="width: 35px;" type="number" id="fam5_d" value="0" min="0" onkeyup="run()" />
+            <input style="width: 35px;" type="number" id="fam5_i" value="0" min="0" onkeyup="run()" />
+			<br/>
+<span>Familiar #6: &nbsp;</span>
+            <input style="width: 35px;" type="number" id="fam6_a" value="0" min="0" onkeyup="run()" />
+            <input style="width: 35px;" type="number" id="fam6_d" value="0" min="0" onkeyup="run()" />
+            <input style="width: 35px;" type="number" id="fam6_i" value="0" min="0" onkeyup="run()" />
+			<br/>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="spoiler">
+          <input type="button" onclick="showSpoiler(this);" value="Show Advanced Options" style="width: 280px;" />
+          <b></b>
+          <div class="inner" style="display: none;">
+            <span>PDR &nbsp;&nbsp; (%): </span>
+            <input style="width: 155px;" type="number" id="pdrEl" value="300" min="0" placeholder="e.g. 300" onkeyup="run()" />
+            <br />
+            <span>Prime &nbsp;&nbsp; #: </span>
+            <input style="width: 155px;" type="number" id="primeEl" value="3" min="0" placeholder="Default 3" onkeyup="run()" />
+            <br />
+            <span>Display Top #: </span>
+            <input style="width: 125px;" type="number" id="disTop" value="5" min="1" placeholder="Default 5" onkeyup="run()" />
+            <br />
+            <span>Max A/D/I #: &nbsp;</span>
+            <input style="width: 35px;" type="number" id="maxatk" value="9" min="0" placeholder="9" onkeyup="run()" />
+            <input style="width: 35px;" type="number" id="maxdmg" value="6" min="0" placeholder="6" onkeyup="run()" />
+            <input style="width: 35px;" type="number" id="maxied" value="9" min="0" placeholder="9" onkeyup="run()" />
+          </div>
+        </div>
+        <div class="spoiler">
+          <input type="button" onclick="showSpoiler2(this);" value="Show Help!" style="width: 280px;" />
+          <b></b>
+          <div class="innerhelp" style="display: none;">
+            <span>
+              <b>
+                <i>DO NOT ACCOUNT FOR WSE POTENTIALS (I.E. THEY SHOULD BE CLEAN)!</i>
+              </b>
+            </span>
+            <br />
+            <br />
+            <span>
+              <a href="https://github.com/Pearlitic/pearlitic.github.io/blob/main/%25/stat_sources.md">Table</a> of all stat sources.
+              </span>
+            <br />
+            <br />
+            <span>
+              <b>Attack %:</b> Enter amount of attack % from passives, soul, etc. </span>
+            <br />
+            <br />
+            <span>
+              <b>Damage %:</b> Enter amount of Damage and Boss Damage % from gears (excluding WSE potentials, but include flame/gear stat), passives, links, skill passive/active, hyper, node bonus, etc. </span>
+            <br />
+            <br />
+            <span>
+              <b>IED %:</b> Enter amount of IED from gears (excluding WSE potentials, but include gear stat). Note that IED calculation isn't additive, so go look up how to calculate it. If you don't know how, the input field also supports multiple inputs seperated by commas in an example format of "30,30,10". </span>
+            <br />
+            <br />
+            <span>
+              <b>Familiar #:</b> Enter the number of familiars you want to include in the optimization. Only Damage% and IED% familiars are supported, with the assumption of Epic 30%. If you've got 40% Uniques, increase the Prime # to account for 40%. </span>
+            <br />
+            <br />
+            <span>
+              <b>PDR %:</b> Boss PDR. Mid-End game bosses are typically 300% PDR. <a href="https://github.com/Pearlitic/pearlitic.github.io/tree/main/%25">List</a> of boss PDR. </span>
+            <br />
+            <br />
+            <span>
+              <b>Prime #:</b> Amount of prime lines to account for. This is typically 3, but if you are confident in your cubing luck you may increase the prime line # to optimize for. </span>
+            <br />
+            <br />
+            <span>
+              <b>Display Top #:</b> Display top n results. </span>
+            <br />
+            <br />
+            <b>Max A/D/I #:</b> Max Attack/Damage/IED lines possible on your WSE. Should be 9/6/9 for most classes (no DMG % on Emblems). </span>
+            <br />
+            <br />
+            <span>Python version for more flexible editing and offline use: <a href="https://github.com/Pearlitic/pearlitic.github.io/tree/main/Python">link</a>. Requires Python 3.6+. </span>
+            <br />
+            <br />
+            <span></span>
+          </div>
+        </div>
+        <br />
+        <input type="button" id="opti" onclick="calc();" value="Optimize!" style="font-weight: bold; width: 280px; margin-top: 0px;" />
+      </div>
+      <div class="box3 col1">
+        <span>Optimized Result:</span>
+        <div id="loop"></div>
+        <div class="spoiler">
+          <input type="button" onclick="showSpoiler2(this);" value="Show Help!" style="width: 280px;" />
+          <b></b>
+          <div class="innerhelp" style="display: none;">
+            <span>
+              <b>FD:</b> Final Damage % </span>
+            <br />
+            <span>
+              <b>A:</b> # of Attack Lines </span>
+            <br />
+            <span>
+              <b>D:</b> # of Boss Damage Lines </span>
+            <br />
+            <span>
+              <b>I:</b> # of IED Lines </span>
+            <br />
+            <span>
+              <b>P:</b> Ideal Prime Line (A,D,I) </span>
+            <span>
+              <i></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <p style="margin-left: auto; margin-right: auto; text-align: center; padding-bottom: 200px;">
+        <a class="github-button" href="https://github.com/Pearlitic/pearlitic.github.io" aria-label="GitHub">GitHub</a>
+      </p>
+    </div>
+  </body>
+</html>
