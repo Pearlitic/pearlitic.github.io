@@ -46,7 +46,7 @@ While most sources show up on your stat window, some sources such as Mage link-s
 
 "On-hit" stats aren't calculated until "on-hit", such as skill node bonus (+20% IED @Lv40) on some skills, passive Hyper skill that provides bonus to your active skill, and active skill 'conditional' bonuses (e.g. Xenon's Snipe). These stats are not shown in the stat window as they only apply to specific skills, but you should account for them if it is your main bossing skill.
 
-Note that some skills come with something like ""Passive: ""+XX% some stat"", these are actually treated like passive skills and are included in the stat window. However, when in doubt, just ask in your class Discord channel!
+Note that some skills come with something like "Passive: +XX% some stat", these are actually treated like passive skills and are included in the stat window. However, when in doubt, just ask in your class Discord channel!
 
 [Here](https://github.com/Pearlitic/pearlitic.github.io/blob/main/%25/class_data.md) is a table of "on-hit/hidden" values used by [SuckHard's WSE optimizer](https://brendonmay.github.io/wseCalculator/) for each class. You may or may not choose to use them. In my opinion a few classes are a bit on the liberal side on applying IED into WSE optimization. I tend to optimize my WSE on the conservative side.
 
@@ -70,7 +70,7 @@ List of sources I can think of:
 - Legion (max +40% IED/DMG)
 - Consumables
 
-An easy and lazy way to find your IED and DMG is to equip a crap weapon with no potentials and use all your buffs. Use the values you get in the stat window as baseline, and then add the ""on-hit"" stats and other bonuses not accounted for in the stat window to your total."
+An easy and lazy way to find your IED and DMG is to equip a crap weapon with no potentials and use all your buffs. Use the values you get in the stat window as baseline, and then add the "on-hit" stats and other bonuses not accounted for in the stat window to your total."
 
 ### Q. I'm confused, is there an easy explanation on how to do this?
 
