@@ -48,6 +48,8 @@ While most sources show up on your stat window, some sources such as Mage link-s
 
 Note that some skills come with something like ""Passive: ""+XX% some stat"", these are actually treated like passive skills and are included in the stat window. However, when in doubt, just ask in your class Discord channel!
 
+[Here](https://github.com/Pearlitic/pearlitic.github.io/blob/main/%25/class_data.md) is a table of "on-hit/hidden" values used by [SuckHard's WSE optimizer](https://brendonmay.github.io/wseCalculator/) for each class. You may or may not choose to use them. In my opinion a few classes are a bit on the liberal side on applying IED into WSE optimization. I tend to optimize my WSE on the conservative side.
+
 List of sources I can think of:
 
 - Gear Stat (not potential, the base stats. e.g. CRA has 5% IED on the armor)
