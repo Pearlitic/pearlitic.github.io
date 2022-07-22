@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>WSE Optimizer by Pearlite</title>
+    <meta name="author" content="Pearlite">
+    <meta name="description" content="A Simple Maplestory WSE Optimizer with Familiar Support." />
+    <meta name="keywords" content="Maplestory, WSE, calculator, optimizer, wse calculator, wse optimizer, attack, damage, ied, familiar, pdr, boss, weapon, secondary, emblem, game" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="5pKheskkgbk7yXiillRrJDq1EVRTQdaNYoahSJt9GXM" />
+    <script src="ied_calc.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div class="box-ex container-fluid">
+      <div class="box2 col1">
+        <center>
+          <p style="font-size: 28px;">
+            <b>IED Calculator </b>
+            <span class="smaller"></span>
+          </p>
+          <p style="font-size: 16px;"> by Pearlite </p>
+          <p style="font-size: 16px;"> ────────────────────────────── </p>
+        </center>
+        
+        <span>IED list, seperated by comma: </span>
+        <br \>
+        <input style="width: 270px;" type="string" id="iedEl" value="" placeholder="e.g. 30,5,10" onkeyup="run()" />
+        <br />
+        <span>Target PDR (%): </span>
+            <input style="width: 115px;" type="number" id="pdrEl" value="300" min="0" placeholder="Default 300" onkeyup="run()" />
+      
+
+
+        <br />
+        <input type="button" id="opti" onclick="calc()" value="Calculate" style="font-weight: bold; width: 280px; margin-top: 0px;" />
+      </div>
+      <div class="box3 col1">
+        <span>Final Combined IED (%):</span>
+        <br \>
+        <span id="fci"></span>
+        <br \>
+        <span>Damage Dealt on Target (%): </span>
+        <br \>
+        <span id="ddot"></span>
+        <br \>
+        <div id="loop"></div>
+      </div>
+      <p style="margin-left: auto; margin-right: auto; text-align: center; padding-bottom: 200px;">
+        <a class="github-button" href="https://github.com/Pearlitic/pearlitic.github.io" aria-label="GitHub">GitHub</a>
+      </p>
+    </div>
+  </body>
+</html>
