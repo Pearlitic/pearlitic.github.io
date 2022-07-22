@@ -12,7 +12,7 @@ node_list = [
     ###############################
     ]
 
-# How many trinodes your class needs? (3 skills = 1 trinode)
+# How many trinodes your class needs? (3 skills = 1 trinode set)
 trinode_set_count = 2
 
 ### === NO TOUCHY BELOW === ###
