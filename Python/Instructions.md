@@ -111,6 +111,8 @@ There are 2 versions:
 
 Open the file in your preferred text editor or IDE.
 
+[Hidden/On-Hit values used by SuckHard's WSE Calculator](https://github.com/Pearlitic/pearlitic.github.io/blob/main/%25/class_data.md) for each class. You can choose to use it as-is, partially, or ignore it completely. In my opinion the values on his calculator tends to be on the liberal side, and I prefer to be conservative in my calculations.
+
 I will use my Kanna as an example.
 
 Enter your character's base attack. This should be 0 for most classes.
@@ -208,25 +210,20 @@ The advanced version allows naming and customized familiars in the form of a dic
 
 Follow the instructions of the Standard version. The only differences are:
 
-You still enter the amount of familiars you want to optimize for, but instead of a 30% dmg/ied assumption, you can list out custom familairs. Follow the format to add/remove familairs `"Familiar_name": (atk%,boss%,ied%),` within the dictionary. You don't need a trailing comma on the last familiar line in the dictionary.
+You still enter the amount of familiars you want to optimize for, but instead of a 30% dmg/ied assumption, you can list out custom familairs. Follow the format to add/remove familairs `"Familiar_name": (atk%,boss%,ied%),` within the dictionary. You don't need a trailing comma on the last familiar line in the dictionary. **Make sure you enter at least 3 familiars.** If you don't have 3, just use fill in a dummy `"Dummy_1": (0,0,0),`, but you shouldn't use this advanced script if you don't have 3+ familiars anyway, just summon them and optimize for WSE.
 ```py
 # Familiar count to optimize for
 fam_count = 3
 
 # Familiar card list
 fam_list = {
-       # Please follow the format, keep the names short but memorable, and have at least 3 familairs.
-       # If you don't have at least 3, you can just put something like "dummy_1": (0,0,0), to simulate a "useless" familiar.
-       # Don't put more than 3 familiars of the same type to save compute time. Just put the best 3 of each boss/ied familairs you have.
-       # Note: If you have 2-line IEDS, here's the cheat sheet: 30+30 = 51, 30+15 = 40.5, 20+15 = 32, 30+20 = 44, 20+20 = 36. If i didn't cover it calculate it yourself.
-       # Last familiar line doesn't need an ending comma.
        # NO DUPLICATE NAMES!
      ### Format:
      # "Familiar_name": (atk%,boss%,ied%),
        "snek_30b": (0,30,0),
        "oda_30b": (0,30,0),
        "boogie_35i": (0,0,35),
-       "sage_cat_30i": (0,0,30)
+       "sage_cat_30i": (0,0,30) # no comma on last line
        }
 ```
 
