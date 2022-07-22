@@ -12,7 +12,7 @@ You can download the [source code folder](https://github.com/Pearlitic/pearlitic
 
 ---
 
-### Python Scripts for MapleStory
+### [Python Scripts](https://github.com/Pearlitic/pearlitic.github.io/tree/main/Python) for MapleStory
 
 If you have a unique class that functions differently or want to customize the optimizer, download the Python script. It's much easier to customize and cleaner. There's also a version that supports custom familairs. The html/js code was written when I began learning coding and its a complete shitshow.
 
