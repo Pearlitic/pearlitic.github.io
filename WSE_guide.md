@@ -9,7 +9,7 @@ Some classes optimize for overall, while others want to optimize for WSE during 
 - Do not account for weapon, secondary, emblem potential
 - List and add all ATK% sources
 - List and add all DMG% sources
-- List all IED sources (use a calculator calculate the combined IED%)
+- List all IED sources (use a [calculator](https://pearlitic.github.io/ied_calculator) calculate the combined IED%)
 - Decide if I want to add party buffs or other time limited buffs to optimize for burst DPS, or just simply optimize for overall damage.
 - Enter those values into calculator, and get the optimized WSE+familiar.
 
