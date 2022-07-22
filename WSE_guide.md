@@ -4,7 +4,7 @@ The idea of optimizing WSE is to balance out the 3 main damage stats - Attack (a
 
 Note that for WSE, we treat Damage% and Boss Damage% as the same thing and add them together, as we are optimizing for boss damage and not regular mobs.
 
-Some classes optimize for overall, while some classes want to optimize for WSE during burst. The gist is:
+Some classes optimize for overall, while others classes want to optimize for WSE during burst. The gist is:
 
 - Do not account for weapon, secondary, emblem potential
 - List and add all ATK% sources
