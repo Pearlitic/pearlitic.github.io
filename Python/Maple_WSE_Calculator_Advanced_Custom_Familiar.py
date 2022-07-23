@@ -143,7 +143,9 @@ if (max_wse_atk_lines + max_wse_dmg_lines + max_wse_ied_lines < 9):
 
 # function to calculate final ied from array of ieds
 def calcIED(arr, flag=True):
-    if arr and flag:
+    if arr == [] and flag:
+        return 0
+    elif arr and flag:
         return 1 - (1-arr.pop())*calcIED(arr,False)
     elif arr:
         return (1-arr.pop())*calcIED(arr,False)
