@@ -206,7 +206,7 @@ for a in range(0,max_wse_atk_lines+1):
                                 # calculate a/d/i of current familiar list f
                                 fam_stats = get_fam_adi(f)
                                 # calculate final atk/dmg/ied for hypothetical WSE distribution
-                                final_atk = atk + 0.12*pa + 0.09*(a-pa) + fam_stats[0]
+                                final_atk = atk + 0.13*pa + 0.10*(a-pa) + fam_stats[0]
                                 final_dmg = dmg + 0.4*pd + 0.3*(d-pd) + fam_stats[1]
                                 final_ied = calcIED([ied] + [0.4]*pi + [0.3]*(i-pi) + [fam_stats[2]])
                                 # calculate final damage %
