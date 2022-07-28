@@ -204,6 +204,25 @@ Don't touch this. Splits out every calculated result. Keep it off (`False`).
 display_all = False
 ```
 
+Lastly, run the script. The console should spit out something like this:
+
+```py
+Input Parameters:
+ATK:      7%  DMG:      344%  IED:     88.1%
+Familiars: 3  Prime Lines: 3  Boss PDR: 300%
+===== Printing Top 10 Results =====
+Top  1 - FD: 806%    A/D/I: (6, 4, 2)    Prime: (1, 0, 2)
+Top  2 - FD: 806%    A/D/I: (7, 3, 2)    Prime: (0, 1, 2)
+Top  3 - FD: 806%    A/D/I: (6, 4, 2)    Prime: (0, 1, 2)
+Top  4 - FD: 805%    A/D/I: (7, 3, 2)    Prime: (1, 0, 2)
+Top  5 - FD: 803%    A/D/I: (5, 5, 2)    Prime: (1, 0, 2)
+Top  6 - FD: 802%    A/D/I: (8, 2, 2)    Prime: (0, 1, 2)
+Top  7 - FD: 801%    A/D/I: (6, 4, 2)    Prime: (2, 0, 1)
+Top  8 - FD: 801%    A/D/I: (7, 3, 2)    Prime: (0, 2, 1)
+Top  9 - FD: 801%    A/D/I: (6, 4, 2)    Prime: (1, 1, 1)
+Top 10 - FD: 800%    A/D/I: (5, 5, 2)    Prime: (0, 1, 2)
+```
+
 #### [Advanced Version](https://github.com/Pearlitic/pearlitic.github.io/blob/main/Python/Maple_WSE_Calculator_Advanced_Custom_Familiar.py)
 
 The advanced version allows naming and customized familiars in the form of a dictionary.
@@ -240,6 +259,47 @@ allow_duplicate = False
 # Allow inferior familiar duplicate WSE setups? (Keep off unless you want dupe WSE setups but with weaker familiars)
 allow_inferior = False
 ```
+
+After running the script, you should get something like this:
+
+```py
+Input Parameters:
+ATK:      7%  DMG:      344%  IED:     88.1%
+Familiars: 3  Prime Lines: 3  Boss PDR: 300%
+===== Printing Top 10 Results =====
+Top  1 - FD: 811%    A/D/I: (6, 2, 1)    Prime: (2, 0, 1)
+                     ⮡ Best Familairs: (snek_30b, oda_30b, boogie_35i)
+                     ⮡ Final A/D/I (%): (67%, 463%, 95.37%)
+Top  2 - FD: 811%    A/D/I: (6, 2, 1)    Prime: (1, 1, 1)
+                     ⮡ Best Familairs: (snek_30b, oda_30b, boogie_35i)
+                     ⮡ Final A/D/I (%): (63%, 473%, 95.37%)
+Top  3 - FD: 810%    A/D/I: (7, 1, 1)    Prime: (1, 1, 1)
+                     ⮡ Best Familairs: (snek_30b, oda_30b, boogie_35i)
+                     ⮡ Final A/D/I (%): (73%, 443%, 95.37%)
+Top  4 - FD: 810%    A/D/I: (6, 2, 1)    Prime: (0, 2, 1)
+                     ⮡ Best Familairs: (snek_30b, oda_30b, boogie_35i)
+                     ⮡ Final A/D/I (%): (61%, 484%, 95.37%)
+Top  5 - FD: 809%    A/D/I: (7, 1, 1)    Prime: (2, 0, 1)
+                     ⮡ Best Familairs: (snek_30b, oda_30b, boogie_35i)
+                     ⮡ Final A/D/I (%): (76%, 434%, 95.37%)
+Top  6 - FD: 808%    A/D/I: (5, 3, 1)    Prime: (2, 0, 1)
+                     ⮡ Best Familairs: (snek_30b, oda_30b, boogie_35i)
+                     ⮡ Final A/D/I (%): (58%, 493%, 95.37%)
+Top  7 - FD: 806%    A/D/I: (5, 3, 1)    Prime: (1, 1, 1)
+                     ⮡ Best Familairs: (snek_30b, oda_30b, boogie_35i)
+                     ⮡ Final A/D/I (%): (55%, 503%, 95.37%)
+Top  8 - FD: 806%    A/D/I: (6, 2, 1)    Prime: (1, 2, 0)
+                     ⮡ Best Familairs: (snek_30b, boogie_35i, sage_cat_30i)
+                     ⮡ Final A/D/I (%): (63%, 454%, 96.22%)
+Top  9 - FD: 805%    A/D/I: (6, 1, 2)    Prime: (2, 1, 0)
+                     ⮡ Best Familairs: (snek_30b, oda_30b, boogie_35i)
+                     ⮡ Final A/D/I (%): (67%, 443%, 96.22%)
+Top 10 - FD: 805%    A/D/I: (6, 1, 2)    Prime: (1, 1, 1)
+                     ⮡ Best Familairs: (snek_30b, oda_30b, boogie_35i)
+                     ⮡ Final A/D/I (%): (63%, 443%, 96.76%)
+```
+
+_The above sample has `display_detailed = True` enabled._
 
 ---
 
