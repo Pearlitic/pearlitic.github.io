@@ -232,7 +232,7 @@ function optimize(opA, opD, opI, opF, opPDR, opPR) {
 						for (let pi = 0; pi <= opPR; pi++) {
 							if (a + d + i == oF && pa + pd + pi == opPR && pa <= a && pd <= d && pi <= i) {
 								//console.log(a + " " + d + " " + i + " " + pa + " " + pd + " " + pi);
-								fA = 0.09 * (a - pa) + 0.12 * pa + opA;
+								fA = 0.10 * (a - pa) + 0.13 * pa + opA;
 								fD = 0.3 * (d - pd) + 0.4 * pd + opD;
 								fI = calcIED(Array(pi).fill(0.4).concat(Array(i - pi).fill(0.3), [opI]));
 								FD = calcFD(fA, fD, fI, opPDR);
