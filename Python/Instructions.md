@@ -223,6 +223,8 @@ Top  9 - FD: 801%    A/D/I: (6, 4, 2)    Prime: (1, 1, 1)
 Top 10 - FD: 800%    A/D/I: (5, 5, 2)    Prime: (0, 1, 2)
 ```
 
+In this example, the best WSE optimization would be 6 Attack% lines, 4 Boss% lines, and 2 IED% lines. The ideal prime lines are 1 Attack and 2 IED%.
+
 #### [Advanced Version](https://github.com/Pearlitic/pearlitic.github.io/blob/main/Python/Maple_WSE_Calculator_Advanced_Custom_Familiar.py)
 
 The advanced version allows naming and customized familiars in the form of a dictionary.
