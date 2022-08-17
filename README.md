@@ -19,3 +19,4 @@ If you have a unique class that functions differently or want to customize the o
 [Python version](https://github.com/Pearlitic/pearlitic.github.io/tree/main/Python) of this calculator for better editing and offline use. You can edit it and run it as a script if you have Python installed, or run it on an online IDE such as [\(online-python\)](https://www.online-python.com/). Requires Python 3.6+. 
 
 ![Spyder](https://github.com/Pearlitic/pearlitic.github.io/blob/main/%25/Spyder.png)
+![Spyder2](https://github.com/Pearlitic/pearlitic.github.io/blob/main/%25/Spyder2.png)
