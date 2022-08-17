@@ -115,12 +115,12 @@ Open the file in your preferred text editor or IDE.
 
 I will use my Kanna as an example.
 
-Enter your character's base attack. This should be 0 for most classes.
+Edit your character's base attack. This should be 0 for most classes.
 ```py
 atk = 3 + 4 # mag soul 3% + Will of the Hero 4%
 ```
 
-Enter dmg% + boss%:
+Edit dmg% + boss%:
 ```py
 dmg = (0 ##### No Touchy, starting dummy
        #################################
@@ -133,7 +133,7 @@ dmg = (0 ##### No Touchy, starting dummy
        + 0)## No touchy, ending dummy
 ```
 
-Enter IED% list:
+Edit IED% list:
 ```py
 ied = [0,########################### No touchy, begin of array dummy
        #############################
@@ -160,22 +160,22 @@ ied = [0,########################### No touchy, begin of array dummy
        0]########################### No touchy, end of array dummy
 ```
 
-Enter how many familairs you want to optimize for.
+Edit how many familairs you want to optimize for.
 ```py
 fam = 3
 ```
 
-Enter the number of prime lines you want to optmize on your WSE. Keep at 3 unless you have a reason not to.
+Edit the number of prime lines you want to optmize on your WSE. Keep at 3 unless you have a reason not to.
 ```py
 prime = 3
 ```
 
-Enter the target boss's PDR. That's 300 for most end-game bosses. Saren is the first end-game boss that exceeds this (380).
+Edit the target boss's PDR. That's 300 for most end-game bosses. Saren is the first end-game boss that exceeds this (380).
 ```py
 pdr = 300
 ```
 
-Enter how many top results you want to display. I recommend keeping it at 10.
+Edit how many top results you want to display. I recommend keeping it at 10.
 ```py
 display_top = 10
 ```
