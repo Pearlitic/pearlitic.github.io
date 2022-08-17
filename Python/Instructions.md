@@ -231,7 +231,7 @@ The advanced version allows naming and customized familiars in the form of a dic
 
 Follow the instructions of the Standard version. The only differences are:
 
-You still enter the amount of familiars you want to optimize for, but instead of a 30% dmg/ied assumption, you can list out custom familairs. Follow the format to add/remove familairs `"Familiar_name": (atk%,boss%,ied%),` within the dictionary. You don't need a trailing comma on the last familiar line in the dictionary. **Make sure you enter at least 3 familiars.** If you don't have 3, just use fill in a dummy `"Dummy_1": (0,0,0),`, but you shouldn't use this advanced script if you don't have 3+ familiars anyway, just summon them and optimize for WSE.
+You still enter the amount of familiars you want to optimize for, but instead of a 30% dmg/ied assumption, you can list out custom familairs. Follow the format to add/remove familairs `"Familiar_name": (atk%,boss%,ied%),` within the dictionary, and make sure you don't have duplicate names. You don't need a trailing comma on the last familiar line in the dictionary. **Make sure you enter at least 3 familiars.** If you don't have 3, just use fill in a dummy `"Dummy_1": (0,0,0),`, but you shouldn't use this advanced script if you don't have 3+ familiars anyway, just summon them and optimize for WSE.
 ```py
 # Familiar count to optimize for
 fam_count = 3
