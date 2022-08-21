@@ -1,14 +1,24 @@
 node_list = [
     ###############################
     # Enter list of trinodes here, I recommend using skill initials to keep it short
-    ['A','B','D'],
-    ['D','A','F'],
-    ['C','E','D'],
-    ['A','E','F'],
-    ['B','C','D'],
-    ['F','E','A'],
-    ['C','B','D'],
-    ['E','D','A'] # No comma on last line
+    ['B','CL','FO'],
+    ['B','E','FO'],
+    ['TS','B','CL'],
+    ['TS','B','E'],
+    ['TS','LO','B'],
+    ['E','B','CL'],
+    ['CL','B','TS'],
+    ['CL','B','FO'],
+    ['CL','TS','FO'],
+    ['FO','LO','B'],
+    ['FO','CL','B'],
+    ['FO','E','LO'],
+    ['FO','LO','B'],
+    ['LO','E','CL'],
+    ['LO','E','TS'],
+    ['LO','B','TS'],
+    ['LO','B','E'],
+    ['LO','FO','E']
     ###############################
     ]
 
@@ -30,6 +40,13 @@ node_combo = generate_node_combo(node_list,trinode_set_count)
 valid_combo = []
 non_perfect_combo = {}
 
+# compensate score if result has less skills than intended skill count
+def score_insufficient(trinode_set_count: int,result: dict):
+    score = trinode_set_count*3 - len(result)
+    score = min(trinode_set_count*3,score)
+    score = max(score,0)
+    return score
+    
 for n in node_combo:
     # concat current loaded combo
     temp_node_combo_concat = list(itertools.chain(*[node_list[x] for x in n]))
@@ -42,13 +59,18 @@ for n in node_combo:
     # case 2: result is not a perfect combo
     else:
         # calculate current combo quality score (lower = better)
-        score = sum([1 for x in result.values() if not x==2])
+        score = sum([1 for x in result.values() if not x==2]) + score_insufficient(trinode_set_count,result)
         # add combo (or create entry) to dict catagorized by quality score
         try:
             non_perfect_combo[score] += [[node_list[x] for x in n]]
         except:
             non_perfect_combo[score] = [[node_list[x] for x in n]]
-   
+
+# remove duplicate entries
+result = [] 
+[result.append(x) for x in valid_combo if x not in result] 
+valid_combo = result
+
 # print results
 print('Valid Trinode Sets :')
 # case 1: valid combo present
