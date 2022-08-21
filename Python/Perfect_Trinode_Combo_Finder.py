@@ -1,24 +1,14 @@
 node_list = [
     ###############################
     # Enter list of trinodes here, I recommend using skill initials to keep it short
-    ['B','CL','FO'],
-    ['B','E','FO'],
-    ['TS','B','CL'],
-    ['TS','B','E'],
-    ['TS','LO','B'],
-    ['E','B','CL'],
-    ['CL','B','TS'],
-    ['CL','B','FO'],
-    ['CL','TS','FO'],
-    ['FO','LO','B'],
-    ['FO','CL','B'],
-    ['FO','E','LO'],
-    ['FO','LO','B'],
-    ['LO','E','CL'],
-    ['LO','E','TS'],
-    ['LO','B','TS'],
-    ['LO','B','E'],
-    ['LO','FO','E']
+    ['A','B','D'],
+    ['D','A','F'],
+    ['C','E','D'],
+    ['A','E','F'],
+    ['B','C','D'],
+    ['F','E','A'],
+    ['C','B','D'],
+    ['E','D','A'] # No comma on last line
     ###############################
     ]
 
