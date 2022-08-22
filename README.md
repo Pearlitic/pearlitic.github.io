@@ -1,6 +1,10 @@
 # MapleStory WSE Optimizer
-### Webpage: [pearlitic.github.io](https://pearlitic.github.io/)
-### Simple IED Calculator: [pearlitic.github.io/ied_calculator](https://pearlitic.github.io/ied_calculator)
++ __Webpage: [pearlitic.github.io](https://pearlitic.github.io/)__
++ Simple IED Calculator: [pearlitic.github.io/ied_calculator](https://pearlitic.github.io/ied_calculator)
++ Familiar Potential List: [pearlitic.github.io/Familiar_Potential_List](https://pearlitic.github.io/Familiar_Potential_List)
++ IED Pre-Calculated Table: [pearlitic.github.io/%25/ied_table](https://pearlitic.github.io/%25/ied_table)
+
+---
 
 Please enter reasonable values, the calculator craps out otherwise. Optimizer assumes 40% IED/DMG for Prime line.
 
