@@ -145,7 +145,7 @@ for a in range(0,max_wse_atk_lines+1):
                         # Only run when sum of a/d/i/fam is the correct amout of lines, and prime count is possible
                         if a+d+i == 9+fam and pa+pd+pi == prime and pa <= a and pd <= d and pi <= i:
                             # calculate final atk/dmg/ied for hypothetical WSE distribution
-                            final_atk = atk + 0.13*pa + 0.10*(a-pa)
+                            final_atk = atk + 0.12*pa + 0.09*(a-pa)
                             final_dmg = dmg + 0.4*pd + 0.3*(d-pd)
                             final_ied = calcIED([ied] + [0.4]*pi + [0.3]*(i-pi))
                             # calculate final damage %
