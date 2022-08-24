@@ -103,6 +103,9 @@ allow_duplicate = False
 allow_inferior = False
 
 ## === ADVANCED OPTIONS === ##
+# If you have Lv160+ Emblem/Secondary or both, edit the following to 2/3.
+Lv160_above_WSE = 1
+
 # If you play a class with weird WSE, modify the max potential lines of your WSE:
 max_wse_atk_lines = 9
 max_wse_dmg_lines = 6
@@ -189,6 +192,16 @@ def get_fam_adi(f_combo):
     ied = calcIED([fam_list[f][2]*0.01 for f in f_combo])
     return [atk,dmg,ied]
 
+# return bonus attack% from Lv160+ equips tier under most optimal condition
+def calcWSE_ATK(a,pa,Lv160_above_WSE):
+    bonus = 0
+    if a >= (Lv160_above_WSE*3):
+        bonus = Lv160_above_WSE*0.03
+    else:
+        bonus = a * 0.01
+        
+    return 0.12*pa + 0.09*(a-pa) + bonus
+
 # create dictionary to store results
 table = {}
 # 1 space string, ignore (debug formatting use)
@@ -206,7 +219,7 @@ for a in range(0,max_wse_atk_lines+1):
                                 # calculate a/d/i of current familiar list f
                                 fam_stats = get_fam_adi(f)
                                 # calculate final atk/dmg/ied for hypothetical WSE distribution
-                                final_atk = atk + 0.12*pa + 0.09*(a-pa) + fam_stats[0]
+                                final_atk = atk + calcWSE_ATK(a,pa,Lv160_above_WSE) + fam_stats[0]
                                 final_dmg = dmg + 0.4*pd + 0.3*(d-pd) + fam_stats[1]
                                 final_ied = calcIED([ied] + [0.4]*pi + [0.3]*(i-pi) + [fam_stats[2]])
                                 # calculate final damage %
