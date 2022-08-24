@@ -187,6 +187,12 @@ display_detailed = False
 
 __Starting here are advanced options. Most of the time you won't need to modify them.__
 
+Is your WSE above Lv160? Most classes should only have 1 (Abso/Arcane weapon) above 160.
+
+```py
+Lv160_above_WSE = 1
+```
+
 Is your class one of those with odd WSE setups (e.g. Kanna)?
 
 _For example, only ATK% is useful on Haku's fan, thus functionally I can only optimize to a max of 9 atk, 3 dmg, and 6 ied lines on my Kanna._
