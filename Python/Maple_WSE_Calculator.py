@@ -62,6 +62,9 @@ display_top = 10
 display_detailed = False
 
 ## === ADVANCED OPTIONS === ##
+# If you have Lv160+ Emblem/Secondary or both, edit the following to 2/3.
+Lv160_above_WSE = 1
+
 # If you play a class with weird WSE, modify the max potential lines of you WSE:
 max_wse_atk_lines = 9
 max_wse_dmg_lines = 6
@@ -131,6 +134,16 @@ def calcFD(a, d, i, pdr):
     # Return final damage accounting for atk/dmg bonus and damage multiplier
     return (1 + a)*(1 + d)*DM
 
+# return bonus attack% from Lv160+ equips tier under most optimal condition
+def calcWSE_ATK(a,pa,Lv160_above_WSE):
+    bonus = 0
+    if a >= (Lv160_above_WSE*3):
+        bonus = Lv160_above_WSE*0.03
+    else:
+        bonus = a * 0.01
+        
+    return 0.12*pa + 0.09*(a-pa) + bonus
+
 # create dictionary to store results
 table = {}
 # 1 space string, ignore (debug formatting use)
@@ -145,7 +158,7 @@ for a in range(0,max_wse_atk_lines+1):
                         # Only run when sum of a/d/i/fam is the correct amout of lines, and prime count is possible
                         if a+d+i == 9+fam and pa+pd+pi == prime and pa <= a and pd <= d and pi <= i:
                             # calculate final atk/dmg/ied for hypothetical WSE distribution
-                            final_atk = atk + 0.12*pa + 0.09*(a-pa)
+                            final_atk = atk + calcWSE_ATK(a,pa,Lv160_above_WSE)
                             final_dmg = dmg + 0.4*pd + 0.3*(d-pd)
                             final_ied = calcIED([ied] + [0.4]*pi + [0.3]*(i-pi))
                             # calculate final damage %
