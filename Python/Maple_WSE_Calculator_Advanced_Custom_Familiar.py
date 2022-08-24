@@ -192,7 +192,7 @@ def get_fam_adi(f_combo):
     ied = calcIED([fam_list[f][2]*0.01 for f in f_combo])
     return [atk,dmg,ied]
 
-# return bonus attack% from Lv160+ equips tier under most optimal condition
+# return wse config + bonus attack% from Lv160+ equips tier under most optimal condition
 def calcWSE_ATK(a,pa,Lv160_above_WSE):
     bonus = 0
     if a >= (Lv160_above_WSE*3):
