@@ -117,7 +117,7 @@ I will use my Kanna as an example.
 
 Edit your character's base attack. This should be 0 for most classes.
 ```py
-atk = 3 + 4 # mag soul 3% + Will of the Hero 4%
+atk = 3 + 4 # mag soul 3% + Echo 4%
 ```
 
 Edit dmg% + boss%:
