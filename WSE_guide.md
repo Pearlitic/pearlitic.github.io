@@ -74,7 +74,7 @@ An easy and lazy way to find your IED and DMG is to equip a crap weapon with no 
 
 ### Q. I'm confused, is there an easy explanation on how to do this?
 
-1. Unequip Weapon, Emblem, Secondary, then equip a level 10 crappy weapon (& crappy secondary if needed) with no potential. See step 16 for if you should summon familiars for steps 2-4.
+1. Unequip Weapon, Emblem, Secondary, then equip a level 10 crappy weapon (& crappy secondary if needed) with no potential. See step 16 for if you should summon familiars for steps 2-4 (Basically, do you have multiple Epic+ Boss/IED fams? If not, just summon your best ones and forget optimizing familairs).
 2. Setup Legion and everything else to how you would battle bosses. Buff up.
 3. Open you stats window. Start hitting dummy. Make all links/passives max stack.
 4. Write down your Damage%, Boss Damage%, IED% displayed in the stat window.
