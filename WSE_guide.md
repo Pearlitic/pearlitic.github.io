@@ -57,7 +57,7 @@ List of sources I can think of:
 - Medals
 - Titles
 - Passive Skills
-- Buff Skills
+- Buff Skills (e.g. Echo 4% ATK)
 - Link Skills (Luminous, Explorer Mage, etc.)
 - Passive Hyper Skill
 - Hyper Stat
@@ -76,25 +76,27 @@ An easy and lazy way to find your IED and DMG is to equip a crap weapon with no 
 
 1. Unequip Weapon, Emblem, Secondary, then equip a level 10 crappy weapon (& crappy secondary if needed) with no potential. See step 16 for if you should summon familiars for steps 2-4 (Basically, do you have multiple Epic+ Boss/IED fams? If not, just summon your best ones and forget optimizing familairs).
 2. Setup Legion and everything else to how you would battle bosses. Buff up.
-3. Open you stats window. Start hitting dummy. Make all links/passives max stack.
-4. Write down your Damage%, Boss Damage%, IED% displayed in the stat window.
-5. If most of your bossing skills have 20% IED from V-Maxtrix Lv40 boost node bonus, write that number down behind IED. If only a few skills have innate IED, omit this step.
-6. If your main bossing skills have IED% from Hyper skill, write that down behind IED.
-7. If your main bossing skills have Boss Damage% from Hyper skill, write that down behind Boss Damage%.
-8. Check your weapon and secondary. Ignoring existing potentials, do they have IED% and Boss Damage% stat on a clean weapon? If yes, write it down behind the respective stat.
-9. When you took off the weapon/secondary, did you lose any set bonus (e.g. 30% Boss Damage)? If yes, write them down behind the respective stat.
-10. Look through your skills. Do you see any ATK% bonus/passive/buffs? Most classes don't, so write down 0 or whatever bonus your class has for your ATK%.
-11. Does your weapon have a soul that's ATK% / IED% / DMG%? If yes, write it down behind the respective stat.
+3. Open you stats window. Start hitting boss dummy. Make all links/passives max stack.
+4. Prepare a pen and paper. We will create a list of all your ATK%/(Boss)DMG%/IED%. Write down 4 lines with the beginning of each line being ATK%, Damage%, Boss Damage%, and IED%.
+5. Write down your Damage%, Boss Damage%, IED% displayed in the stat window at the respective line.
+6. If most of your bossing skills have 20% IED from V-Maxtrix Lv40 boost node bonus, write that number down behind IED. If only a few skills have innate IED, omit this step.
+7. If your main bossing skills have IED% from Hyper skill, write that down behind IED%.
+8. If your main bossing skills have Boss Damage% from Hyper skill, write that down behind Boss Damage%.
+9. Check your weapon and secondary. Ignoring existing potentials, do they have IED% and Boss Damage% stat on a clean weapon? If yes, write it down behind the respective stat.
+10. When you took off the weapon/secondary, did you lose any set bonus (e.g. 30% Boss Damage)? If yes, write them down behind the respective stat.
+11. Look through your skills. Do you see any ATK% bonus/passive/buffs? Most classes don't, so write down 0 or whatever bonus your class has for your ATK%.
+12. Does your weapon have a soul that's ATK% / IED% / DMG%? If yes, write it down behind the respective stat.
+13. Do you have special on-hit/debuff/stacking/temp buff skills that grant ATK%/(BOSS)DMG%/IED% (e.g. Adele's Resonance Rush, Explorer's Link Skill)? If yes, and you are confident you are able to keep these skills/stacks consistantly up while bossing, write down these values behind their respective stats.
 
-12. Open the WSE Calculator
-13. Add up all your ATK% you wrote down, and enter the value into the Attack (%) input field.
-14. Add up all your Damage% and Boss Damage% that you wrote down (yes, add both Dmg% and Boss%). Enter that into the Damage (%) field.
-15. Enter the list of IEDs that you wrote down seperated by commas. Example: "72,20,15,10" (without quotes).
-16. Enter the amount of familiar slots you have. If you don't have any Epic and above IED/Boss familiars to fill in the slots, enter 0. Redo step 2-4 but summon the best familiars you have first, and update the numbers in step 4. Then re-enter values (step 13-15).
-17. Open advanced option if you want to edit Prime Lines or Boss PDR (Seren has 380 PDR). Otherwise leave at default 300 for Lomien/Lucid/Will.
-18. If you have a class with weird WSE that have limited potential, open advanced option and edit the max ATK/DMG/IED lines your WSE can get. Otherwise leave at default 9/6/9.
-18. Voila! You got your optimization. For example, lets say you entered 2 familiars and got a result of "A/D/I: (5,4,2)  P: (1,0,2)". This means on your WSE you need 5 lines of ATK%, and the remaining lines plus familiar should have 4 DMG% and 2 IED%. So lets say you have 1 IED% and 1 Boss% Epic familiar, then your WSE will need to fit the remaining 3 DMG% and 1 IED%. 
-19. Don'y worry about the "P: (1,0,2)". That's the Prime Line distribution. It's only for hard-core optimization end-game. See pics below, Final Damage% for even the top 10 configs are really, really close.
+14. Open the WSE Calculator
+15. Add up all your ATK% you wrote down, and enter the value into the Attack (%) input field.
+16. Add up all your Damage% and Boss Damage% that you wrote down (yes, add both Dmg% and Boss%). Enter that into the Damage (%) field.
+17. Enter the list of IEDs that you wrote down seperated by commas (DO NOT add them, they aren't additive). Example: "72,20,15,10" (without quotes).
+18. Enter the amount of familiar slots you have. If you don't have any Epic and above IED/Boss familiars to fill in the slots, enter 0. Redo step 2-4 but summon the best familiars you have first, and update the numbers in step 4. Then re-enter values (step 13-15).
+19. Open advanced option if you want to edit Prime Lines or Boss PDR (Seren has 380 PDR). Otherwise leave at default 300 for Lomien/Lucid/Will.
+20. If you have a class with weird WSE that have limited potential, open advanced option and edit the max ATK/DMG/IED lines your WSE can get. Otherwise leave at default 9/6/9.
+21. Voila! You got your optimization. For example, lets say you entered 2 familiars and got a result of "A/D/I: (5,4,2)  P: (1,0,2)". This means on your WSE you need 5 lines of ATK%, and the remaining lines plus familiar should have 4 DMG% and 2 IED%. So lets say you have 1 IED% and 1 Boss% Epic familiar, then your WSE will need to fit the remaining 3 DMG% and 1 IED%. 
+22. Don'y worry about the "P: (1,0,2)". That's the Prime Line distribution. It's only for hard-core optimization end-game. See pics below, Final Damage% for even the top 10 configs are really, really close.
 
 ### Q. Recubing WSE is expersive. I just wanna optimize my familiar, can I do that? 
 
