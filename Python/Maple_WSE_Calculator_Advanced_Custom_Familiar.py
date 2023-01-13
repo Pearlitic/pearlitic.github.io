@@ -82,7 +82,7 @@ fam_list = {
        "cat_30i_1": (0,0,30)
        }
 
-# number of prime lines (If you have Unique familiars, you can increase prime lines to account for them)
+# number of prime lines
     # prime lines are calculated as 12%/40%/40% for atk/dmg/ied
     # non-prime are calculated as 9%/30%/30% for atk/dmg/ied
 prime = 3
