@@ -101,7 +101,7 @@ These should be all the editable datatypes intended for users to edit.
 <details>
   <summary>Recommended Hidden Stats (Click to expand)</summary>
 
-**_Likely Outdated_**. These are "hidden" stats that are not accounted for / not found in the stats window. See [stats](https://github.com/Pearlitic/pearlitic.github.io/blob/main/%25/class_data.md) used by SuckHard's calculator. The 4% extra attack you see on classes is Will of the Hero skill. The 20% IED is from Lv40 V skills. Some classes have a lot of bonus IED%/DMG%, these are not displayed in the stats window but are built into skills, such as the infamous Marksman's snipe.
+**_Likely Outdated_**. These are "hidden" stats that are not accounted for / not found in the stats window. See [stats (probably outdated)](https://github.com/Pearlitic/pearlitic.github.io/blob/main/%25/class_data.md) or [original repo file](https://github.com/brendonmay/brendonmay.github.io/blob/master/wseCalculator/main.js) for stats used by SuckHard's calculator. The 4% extra attack you see on classes is Will of the Hero skill. The 20% IED is from Lv40 V skills. Some classes have a lot of bonus IED%/DMG%, these are not displayed in the stats window but are built into skills, such as the infamous Marksman's snipe.
 
 </details>
   
@@ -111,7 +111,7 @@ There are 2 versions:
 
 Open the file in your preferred text editor or IDE.
 
-[Hidden/On-Hit values used by SuckHard's WSE Calculator](https://github.com/Pearlitic/pearlitic.github.io/blob/main/%25/class_data.md) for each class. You can choose to use it as-is, partially, or ignore it completely. In my opinion the values on his calculator tends to be on the liberal side, and I prefer to be conservative in my calculations.
+See [Hidden/On-Hit values](https://github.com/Pearlitic/pearlitic.github.io/blob/main/%25/class_data.md) or [original repo file (as of 2024 it's on line 1218 and onwards)](https://github.com/brendonmay/brendonmay.github.io/blob/master/wseCalculator/main.js) used by SuckHard's WSE Calculator for each class. You can choose to use it as-is, partially, or ignore it completely. In my opinion the values on his calculator tends to be on the liberal side, and I prefer to be conservative in my calculations.
 
 I will use my Kanna as an example.
 
